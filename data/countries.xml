@@ -231,10 +231,10 @@
     <country countryCode="UA" countryName="Ukraine" north="52.369362" south="44.390415" east="40.20739" west="22.128889" capital="Kyiv" continentName="Europe" continent="EU" />
     <country countryCode="UG" countryName="Uganda" north="4.214427" south="-1.48405" east="35.036049" west="29.573252" capital="Kampala" continentName="Africa" continent="AF" />
     <country countryCode="UM" countryName="U.S. Minor Outlying Islands" north="28.219814" south="-0.389006" east="166.654526" west="-177.392029" capital="" continentName="Oceania" continent="OC" />
-    <country countryCode="US" countryName="United States" north="49.388611" south="24.544245" east="-66.954811" west="-124.733253" capital="Washington" continentName="North America" continent="NA" />
+    <country countryCode="US" countryName="United States" north="49.388611" south="24.544245" east="-66.954811" west="-124.733253" capital="Washington, D.C." continentName="North America" continent="NA" />
     <country countryCode="UY" countryName="Uruguay" north="-30.082224" south="-34.980816" east="-53.073933" west="-58.442722" capital="Montevideo" continentName="South America" continent="SA" />
     <country countryCode="UZ" countryName="Uzbekistan" north="45.575001" south="37.184444" east="73.132278" west="55.996639" capital="Tashkent" continentName="Asia" continent="AS" />
-    <country countryCode="VA" countryName="Vatican City" north="41.90743830885576" south="41.90027960306854" east="12.45837546629481" west="12.44570678169205" capital="Vatican" continentName="Europe" continent="EU" />
+    <country countryCode="VA" countryName="Vatican City" north="41.90743830885576" south="41.90027960306854" east="12.45837546629481" west="12.44570678169205" capital="Vatican City" continentName="Europe" continent="EU" />
     <country countryCode="VC" countryName="Saint Vincent and the Grenadines" north="13.377834" south="12.583984810969037" east="-61.11388" west="-61.46090317727658" capital="Kingstown" continentName="North America" continent="NA" />
     <country countryCode="VE" countryName="Venezuela" north="12.201903" south="0.626311" east="-59.80378" west="-73.354073" capital="Caracas" continentName="South America" continent="SA" />
     <country countryCode="VG" countryName="British Virgin Islands" north="18.757221" south="18.383710898211305" east="-64.268768" west="-64.71312752730364" capital="Road Town" continentName="North America" continent="NA" />

@@ -78,7 +78,7 @@
                                         <xsl:element name="a">
                                             <xsl:attribute name="href">
                                                 <!-- See convexedHandler.js -->
-                                                javascript:Wiki.showPage("<xsl:value-of select="@capital"/>");
+                                                javascript:Wiki.showPage("<xsl:value-of select="concat(@capital, ', ', $name)"/>");
                                             </xsl:attribute>
                                             <font color="white">
                                                 (<xsl:value-of select="@capital"/>)
