@@ -1,5 +1,5 @@
 body {
-    background-image:url('../img/starry_sky.gif');
+    background-image:url("../img/starry_sky.gif");
     font-family: "Calibri";
 }
 

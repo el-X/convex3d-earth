@@ -66,7 +66,7 @@
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
                                     <!-- See convexedHandler.js -->
-                                    javascript:showCountry("<xsl:value-of select="$name"/>");
+                                    javascript:showWikiPage("<xsl:value-of select="$name"/>");
                                 </xsl:attribute>
                                 <font color="white">
                                     <xsl:value-of select="$name"/>
@@ -75,7 +75,15 @@
                             <i>
                                 <xsl:choose>
                                     <xsl:when test="@capital != ''">
-                                        (<xsl:value-of select="@capital"/>)
+                                        <xsl:element name="a">
+                                            <xsl:attribute name="href">
+                                                <!-- See convexedHandler.js -->
+                                                javascript:showWikiPage("<xsl:value-of select="@capital"/>");
+                                            </xsl:attribute>
+                                            <font color="white">
+                                                (<xsl:value-of select="@capital"/>)
+                                            </font>
+                                        </xsl:element>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         (-)

@@ -12,7 +12,7 @@ function initConvexedEarth() {
  * equator line.
  */
 function resetEarthView() {
-    var earth = document.getElementById('earth');
+    var earth = document.getElementById("earth");
     earth.runtime.showAll();
 }
 
@@ -23,9 +23,9 @@ function resetEarthView() {
  * disappear.
  */
 function resetInfoView() {
-    var wikiFrame = document.getElementById('wikiFrame');
+    var wikiFrame = document.getElementById("wikiFrame");
     wikiFrame.src = "";
-    var wikiLink = document.getElementById('outlink');
+    var wikiLink = document.getElementById("outlink");
     wikiLink.style.display = "none";
 }
 
@@ -77,14 +77,14 @@ function toggleCountryBoundaries(button) {
  *
  * @param name of the country
  */
-function showCountry(name) {
+function showWikiPage(name) {
     var sideLink = "http://en.m.wikipedia.org/wiki/";
     var fullLink = "http://en.wikipedia.org/wiki/";
 
-    var wikiLink = document.getElementById('outlink');
-    var wikiFrame = document.getElementById('wikiFrame');
+    var wikiLink = document.getElementById("outlink");
+    var wikiFrame = document.getElementById("wikiFrame");
 
-    document.getElementById('info').style.display = "none";
+    document.getElementById("info").style.display = "none";
 
     wikiLink.href = fullLink + name;
     wikiLink.style.display = "block";
