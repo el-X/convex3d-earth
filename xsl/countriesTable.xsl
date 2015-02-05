@@ -66,7 +66,7 @@
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
                                     <!-- See convexedHandler.js -->
-                                    javascript:showWikiPage("<xsl:value-of select="$name"/>");
+                                    javascript:Wiki.showPage("<xsl:value-of select="$name"/>");
                                 </xsl:attribute>
                                 <font color="white">
                                     <xsl:value-of select="$name"/>
@@ -78,7 +78,7 @@
                                         <xsl:element name="a">
                                             <xsl:attribute name="href">
                                                 <!-- See convexedHandler.js -->
-                                                javascript:showWikiPage("<xsl:value-of select="@capital"/>");
+                                                javascript:Wiki.showPage("<xsl:value-of select="@capital"/>");
                                             </xsl:attribute>
                                             <font color="white">
                                                 (<xsl:value-of select="@capital"/>)
