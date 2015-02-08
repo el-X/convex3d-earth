@@ -25,7 +25,6 @@ XSLTransformer.loadXMLDoc = function (filename)
     try {
         xhttp.responseType = "msxml-document";
     } catch (err) {
-        alert("Error occured!");
     } // Helping IE11
     xhttp.send("");
     return xhttp.responseXML;
