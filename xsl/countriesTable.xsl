@@ -53,9 +53,12 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- Recursive template. Depth is the length of the characters string. -->
     <xsl:template name="for-each-character">
         <xsl:param name="data"/>
+        <!-- Check characters string for content before proceed -->
         <xsl:if test="string-length($data) &gt; 0">
+            <!-- Pick the first letter of the string -->
             <xsl:variable name="letter" select="substring($data, 1, 1)" />
             <h3>
                 <xsl:value-of select="$letter"/>
@@ -69,7 +72,7 @@
                             <b>
                                 <xsl:element name="a">
                                     <xsl:attribute name="href">
-                                        <!-- See convexedHandler.js -->
+                                        <!-- See wikiEventHandler.js -->
                                         javascript:Wiki.showPage("<xsl:value-of select="$country"/>");
                                     </xsl:attribute>
                                     <font color="white">
@@ -82,7 +85,7 @@
                                 <xsl:when test="@capital != ''">
                                     <xsl:element name="a">
                                         <xsl:attribute name="href">
-                                            <!-- See convexedHandler.js -->
+                                            <!-- See wikiEventHandler.js -->
                                             javascript:Wiki.showPage("<xsl:value-of select="concat(@capital, $comma, $space, $country)"/>");
                                         </xsl:attribute>
                                         <font color="white">
@@ -100,6 +103,7 @@
                 </xsl:for-each>
             </ul>
             <xsl:call-template name="for-each-character">
+                <!-- Cut off the first character of the string and proceed recursively -->
                 <xsl:with-param name="data" select="substring($data, 2)"/>
             </xsl:call-template>
         </xsl:if>
