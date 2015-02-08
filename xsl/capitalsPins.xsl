@@ -8,15 +8,18 @@
     <xsl:variable name="pinScale" select="0.008"/>
     <xsl:variable name="PI" select="number(3.14159265359)"/>
 
+    <!-- Creates markups for capitals by defining an pin and using it for each capital. -->
     <xsl:template match="/">
-        <!-- Definition of a pin for a capital -->
+        <!-- Definition of a pin for each capital. -->
         <Group DEF="PIN">
             <xsl:element name="Transform">
+                <!-- Scaling of the pin. Done by setting x y z scalings.  -->
                 <xsl:attribute name="scale">
                     <xsl:value-of select="$pinScale"/>,
                     <xsl:value-of select="$pinScale"/>,
                     <xsl:value-of select="$pinScale"/>
                 </xsl:attribute>
+                <!-- Pin head. -->
                 <Transform translation="0 4 0">
                     <Shape>
                         <Appearance>
@@ -25,6 +28,7 @@
                         <Sphere radius="1"></Sphere>
                     </Shape>
                 </Transform>
+                <!-- Pin foot. -->
                 <Transform translation="0 1.5 0">
                     <Shape>
                         <Appearance>
@@ -44,6 +48,7 @@
                              http://de.wikipedia.org/wiki/Geographische_Breite
                              http://de.wikipedia.org/wiki/Geographische_L%C3%A4nge
     -->
+    <!-- Generates capital pins for all countries. -->
     <xsl:template name="generatePins">
 
         <!-- Dummy pin bremen -->
