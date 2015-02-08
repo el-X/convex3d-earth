@@ -1,12 +1,16 @@
 /* Code inspired by http://www.w3schools.com/xsl/xsl_client.asp */
 
+function XSLTransformer() {
+}
+;
+
 /**
  * Loads an xml file with given a filename and retuns it.
  *
  * @param {string} filename
  * @returns {XMLDocument} xml file
  */
-function loadXMLDoc(filename)
+XSLTransformer.loadXMLDoc = function (filename)
 {
     if (window.ActiveXObject)
     {
@@ -25,7 +29,7 @@ function loadXMLDoc(filename)
     } // Helping IE11
     xhttp.send("");
     return xhttp.responseXML;
-}
+};
 
 /**
  * Proceeds an XSL-Transformation with the given XML and XSL files.
@@ -34,11 +38,11 @@ function loadXMLDoc(filename)
  * @param {string} xslFilename stylesheet for transformation
  * @returns {XMLDocument} transformation result
  */
-function proceedXslt(xmlFilename, xslFilename)
+XSLTransformer.proceedXslt = function (xmlFilename, xslFilename)
 {
     result = "";
-    xml = loadXMLDoc(xmlFilename);
-    xsl = loadXMLDoc(xslFilename);
+    xml = XSLTransformer.loadXMLDoc(xmlFilename);
+    xsl = XSLTransformer.loadXMLDoc(xslFilename);
     // Internet Explorer handling
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
     {
@@ -53,5 +57,5 @@ function proceedXslt(xmlFilename, xslFilename)
         result = xsltProcessor.transformToFragment(xml, document);
     }
     return result;
-}
+};
 

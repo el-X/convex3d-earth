@@ -10,6 +10,7 @@ MainPage.initConvexedEarth = function () {
     Earth.resetView();
     Wiki.resetInfoView();
     MainPage.loadCountries();
+    MainPage.loadCapitals();
 };
 
 /**
@@ -21,7 +22,7 @@ MainPage.initConvexedEarth = function () {
  */
 MainPage.loadCountries = function ()
 {
-    countriesTable = proceedXslt("data/countries.xml", "xsl/countriesTable.xsl");
+    countriesTable = XSLTransformer.proceedXslt("data/countries.xml", "xsl/countriesTable.xsl");
 
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
     {
@@ -31,4 +32,22 @@ MainPage.loadCountries = function ()
         document.getElementById("countriesTable").appendChild(countriesTable);
     }
 
+};
+
+/**
+ * Creates X3D objects for capitals which are shown as pins on the map.
+ *
+ * Data: data/countries.xml.
+ * Stylesheet: xsl/capitalsPins.xsl.
+ */
+MainPage.loadCapitals = function () {
+    capitals = XSLTransformer.proceedXslt("data/countries.xml", "xsl/capitalsPins.xsl");
+
+    if (window.ActiveXObject || xhttp.responseType === "msxml-document")
+    {
+        document.getElementById("capitalsPins").innerHTML = capitals;
+    } else if (document.implementation && document.implementation.createDocument)
+    {
+        document.getElementById("capitalsPins").appendChild(capitals);
+    }
 };
