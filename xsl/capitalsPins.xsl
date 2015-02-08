@@ -87,7 +87,7 @@
                             <!-- Onlick attribute to call wikiEventHandler.js -->
                             <xsl:attribute name="onclick">
                                 <!-- See wikiEventHandler.js -->
-                                javascript:Wiki.showPage("<xsl:value-of select="concat(@capital, $comma, $space, $country)"/>");
+                                javascript:Wiki.showPage("<xsl:value-of select="concat(@capital, $comma, $space, @countryName)"/>");
                             </xsl:attribute>
                             <!-- Using the shape definition of the pin for the capital -->
                             <Shape USE="PIN"></Shape>
