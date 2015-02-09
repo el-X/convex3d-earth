@@ -18,18 +18,18 @@ MainPage.initConvexedEarth = function () {
  * by using an XSL-Transformation.
  *
  * Data: data/countries.xml.
- * Stylesheet: xsl/countriesTable.xsl.
+ * Stylesheet: xsl/countryTable.xsl.
  */
 MainPage.loadCountries = function ()
 {
-    countriesTable = XSLTransformer.proceedXslt("data/countries.xml", "xsl/countriesTable.xsl");
+    countryTable = XSLTransformer.proceedXslt("data/countries.xml", "xsl/countryTable.xsl");
 
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
     {
-        document.getElementById("countriesTable").innerHTML = countriesTable;
+        document.getElementById("countryTable").innerHTML = countryTable;
     } else if (document.implementation && document.implementation.createDocument)
     {
-        document.getElementById("countriesTable").appendChild(countriesTable);
+        document.getElementById("countryTable").appendChild(countryTable);
     }
 
 };
@@ -38,16 +38,16 @@ MainPage.loadCountries = function ()
  * Creates X3D objects for capitals which are shown as pins on the map.
  *
  * Data: data/countries.xml.
- * Stylesheet: xsl/capitalsPins.xsl.
+ * Stylesheet: xsl/capitalPins.xsl.
  */
 MainPage.loadCapitals = function () {
-    capitals = XSLTransformer.proceedXslt("data/countries.xml", "xsl/capitalsPins.xsl");
+    capitals = XSLTransformer.proceedXslt("data/countries.xml", "xsl/capitalPins.xsl");
 
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
     {
-        document.getElementById("capitalsPins").innerHTML = capitals;
+        document.getElementById("capitalPins").innerHTML = capitals;
     } else if (document.implementation && document.implementation.createDocument)
     {
-        document.getElementById("capitalsPins").appendChild(capitals);
+        document.getElementById("capitalPins").appendChild(capitals);
     }
 };

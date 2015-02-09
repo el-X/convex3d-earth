@@ -11,11 +11,11 @@
 
     <xsl:template match="/">
         <xsl:element name="html">
-            <xsl:call-template name="countriesTable"/>
+            <xsl:call-template name="countryTable"/>
         </xsl:element>
     </xsl:template>
 
-    <xsl:template name="countriesTable">
+    <xsl:template name="countryTable">
         <xsl:element name="table">
             <xsl:attribute name="width">
                 100%;

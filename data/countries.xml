@@ -89,8 +89,8 @@
         <southLatitude>38.830528</southLatitude>
         <capital id="temp">
             <name>Yerevan</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>44.51666</longitude>
+            <latitude>40.18333</latitude>
         </capital>
     </country>
     <country id="AO">
@@ -102,8 +102,8 @@
         <southLatitude>-18.042076</southLatitude>
         <capital id="temp">
             <name>Luanda</name>
-            <longitude>44.5</longitude>
-            <latitude>40.16666667</latitude>
+            <longitude>13.23444</longitude>
+            <latitude>-8.8383</latitude>
         </capital>
     </country>
     <country id="AQ">
@@ -331,8 +331,8 @@
         <southLatitude>17.878183227405575</southLatitude>
         <capital id="temp">
             <name>Gustavia</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-62.8516</longitude>
+            <latitude>17.895921</latitude>
         </capital>
     </country>
     <country id="BM">
@@ -1197,8 +1197,8 @@
         <southLatitude>10.924265</southLatitude>
         <capital id="temp">
             <name>Bissau</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-15.6</longitude>
+            <latitude>11.86666</latitude>
         </capital>
     </country>
     <country id="GY">
@@ -1725,8 +1725,8 @@
         <southLatitude>49.446583</southLatitude>
         <capital id="temp">
             <name>Luxembourg</name>
-            <longitude>6.116667</longitude>
-            <latitude>49.6</latitude>
+            <longitude>6.1295</longitude>
+            <latitude>49.815273</latitude>
         </capital>
     </country>
     <country id="LV">
@@ -2232,8 +2232,8 @@
         <southLatitude>7.197906</southLatitude>
         <capital id="temp">
             <name>Panama City</name>
-            <longitude>-79.533333</longitude>
-            <latitude>8.966666667</latitude>
+            <longitude>-79.51879199999996</longitude>
+            <latitude>8.9942689</latitude>
         </capital>
     </country>
     <country id="PE">
