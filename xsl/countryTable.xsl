@@ -82,11 +82,24 @@
                             </b>
                             <xsl:value-of select="concat($space, $hyphen, $space)"/>
                             <xsl:choose>
-                                <xsl:when test="capital/name != ''">
+                                <xsl:when test="boolean(capital)">
+                                    <!-- Determine if a special wiki search name is provided -->
+                                    <xsl:variable name="wikiSearch">
+                                        <xsl:choose>
+                                            <xsl:when test="boolean(capital/wikiName)">
+                                                <xsl:value-of select="capital/wikiName"/>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <!-- If there are no special search criterias, the -->
+                                                <!-- country will act as an additional search criteria -->
+                                                <xsl:value-of select="concat(capital/name, $comma, $space, $country)"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:variable>
                                     <xsl:element name="a">
                                         <xsl:attribute name="href">
                                             <!-- See wikiEventHandler.js -->
-                                            javascript:Wiki.showPage("<xsl:value-of select="concat(capital/name, $comma, $space, $country)"/>");
+                                            javascript:Wiki.showPage("<xsl:value-of select="$wikiSearch"/>");
                                         </xsl:attribute>
                                         <font color="white">
                                             <xsl:value-of select="capital/name"/>

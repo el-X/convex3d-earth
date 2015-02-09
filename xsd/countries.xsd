@@ -3,4 +3,80 @@
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
+
+    <!-- ### Simple Types ### -->
+    <xs:simpleType name="countryIdType">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[A-Z]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nameType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:pattern value="[^0-9]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="continentType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Africa"/>
+            <xs:enumeration value="Antarctica"/>
+            <xs:enumeration value="Asia"/>
+            <xs:enumeration value="Europe"/>
+            <xs:enumeration value="North America"/>
+            <xs:enumeration value="South America"/>
+            <xs:enumeration value="Oceania"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="latitudeType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-90"/>
+            <xs:maxInclusive value="90"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="longitudeType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-180"/>
+            <xs:maxInclusive value="180"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- ### Complex Types ### -->
+    <xs:element name="countries" type="countriesType"/>
+
+    <!-- Countries -->
+    <xs:complexType name="countriesType">
+        <xs:sequence>
+            <xs:element name="country" type="countryType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Country -->
+    <xs:complexType name="countryType">
+        <xs:sequence>
+            <xs:element name="name" type="nameType"/>
+            <xs:element name="continent" type="continentType"/>
+            <xs:element name="northLatitude" type="latitudeType"/>
+            <xs:element name="southLatitude" type="latitudeType"/>
+            <xs:element name="westLongitude" type="longitudeType"/>
+            <xs:element name="eastLongitude" type="longitudeType"/>
+            <xs:element name="capital" type="capitalType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="countryIdType" use="required"/>
+    </xs:complexType>
+
+    <!-- Capital -->
+    <xs:complexType name="capitalType">
+        <xs:sequence>
+            <xs:element name="name" type="nameType"/>
+            <!-- "wikiName" is used as an alternative search string, -->
+            <!-- whenever "name" fails to deliver proper results -->
+            <xs:element name="wikiName" type="nameType" minOccurs="0"/>
+            <xs:element name="latitude" type="latitudeType"/>
+            <xs:element name="longitude" type="longitudeType"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
