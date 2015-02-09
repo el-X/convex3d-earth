@@ -51,16 +51,6 @@
     <!-- Generates capital pins for all countries. -->
     <xsl:template name="generatePins">
 
-        <!-- Dummy pin bremen -->
-        <Transform rotation="0 1 0 0.14827777777777779">
-            <Transform rotation="1 0 0 0.6332333333333333">
-                <Transform translation="0 1 0">
-                    <xsl:attribute name="onclick">alert('Bremen <xsl:value-of select="$PI"/>');</xsl:attribute>
-                    <Shape USE="PIN"></Shape>
-                </Transform>
-            </Transform>
-        </Transform>
-
         <!-- Generate pin for each country capital -->
         <xsl:for-each select="/countries/country">
             <xsl:variable name="capitalLongitude" select="number(capital/longitude)"/>
@@ -88,11 +78,27 @@
                         </xsl:attribute>
                         <!-- Move the pin to the earth surface (y->1 since the earth radius is 1) -->
                         <Transform translation="0 1 0">
-                            <!-- Onlick attribute to call wikiEventHandler.js -->
-                            <xsl:attribute name="onclick">
-                                <!-- See wikiEventHandler.js -->
-                                javascript:Wiki.showPage("<xsl:value-of select="concat(capital/name, $comma, $space, name)"/>");
-                            </xsl:attribute>
+                            <!--
+                                Clickable transparent box over the pin with onlick action to call wikiEventHandler.js.
+                                The box provides better usability (pins are sometimes hard to reach with the mouse).
+                                Also needed for the onlick event, since the event propagates through all group elements.
+                            -->
+                            <Shape render="true" isPickable="true">
+                                <Appearance>
+                                    <Material diffuseColor="0.5 0.1 0.1" transparency="1.0" />
+                                </Appearance>
+                                <Box>
+                                    <xsl:attribute name="onclick">
+                                        <!-- See wikiEventHandler.js -->
+                                        javascript:Wiki.showPage("<xsl:value-of select="concat(capital/name, $comma, $space, name)"/>");
+                                    </xsl:attribute>
+                                    <xsl:attribute name="size">
+                                        <xsl:value-of select="number($pinScale) * 4"/>,
+                                        <xsl:value-of select="number($pinScale) * 12"/>,
+                                        <xsl:value-of select="number($pinScale) * 4"/>
+                                    </xsl:attribute>
+                                </Box>
+                            </Shape>
                             <!-- Using the shape definition of the pin for the capital -->
                             <Shape USE="PIN"></Shape>
                         </Transform>

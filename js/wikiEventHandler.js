@@ -22,7 +22,6 @@ Wiki.showPage = function (name) {
     wikiLink.style.display = "block";
     wikiFrame.src = sideLink + name;
     window.scrollTo(0, 0);
-    Earth.resetView();
 };
 
 /**
