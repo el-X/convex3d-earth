@@ -78,33 +78,43 @@
                         </xsl:attribute>
                         <!-- Move the pin to the earth surface (y->1 since the earth radius is 1) -->
                         <Transform translation="0 1 0">
-                            <!--
-                                Clickable transparent box over the pin with onlick action to call wikiEventHandler.js.
-                                The box provides better usability (pins are sometimes hard to reach with the mouse).
-                                Also needed for the onlick event, since the event propagates through all group elements.
-                            -->
-                            <Shape render="true" isPickable="true">
-                                <Appearance>
-                                    <Material diffuseColor="0.5 0.1 0.1" transparency="1.0" />
-                                </Appearance>
-                                <Box>
-                                    <xsl:attribute name="onclick">
-                                        <!-- See wikiEventHandler.js -->
-                                        javascript:Wiki.showPage("<xsl:value-of select="concat(capital/name, $comma, $space, name)"/>");
-                                    </xsl:attribute>
-                                    <xsl:attribute name="size">
-                                        <xsl:value-of select="number($pinScale) * 4"/>,
-                                        <xsl:value-of select="number($pinScale) * 12"/>,
-                                        <xsl:value-of select="number($pinScale) * 4"/>
-                                    </xsl:attribute>
-                                </Box>
-                            </Shape>
                             <!-- Using the shape definition of the pin for the capital -->
                             <Shape USE="PIN"></Shape>
+                            <!-- Generate an invisible box over the pin for click event. -->
+                            <xsl:call-template name="generateClickableBox">
+                                <xsl:with-param name="country" select="."/>
+                            </xsl:call-template>
                         </Transform>
                     </Transform>
                 </Transform>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+
+    <!--
+        Clickable transparent box over the pin with onlick action to call wikiEventHandler.js.
+        The box provides better usability (pins are sometimes hard to reach with the mouse).
+        Also needed for the onlick event, since the event propagates through all group elements.
+    -->
+    <xsl:template name="generateClickableBox">
+        <xsl:param name="country"/>
+        <Shape>
+            <Appearance>
+                <Material transparency="1.0" />
+            </Appearance>
+            <Box>
+                <xsl:attribute name="onclick">
+                    <!-- See wikiEventHandler.js -->
+                    javascript:Wiki.showPage("<xsl:value-of select="concat($country/capital/name, $comma, $space, $country/name)"/>");
+                </xsl:attribute>
+                <!-- Make the box bigger than the pin to provide better user interaction. -->
+                <xsl:attribute name="size">
+                    <xsl:value-of select="number($pinScale) * 4"/>,
+                    <xsl:value-of select="number($pinScale) * 12"/>,
+                    <xsl:value-of select="number($pinScale) * 4"/>
+                </xsl:attribute>
+            </Box>
+        </Shape>
+    </xsl:template>
+
 </xsl:stylesheet>

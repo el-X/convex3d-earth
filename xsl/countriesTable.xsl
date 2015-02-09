@@ -45,7 +45,7 @@
                     </td>
                     <td style="color:white;" valign="top">
                         <xsl:call-template name="for-each-character">
-                            <xsl:with-param name="data" select="$thirdPart"/>
+                            <xsl:with-param name="characters" select="$thirdPart"/>
                         </xsl:call-template>
                     </td>
                 </tr>
@@ -55,19 +55,19 @@
 
     <!-- Recursive template. Depth is the length of the characters string. -->
     <xsl:template name="for-each-character">
-        <xsl:param name="data"/>
+        <xsl:param name="characters"/>
         <!-- Check characters string for content before proceed -->
         <xsl:if test="string-length($data) &gt; 0">
             <!-- Pick the first letter of the string -->
-            <xsl:variable name="letter" select="substring($data, 1, 1)" />
+            <xsl:variable name="character" select="substring($characters, 1, 1)" />
             <h3>
-                <xsl:value-of select="$letter"/>
+                <xsl:value-of select="$character"/>
             </h3>
             <ul>
                 <xsl:for-each select="/countries/country">
                     <xsl:sort select="name"/>
                     <xsl:variable name="country" select="name"/>
-                    <xsl:if test="starts-with(substring($country, 1, 2), $letter)">
+                    <xsl:if test="starts-with(substring($country, 1, 2), $character)">
                         <li>
                             <b>
                                 <xsl:element name="a">
@@ -104,7 +104,7 @@
             </ul>
             <xsl:call-template name="for-each-character">
                 <!-- Cut off the first character of the string and proceed recursively -->
-                <xsl:with-param name="data" select="substring($data, 2)"/>
+                <xsl:with-param name="characters" select="substring($characters, 2)"/>
             </xsl:call-template>
         </xsl:if>
     </xsl:template>
