@@ -1,252 +1,3240 @@
-<countries>
-    <country countryCode="AD" countryName="Andorra" north="42.65604389629997" south="42.42849259876837" east="1.7865427778319827" west="1.4071867141112762" capital="Andorra la Vella" continentName="Europe" continent="EU" />
-    <country countryCode="AE" countryName="United Arab Emirates" north="26.08415985107422" south="22.633329391479492" east="56.38166046142578" west="51.58332824707031" capital="Abu Dhabi" continentName="Asia" continent="AS" />
-    <country countryCode="AF" countryName="Afghanistan" north="38.483418" south="29.377472" east="74.879448" west="60.478443" capital="Kabul" continentName="Asia" continent="AS" />
-    <country countryCode="AG" countryName="Antigua and Barbuda" north="17.729387" south="16.996979" east="-61.672421" west="-61.906425" capital="St. John's" continentName="North America" continent="NA" />
-    <country countryCode="AI" countryName="Anguilla" north="18.283424" south="18.166815" east="-62.971359" west="-63.172901" capital="The Valley" continentName="North America" continent="NA" />
-    <country countryCode="AL" countryName="Albania" north="42.665611" south="39.648361" east="21.068472" west="19.293972" capital="Tirana" continentName="Europe" continent="EU" />
-    <country countryCode="AM" countryName="Armenia" north="41.301834" south="38.830528" east="46.772435045159995" west="43.44978" capital="Yerevan" continentName="Asia" continent="AS" />
-    <country countryCode="AO" countryName="Angola" north="-4.376826" south="-18.042076" east="24.082119" west="11.679219" capital="Luanda" continentName="Africa" continent="AF" />
-    <country countryCode="AQ" countryName="Antarctica" north="-60.515533" south="-89.9999" east="179.9999" west="-179.9999" capital="" continentName="Antarctica" continent="AN" />
-    <country countryCode="AR" countryName="Argentina" north="-21.781277" south="-55.061314" east="-53.591835" west="-73.58297" capital="Buenos Aires" continentName="South America" continent="SA" />
-    <country countryCode="AS" countryName="American Samoa" north="-11.0497" south="-14.382478" east="-169.416077" west="-171.091888" capital="Pago Pago" continentName="Oceania" continent="OC" />
-    <country countryCode="AT" countryName="Austria" north="49.0211627691393" south="46.3726520216244" east="17.1620685652599" west="9.53095237240833" capital="Vienna" continentName="Europe" continent="EU" />
-    <country countryCode="AU" countryName="Australia" north="-10.062805" south="-43.64397" east="153.639252" west="112.911057" capital="Canberra" continentName="Oceania" continent="OC" />
-    <country countryCode="AW" countryName="Aruba" north="12.623718127152925" south="12.411707706190716" east="-69.86575120104982" west="-70.0644737196045" capital="Oranjestad" continentName="North America" continent="NA" />
-    <country countryCode="AX" countryName="Åland" north="60.488861" south="59.90675" east="21.011862" west="19.317694" capital="Mariehamn" continentName="Europe" continent="EU" />
-    <country countryCode="AZ" countryName="Azerbaijan" north="41.90564" south="38.38915252685547" east="50.370083" west="44.774113" capital="Baku" continentName="Asia" continent="AS" />
-    <country countryCode="BA" countryName="Bosnia and Herzegovina" north="45.239193" south="42.546112" east="19.622223" west="15.718945" capital="Sarajevo" continentName="Europe" continent="EU" />
-    <country countryCode="BB" countryName="Barbados" north="13.327257" south="13.039844" east="-59.420376" west="-59.648922" capital="Bridgetown" continentName="North America" continent="NA" />
-    <country countryCode="BD" countryName="Bangladesh" north="26.631945" south="20.743334" east="92.673668" west="88.028336" capital="Dhaka" continentName="Asia" continent="AS" />
-    <country countryCode="BE" countryName="Belgium" north="51.505444" south="49.49361" east="6.403861" west="2.546944" capital="Brussels" continentName="Europe" continent="EU" />
-    <country countryCode="BF" countryName="Burkina Faso" north="15.082593" south="9.401108" east="2.405395" west="-5.518916" capital="Ouagadougou" continentName="Africa" continent="AF" />
-    <country countryCode="BG" countryName="Bulgaria" north="44.21764" south="41.242084" east="28.612167" west="22.371166" capital="Sofia" continentName="Europe" continent="EU" />
-    <country countryCode="BH" countryName="Bahrain" north="26.282583" south="25.796862" east="50.664471" west="50.45414" capital="Manama" continentName="Asia" continent="AS" />
-    <country countryCode="BI" countryName="Burundi" north="-2.310123" south="-4.465713" east="30.847729" west="28.993061" capital="Bujumbura" continentName="Africa" continent="AF" />
-    <country countryCode="BJ" countryName="Benin" north="12.418347" south="6.225748" east="3.851701" west="0.774575" capital="Porto-Novo" continentName="Africa" continent="AF" />
-    <country countryCode="BL" countryName="Saint Barthélemy" north="17.928808791949283" south="17.878183227405575" east="-62.788983372985854" west="-62.8739118253784" capital="Gustavia" continentName="North America" continent="NA" />
-    <country countryCode="BM" countryName="Bermuda" north="32.393833" south="32.246639" east="-64.651993" west="-64.89605" capital="Hamilton" continentName="North America" continent="NA" />
-    <country countryCode="BN" countryName="Brunei" north="5.047167" south="4.003083" east="115.359444" west="114.071442" capital="Bandar Seri Begawan" continentName="Asia" continent="AS" />
-    <country countryCode="BO" countryName="Bolivia" north="-9.680567" south="-22.896133" east="-57.45809600000001" west="-69.640762" capital="Sucre" continentName="South America" continent="SA" />
-    <country countryCode="BQ" countryName="Bonaire" north="12.304535" south="12.017149" east="-68.192307" west="-68.416458" capital="Kralendijk" continentName="North America" continent="NA" />
-    <country countryCode="BR" countryName="Brazil" north="5.264877" south="-33.750706" east="-32.392998" west="-73.985535" capital="Brasília" continentName="South America" continent="SA" />
-    <country countryCode="BS" countryName="Bahamas" north="26.919243" south="22.852743" east="-74.423874" west="-78.995911" capital="Nassau" continentName="North America" continent="NA" />
-    <country countryCode="BT" countryName="Bhutan" north="28.323778" south="26.70764" east="92.125191" west="88.75972" capital="Thimphu" continentName="Asia" continent="AS" />
-    <country countryCode="BV" countryName="Bouvet Island" north="-54.400322" south="-54.462383" east="3.487976" west="3.335499" capital="" continentName="Antarctica" continent="AN" />
-    <country countryCode="BW" countryName="Botswana" north="-17.780813" south="-26.907246" east="29.360781" west="19.999535" capital="Gaborone" continentName="Africa" continent="AF" />
-    <country countryCode="BY" countryName="Belarus" north="56.165806" south="51.256416" east="32.770805" west="23.176889" capital="Minsk" continentName="Europe" continent="EU" />
-    <country countryCode="BZ" countryName="Belize" north="18.496557" south="15.8893" east="-87.776985" west="-89.224815" capital="Belmopan" continentName="North America" continent="NA" />
-    <country countryCode="CA" countryName="Canada" north="83.110626" south="41.67598" east="-52.636291" west="-141" capital="Ottawa" continentName="North America" continent="NA" />
-    <country countryCode="CC" countryName="Cocos (Keeling) Islands" north="-12.072459094" south="-12.208725839" east="96.929489344" west="96.816941408" capital="West Island" continentName="Asia" continent="AS" />
-    <country countryCode="CD" countryName="Democratic Republic of the Congo" north="5.386098" south="-13.455675" east="31.305912" west="12.204144" capital="Kinshasa" continentName="Africa" continent="AF" />
-    <country countryCode="CF" countryName="Central African Republic" north="11.007569" south="2.220514" east="27.463421" west="14.420097" capital="Bangui" continentName="Africa" continent="AF" />
-    <country countryCode="CG" countryName="Republic of the Congo" north="3.703082" south="-5.027223" east="18.649839" west="11.205009" capital="Brazzaville" continentName="Africa" continent="AF" />
-    <country countryCode="CH" countryName="Switzerland" north="47.805332" south="45.825695" east="10.491472" west="5.957472" capital="Berne" continentName="Europe" continent="EU" />
-    <country countryCode="CI" countryName="Ivory Coast" north="10.736642" south="4.357067" east="-2.494897" west="-8.599302" capital="Yamoussoukro" continentName="Africa" continent="AF" />
-    <country countryCode="CK" countryName="Cook Islands" north="-10.023114" south="-21.944164" east="-157.312134" west="-161.093658" capital="Avarua" continentName="Oceania" continent="OC" />
-    <country countryCode="CL" countryName="Chile" north="-17.507553" south="-55.9256225109217" east="-66.417557" west="-80.785851" capital="Santiago" continentName="South America" continent="SA" />
-    <country countryCode="CM" countryName="Cameroon" north="13.078056" south="1.652548" east="16.192116" west="8.494763" capital="Yaoundé" continentName="Africa" continent="AF" />
-    <country countryCode="CN" countryName="China" north="53.56086" south="15.775416" east="134.773911" west="73.557693" capital="Beijing" continentName="Asia" continent="AS" />
-    <country countryCode="CO" countryName="Colombia" north="13.380502" south="-4.225869" east="-66.869835" west="-81.728111" capital="Bogotá" continentName="South America" continent="SA" />
-    <country countryCode="CR" countryName="Costa Rica" north="11.216819" south="8.032975" east="-82.555992" west="-85.950623" capital="San José" continentName="North America" continent="NA" />
-    <country countryCode="CU" countryName="Cuba" north="23.226042" south="19.828083" east="-74.131775" west="-84.957428" capital="Havana" continentName="North America" continent="NA" />
-    <country countryCode="CV" countryName="Cape Verde" north="17.197178" south="14.808022" east="-22.669443" west="-25.358747" capital="Praia" continentName="Africa" continent="AF" />
-    <country countryCode="CW" countryName="Curacao" north="12.385672" south="12.032745" east="-68.733948" west="-69.157204" capital="Willemstad" continentName="North America" continent="NA" />
-    <country countryCode="CX" countryName="Christmas Island" north="-10.412356007" south="-10.5704829995" east="105.712596992" west="105.533276992" capital="The Settlement" continentName="Asia" continent="AS" />
-    <country countryCode="CY" countryName="Cyprus" north="35.701527" south="34.6332846722908" east="34.59791599999994" west="32.27308300000004" capital="Nicosia" continentName="Europe" continent="EU" />
-    <country countryCode="CZ" countryName="Czech Republic" north="51.058887" south="48.542915" east="18.860111" west="12.096194" capital="Prague" continentName="Europe" continent="EU" />
-    <country countryCode="DE" countryName="Germany" north="55.055637" south="47.275776" east="15.039889" west="5.865639" capital="Berlin" continentName="Europe" continent="EU" />
-    <country countryCode="DJ" countryName="Djibouti" north="12.706833" south="10.909917" east="43.416973" west="41.773472" capital="Djibouti" continentName="Africa" continent="AF" />
-    <country countryCode="DK" countryName="Denmark" north="57.748417" south="54.562389" east="15.158834" west="8.075611" capital="Copenhagen" continentName="Europe" continent="EU" />
-    <country countryCode="DM" countryName="Dominica" north="15.631809" south="15.20169" east="-61.244152" west="-61.484108" capital="Roseau" continentName="North America" continent="NA" />
-    <country countryCode="DO" countryName="Dominican Republic" north="19.929859" south="17.543159" east="-68.32" west="-72.003487" capital="Santo Domingo" continentName="North America" continent="NA" />
-    <country countryCode="DZ" countryName="Algeria" north="37.093723" south="18.960028" east="11.979548" west="-8.673868" capital="Algiers" continentName="Africa" continent="AF" />
-    <country countryCode="EC" countryName="Ecuador" north="1.43902" south="-4.998823" east="-75.184586" west="-81.078598" capital="Quito" continentName="South America" continent="SA" />
-    <country countryCode="EE" countryName="Estonia" north="59.676224" south="57.516193" east="28.209972" west="21.837584" capital="Tallinn" continentName="Europe" continent="EU" />
-    <country countryCode="EG" countryName="Egypt" north="31.667334" south="21.725389" east="36.89833068847656" west="24.698111" capital="Cairo" continentName="Africa" continent="AF" />
-    <country countryCode="EH" countryName="Western Sahara" north="27.669674" south="20.774158" east="-8.670276" west="-17.103182" capital="El Aaiún" continentName="Africa" continent="AF" />
-    <country countryCode="ER" countryName="Eritrea" north="18.003084" south="12.359555" east="43.13464" west="36.438778" capital="Asmara" continentName="Africa" continent="AF" />
-    <country countryCode="ES" countryName="Spain" north="43.7913565913767" south="36.0001044260548" east="4.32778473043961" west="-9.30151567231899" capital="Madrid" continentName="Europe" continent="EU" />
-    <country countryCode="ET" countryName="Ethiopia" north="14.89375" south="3.402422" east="47.986179" west="32.999939" capital="Addis Ababa" continentName="Africa" continent="AF" />
-    <country countryCode="FI" countryName="Finland" north="70.096054" south="59.808777" east="31.580944" west="20.556944" capital="Helsinki" continentName="Europe" continent="EU" />
-    <country countryCode="FJ" countryName="Fiji" north="-12.480111" south="-20.67597" east="-178.424438" west="177.129334" capital="Suva" continentName="Oceania" continent="OC" />
-    <country countryCode="FK" countryName="Falkland Islands" north="-51.24065" south="-52.360512" east="-57.712486" west="-61.345192" capital="Stanley" continentName="South America" continent="SA" />
-    <country countryCode="FM" countryName="Micronesia" north="10.08904" south="1.02629" east="163.03717" west="137.33648" capital="Palikir" continentName="Oceania" continent="OC" />
-    <country countryCode="FO" countryName="Faroe Islands" north="62.400749" south="61.394943" east="-6.399583" west="-7.458" capital="Tórshavn" continentName="Europe" continent="EU" />
-    <country countryCode="FR" countryName="France" north="51.092804" south="41.371582" east="9.561556" west="-5.142222" capital="Paris" continentName="Europe" continent="EU" />
-    <country countryCode="GA" countryName="Gabon" north="2.322612" south="-3.978806" east="14.502347" west="8.695471" capital="Libreville" continentName="Africa" continent="AF" />
-    <country countryCode="GB" countryName="United Kingdom" north="59.360249" south="49.906193" east="1.759" west="-8.623555" capital="London" continentName="Europe" continent="EU" />
-    <country countryCode="GD" countryName="Grenada" north="12.318283928171299" south="11.986893" east="-61.57676970108031" west="-61.802344" capital="St. George's" continentName="North America" continent="NA" />
-    <country countryCode="GE" countryName="Georgia (country)" north="43.586498" south="41.053196" east="46.725971" west="40.010139" capital="Tbilisi" continentName="Asia" continent="AS" />
-    <country countryCode="GF" countryName="French Guiana" north="5.776496" south="2.127094" east="-51.613949" west="-54.542511" capital="Cayenne" continentName="South America" continent="SA" />
-    <country countryCode="GG" countryName="Guernsey" north="49.731727816705416" south="49.40764156876899" east="-2.1577152112246267" west="-2.673194593476069" capital="St Peter Port" continentName="Europe" continent="EU" />
-    <country countryCode="GH" countryName="Ghana" north="11.173301" south="4.736723" east="1.191781" west="-3.25542" capital="Accra" continentName="Africa" continent="AF" />
-    <country countryCode="GI" countryName="Gibraltar" north="36.155439135670726" south="36.10903070140248" east="-5.338285164001491" west="-5.36626149743654" capital="Gibraltar" continentName="Europe" continent="EU" />
-    <country countryCode="GL" countryName="Greenland" north="83.627357" south="59.777401" east="-11.312319" west="-73.04203" capital="Nuuk" continentName="North America" continent="NA" />
-    <country countryCode="GM" countryName="Gambia" north="13.826571" south="13.064252" east="-13.797793" west="-16.825079" capital="Banjul" continentName="Africa" continent="AF" />
-    <country countryCode="GN" countryName="Guinea" north="12.67622" south="7.193553" east="-7.641071" west="-14.926619" capital="Conakry" continentName="Africa" continent="AF" />
-    <country countryCode="GP" countryName="Guadeloupe" north="16.516848" south="15.867565" east="-61" west="-61.544765" capital="Basse-Terre" continentName="North America" continent="NA" />
-    <country countryCode="GQ" countryName="Equatorial Guinea" north="2.346989" south="0.92086" east="11.335724" west="9.346865" capital="Malabo" continentName="Africa" continent="AF" />
-    <country countryCode="GR" countryName="Greece" north="41.7484999849641" south="34.8020663391466" east="28.2470831714347" west="19.3736035624134" capital="Athens" continentName="Europe" continent="EU" />
-    <country countryCode="GS" countryName="South Georgia and the South Sandwich Islands" north="-53.970467" south="-59.479259" east="-26.229326" west="-38.021175" capital="Grytviken" continentName="Antarctica" continent="AN" />
-    <country countryCode="GT" countryName="Guatemala" north="17.81522" south="13.737302" east="-88.223198" west="-92.23629" capital="Guatemala City" continentName="North America" continent="NA" />
-    <country countryCode="GU" countryName="Guam" north="13.654402" south="13.23376" east="144.956894" west="144.61806" capital="Hagåtña" continentName="Oceania" continent="OC" />
-    <country countryCode="GW" countryName="Guinea-Bissau" north="12.680789" south="10.924265" east="-13.636522" west="-16.717535" capital="Bissau" continentName="Africa" continent="AF" />
-    <country countryCode="GY" countryName="Guyana" north="8.557567" south="1.17508" east="-56.480251" west="-61.384762" capital="Georgetown" continentName="South America" continent="SA" />
-    <country countryCode="HK" countryName="Hong Kong" north="22.559778" south="22.15325" east="114.434753" west="113.837753" capital="Hong Kong" continentName="Asia" continent="AS" />
-    <country countryCode="HM" countryName="Heard Island and McDonald Islands" north="-52.909416" south="-53.192001" east="73.859146" west="72.596535" capital="" continentName="Antarctica" continent="AN" />
-    <country countryCode="HN" countryName="Honduras" north="16.510256" south="12.982411" east="-83.155403" west="-89.350792" capital="Tegucigalpa" continentName="North America" continent="NA" />
-    <country countryCode="HR" countryName="Croatia" north="46.53875" south="42.43589" east="19.427389" west="13.493222" capital="Zagreb" continentName="Europe" continent="EU" />
-    <country countryCode="HT" countryName="Haiti" north="20.08782" south="18.021032" east="-71.613358" west="-74.478584" capital="Port-au-Prince" continentName="North America" continent="NA" />
-    <country countryCode="HU" countryName="Hungary" north="48.585667" south="45.74361" east="22.906" west="16.111889" capital="Budapest" continentName="Europe" continent="EU" />
-    <country countryCode="ID" countryName="Indonesia" north="5.904417" south="-10.941861" east="141.021805" west="95.009331" capital="Jakarta" continentName="Asia" continent="AS" />
-    <country countryCode="IE" countryName="Ireland" north="55.387917" south="51.451584" east="-6.002389" west="-10.478556" capital="Dublin" continentName="Europe" continent="EU" />
-    <country countryCode="IL" countryName="Israel" north="33.340137" south="29.496639" east="35.876804" west="34.270278754419145" capital="Jerusalem" continentName="Asia" continent="AS" />
-    <country countryCode="IM" countryName="Isle of Man" north="54.419724" south="54.055916" east="-4.3115" west="-4.798722" capital="Douglas" continentName="Europe" continent="EU" />
-    <country countryCode="IN" countryName="India" north="35.504223" south="6.747139" east="97.403305" west="68.186691" capital="New Delhi" continentName="Asia" continent="AS" />
-    <country countryCode="IO" countryName="British Indian Ocean Territory" north="-5.268333" south="-7.438028" east="72.493164" west="71.259972" capital="Diego Garcia" continentName="Asia" continent="AS" />
-    <country countryCode="IQ" countryName="Iraq" north="37.378029" south="29.069445" east="48.575916" west="38.795887" capital="Baghdad" continentName="Asia" continent="AS" />
-    <country countryCode="IR" countryName="Iran" north="39.777222" south="25.064083" east="63.317471" west="44.047279" capital="Tehran" continentName="Asia" continent="AS" />
-    <country countryCode="IS" countryName="Iceland" north="66.53463" south="63.393253" east="-13.495815" west="-24.546524" capital="Reykjavik" continentName="Europe" continent="EU" />
-    <country countryCode="IT" countryName="Italy" north="47.095196" south="36.652779" east="18.513445" west="6.614889" capital="Rome" continentName="Europe" continent="EU" />
-    <country countryCode="JE" countryName="Jersey" north="49.265057" south="49.169834" east="-2.022083" west="-2.260028" capital="Saint Helier" continentName="Europe" continent="EU" />
-    <country countryCode="JM" countryName="Jamaica" north="18.526976" south="17.703554" east="-76.180321" west="-78.366638" capital="Kingston" continentName="North America" continent="NA" />
-    <country countryCode="JO" countryName="Jordan" north="33.367668" south="29.185888" east="39.301167" west="34.959999" capital="Amman" continentName="Asia" continent="AS" />
-    <country countryCode="JP" countryName="Japan" north="45.52314" south="24.249472" east="145.820892" west="122.93853" capital="Tokyo" continentName="Asia" continent="AS" />
-    <country countryCode="KE" countryName="Kenya" north="5.019938" south="-4.678047" east="41.899078" west="33.908859" capital="Nairobi" continentName="Africa" continent="AF" />
-    <country countryCode="KG" countryName="Kyrgyzstan" north="43.238224" south="39.172832" east="80.283165" west="69.276611" capital="Bishkek" continentName="Asia" continent="AS" />
-    <country countryCode="KH" countryName="Cambodia" north="14.686417" south="10.409083" east="107.627724" west="102.339996" capital="Phnom Penh" continentName="Asia" continent="AS" />
-    <country countryCode="KI" countryName="Kiribati" north="4.71957" south="-11.446881150186856" east="-150.215347" west="169.556137" capital="Tarawa" continentName="Oceania" continent="OC" />
-    <country countryCode="KM" countryName="Comoros" north="-11.362381" south="-12.387857" east="44.538223" west="43.21579" capital="Moroni" continentName="Africa" continent="AF" />
-    <country countryCode="KN" countryName="Saint Kitts and Nevis" north="17.420118" south="17.095343" east="-62.543266" west="-62.86956" capital="Basseterre" continentName="North America" continent="NA" />
-    <country countryCode="KP" countryName="North Korea" north="43.006054" south="37.673332" east="130.674866" west="124.315887" capital="Pyongyang" continentName="Asia" continent="AS" />
-    <country countryCode="KR" countryName="South Korea" north="38.612446" south="33.190945" east="129.584671" west="125.887108" capital="Seoul" continentName="Asia" continent="AS" />
-    <country countryCode="KW" countryName="Kuwait" north="30.095945" south="28.524611" east="48.431473" west="46.555557" capital="Kuwait City" continentName="Asia" continent="AS" />
-    <country countryCode="KY" countryName="Cayman Islands" north="19.7617" south="19.263029" east="-79.727272" west="-81.432777" capital="George Town" continentName="North America" continent="NA" />
-    <country countryCode="KZ" countryName="Kazakhstan" north="55.451195" south="40.936333" east="87.312668" west="46.491859" capital="Astana" continentName="Asia" continent="AS" />
-    <country countryCode="LA" countryName="Laos" north="22.500389" south="13.910027" east="107.697029" west="100.093056" capital="Vientiane" continentName="Asia" continent="AS" />
-    <country countryCode="LB" countryName="Lebanon" north="34.691418" south="33.05386" east="36.639194" west="35.114277" capital="Beirut" continentName="Asia" continent="AS" />
-    <country countryCode="LC" countryName="Saint Lucia" north="14.103245" south="13.704778" east="-60.874203" west="-61.07415" capital="Castries" continentName="North America" continent="NA" />
-    <country countryCode="LI" countryName="Liechtenstein" north="47.2706251386959" south="47.0484284123471" east="9.63564281136796" west="9.47167359782014" capital="Vaduz" continentName="Europe" continent="EU" />
-    <country countryCode="LK" countryName="Sri Lanka" north="9.831361" south="5.916833" east="81.881279" west="79.652916" capital="Colombo" continentName="Asia" continent="AS" />
-    <country countryCode="LR" countryName="Liberia" north="8.551791" south="4.353057" east="-7.365113" west="-11.492083" capital="Monrovia" continentName="Africa" continent="AF" />
-    <country countryCode="LS" countryName="Lesotho" north="-28.572058" south="-30.668964" east="29.465761" west="27.029068" capital="Maseru" continentName="Africa" continent="AF" />
-    <country countryCode="LT" countryName="Lithuania" north="56.446918" south="53.901306" east="26.871944" west="20.941528" capital="Vilnius" continentName="Europe" continent="EU" />
-    <country countryCode="LU" countryName="Luxembourg" north="50.184944" south="49.446583" east="6.528472" west="5.734556" capital="Luxembourg" continentName="Europe" continent="EU" />
-    <country countryCode="LV" countryName="Latvia" north="58.082306" south="55.668861" east="28.241167" west="20.974277" capital="Riga" continentName="Europe" continent="EU" />
-    <country countryCode="LY" countryName="Libya" north="33.168999" south="19.508045" east="25.150612" west="9.38702" capital="Tripoli" continentName="Africa" continent="AF" />
-    <country countryCode="MA" countryName="Morocco" north="35.9224966985384" south="27.662115" east="-0.991750000000025" west="-13.168586" capital="Rabat" continentName="Africa" continent="AF" />
-    <country countryCode="MC" countryName="Monaco" north="43.75196717037228" south="43.72472839869377" east="7.439939260482788" west="7.408962249755859" capital="Monaco" continentName="Europe" continent="EU" />
-    <country countryCode="MD" countryName="Moldova" north="48.490166" south="45.468887" east="30.135445" west="26.618944" capital="Chişinău" continentName="Europe" continent="EU" />
-    <country countryCode="ME" countryName="Montenegro" north="43.570137" south="41.850166" east="20.358833" west="18.461306" capital="Podgorica" continentName="Europe" continent="EU" />
-    <country countryCode="MF" countryName="Saint Martin" north="18.130354" south="18.052231" east="-63.012993" west="-63.152767" capital="Marigot" continentName="North America" continent="NA" />
-    <country countryCode="MG" countryName="Madagascar" north="-11.945433" south="-25.608952" east="50.48378" west="43.224876" capital="Antananarivo" continentName="Africa" continent="AF" />
-    <country countryCode="MH" countryName="Marshall Islands" north="14.62" south="5.587639" east="171.931808" west="165.524918" capital="Majuro" continentName="Oceania" continent="OC" />
-    <country countryCode="MK" countryName="Macedonia" north="42.361805" south="40.860195" east="23.038139" west="20.464695" capital="Skopje" continentName="Europe" continent="EU" />
-    <country countryCode="ML" countryName="Mali" north="25.000002" south="10.159513" east="4.244968" west="-12.242614" capital="Bamako" continentName="Africa" continent="AF" />
-    <country countryCode="MM" countryName="Burma" north="28.543249" south="9.784583" east="101.176781" west="92.189278" capital="Nay Pyi Taw" continentName="Asia" continent="AS" />
-    <country countryCode="MN" countryName="Mongolia" north="52.154251" south="41.567638" east="119.924309" west="87.749664" capital="Ulan Bator" continentName="Asia" continent="AS" />
-    <country countryCode="MO" countryName="Macao" north="22.222334" south="22.180389" east="113.565834" west="113.528946" capital="Macao" continentName="Asia" continent="AS" />
-    <country countryCode="MP" countryName="Northern Mariana Islands" north="20.55344" south="14.11023" east="146.06528" west="144.88626" capital="Saipan" continentName="Oceania" continent="OC" />
-    <country countryCode="MQ" countryName="Martinique" north="14.878819" south="14.392262" east="-60.81551" west="-61.230118" capital="Fort-de-France" continentName="North America" continent="NA" />
-    <country countryCode="MR" countryName="Mauritania" north="27.298073" south="14.715547" east="-4.827674" west="-17.066521" capital="Nouakchott" continentName="Africa" continent="AF" />
-    <country countryCode="MS" countryName="Montserrat" north="16.824060205313184" south="16.674768935441556" east="-62.144100129608205" west="-62.24138237036129" capital="Plymouth" continentName="North America" continent="NA" />
-    <country countryCode="MT" countryName="Malta" north="36.0821530995456" south="35.8061835000002" east="14.5764915000002" west="14.1834251000001" capital="Valletta" continentName="Europe" continent="EU" />
-    <country countryCode="MU" countryName="Mauritius" north="-10.319255" south="-20.525717" east="63.500179" west="56.512718" capital="Port Louis" continentName="Africa" continent="AF" />
-    <country countryCode="MV" countryName="Maldives" north="7.091587495414767" south="-0.692694" east="73.637276" west="72.693222" capital="Malé" continentName="Asia" continent="AS" />
-    <country countryCode="MW" countryName="Malawi" north="-9.367541" south="-17.125" east="35.916821" west="32.67395" capital="Lilongwe" continentName="Africa" continent="AF" />
-    <country countryCode="MX" countryName="Mexico" north="32.716759" south="14.532866" east="-86.703392" west="-118.453949" capital="Mexico City" continentName="North America" continent="NA" />
-    <country countryCode="MY" countryName="Malaysia" north="7.363417" south="0.855222" east="119.267502" west="99.643448" capital="Kuala Lumpur" continentName="Asia" continent="AS" />
-    <country countryCode="MZ" countryName="Mozambique" north="-10.471883" south="-26.868685" east="40.842995" west="30.217319" capital="Maputo" continentName="Africa" continent="AF" />
-    <country countryCode="NA" countryName="Namibia" north="-16.959894" south="-28.97143" east="25.256701" west="11.71563" capital="Windhoek" continentName="Africa" continent="AF" />
-    <country countryCode="NC" countryName="New Caledonia" north="-19.549778" south="-22.698" east="168.129135" west="163.564667" capital="Noumea" continentName="Oceania" continent="OC" />
-    <country countryCode="NE" countryName="Niger" north="23.525026" south="11.696975" east="15.995643" west="0.16625" capital="Niamey" continentName="Africa" continent="AF" />
-    <country countryCode="NF" countryName="Norfolk Island" north="-28.995170686948427" south="-29.063076742954735" east="167.99773740209957" west="167.91543230151365" capital="Kingston" continentName="Oceania" continent="OC" />
-    <country countryCode="NG" countryName="Nigeria" north="13.892007" south="4.277144" east="14.680073" west="2.668432" capital="Abuja" continentName="Africa" continent="AF" />
-    <country countryCode="NI" countryName="Nicaragua" north="15.025909" south="10.707543" east="-82.738289" west="-87.690308" capital="Managua" continentName="North America" continent="NA" />
-    <country countryCode="NL" countryName="Netherlands" north="53.512196" south="50.753918" east="7.227944" west="3.362556" capital="Amsterdam" continentName="Europe" continent="EU" />
-    <country countryCode="NO" countryName="Norway" north="71.18811" south="57.977917" east="31.078052520751953" west="4.650167" capital="Oslo" continentName="Europe" continent="EU" />
-    <country countryCode="NP" countryName="Nepal" north="30.43339" south="26.356722" east="88.199333" west="80.056274" capital="Kathmandu" continentName="Asia" continent="AS" />
-    <country countryCode="NR" countryName="Nauru" north="-0.504306" south="-0.552333" east="166.945282" west="166.899033" capital="Yaren" continentName="Oceania" continent="OC" />
-    <country countryCode="NU" countryName="Niue" north="-18.951069" south="-19.152193" east="-169.775177" west="-169.951004" capital="Alofi" continentName="Oceania" continent="OC" />
-    <country countryCode="NZ" countryName="New Zealand" north="-34.389668" south="-47.286026" east="-180" west="166.7155" capital="Wellington" continentName="Oceania" continent="OC" />
-    <country countryCode="OM" countryName="Oman" north="26.387972" south="16.64575" east="59.836582" west="51.882" capital="Muscat" continentName="Asia" continent="AS" />
-    <country countryCode="PA" countryName="Panama" north="9.637514" south="7.197906" east="-77.17411" west="-83.051445" capital="Panama City" continentName="North America" continent="NA" />
-    <country countryCode="PE" countryName="Peru" north="-0.012977" south="-18.349728" east="-68.677986" west="-81.326744" capital="Lima" continentName="South America" continent="SA" />
-    <country countryCode="PF" countryName="French Polynesia" north="-7.903573" south="-27.653572" east="-134.929825" west="-152.877167" capital="Papeete" continentName="Oceania" continent="OC" />
-    <country countryCode="PG" countryName="Papua New Guinea" north="-1.318639" south="-11.657861" east="155.96344" west="140.842865" capital="Port Moresby" continentName="Oceania" continent="OC" />
-    <country countryCode="PH" countryName="Philippines" north="21.120611" south="4.643306" east="126.601524" west="116.931557" capital="Manila" continentName="Asia" continent="AS" />
-    <country countryCode="PK" countryName="Pakistan" north="37.097" south="23.786722" east="77.840919" west="60.878613" capital="Islamabad" continentName="Asia" continent="AS" />
-    <country countryCode="PL" countryName="Poland" north="54.839138" south="49.006363" east="24.150749" west="14.123" capital="Warsaw" continentName="Europe" continent="EU" />
-    <country countryCode="PM" countryName="Saint Pierre and Miquelon" north="47.146286" south="46.786041" east="-56.252991" west="-56.420658" capital="Saint-Pierre" continentName="North America" continent="NA" />
-    <country countryCode="PN" countryName="Pitcairn Islands" north="-24.315865" south="-24.672565" east="-124.77285" west="-128.346436" capital="Adamstown" continentName="Oceania" continent="OC" />
-    <country countryCode="PR" countryName="Puerto Rico" north="18.520166" south="17.926405" east="-65.242737" west="-67.942726" capital="San Juan" continentName="North America" continent="NA" />
-    <country countryCode="PS" countryName="Palestine" north="32.54638671875" south="31.216541290283203" east="35.5732955932617" west="34.21665954589844" capital="Ramallah" continentName="Asia" continent="AS" />
-    <country countryCode="PT" countryName="Portugal" north="42.154311127408" south="36.96125" east="-6.18915930748288" west="-9.50052660716588" capital="Lisbon" continentName="Europe" continent="EU" />
-    <country countryCode="PW" countryName="Palau" north="8.46966" south="2.8036" east="134.72307" west="131.11788" capital="Melekeok - Palau State Capital" continentName="Oceania" continent="OC" />
-    <country countryCode="PY" countryName="Paraguay" north="-19.294041" south="-27.608738" east="-54.259354" west="-62.647076" capital="Asunción" continentName="South America" continent="SA" />
-    <country countryCode="QA" countryName="Qatar" north="26.154722" south="24.482944" east="51.636639" west="50.757221" capital="Doha" continentName="Asia" continent="AS" />
-    <country countryCode="RE" countryName="Réunion" north="-20.868391324576944" south="-21.383747301469107" east="55.838193901930026" west="55.21219224792685" capital="Saint-Denis" continentName="Africa" continent="AF" />
-    <country countryCode="RO" countryName="Romania" north="48.266945" south="43.627304" east="29.691055" west="20.269972" capital="Bucharest" continentName="Europe" continent="EU" />
-    <country countryCode="RS" countryName="Serbia" north="46.18138885498047" south="42.232215881347656" east="23.00499725341797" west="18.817020416259766" capital="Belgrade" continentName="Europe" continent="EU" />
-    <country countryCode="RU" countryName="Russia" north="81.857361" south="41.188862" east="-169.05" west="19.25" capital="Moscow" continentName="Europe" continent="EU" />
-    <country countryCode="RW" countryName="Rwanda" north="-1.053481" south="-2.840679" east="30.895958" west="28.856794" capital="Kigali" continentName="Africa" continent="AF" />
-    <country countryCode="SA" countryName="Saudi Arabia" north="32.158333" south="15.61425" east="55.666584" west="34.495693" capital="Riyadh" continentName="Asia" continent="AS" />
-    <country countryCode="SB" countryName="Solomon Islands" north="-6.589611" south="-11.850555" east="166.980865" west="155.508606" capital="Honiara" continentName="Oceania" continent="OC" />
-    <country countryCode="SC" countryName="Seychelles" north="-4.283717" south="-9.753867" east="56.29770287937299" west="46.204769" capital="Victoria" continentName="Africa" continent="AF" />
-    <country countryCode="SD" countryName="Sudan" north="22.232219696044922" south="8.684720993041992" east="38.60749816894531" west="21.827774047851562" capital="Khartoum" continentName="Africa" continent="AF" />
-    <country countryCode="SE" countryName="Sweden" north="69.0625" south="55.337112" east="24.1562924839185" west="11.118694" capital="Stockholm" continentName="Europe" continent="EU" />
-    <country countryCode="SG" countryName="Singapore" north="1.471278" south="1.258556" east="104.007469" west="103.638275" capital="Singapore" continentName="Asia" continent="AS" />
-    <country countryCode="SH" countryName="Saint Helena" north="-7.887815" south="-16.019543" east="-5.638753" west="-14.42123" capital="Jamestown" continentName="Africa" continent="AF" />
-    <country countryCode="SI" countryName="Slovenia" north="46.8766275518195" south="45.421812998164" east="16.6106311807" west="13.3753342064709" capital="Ljubljana" continentName="Europe" continent="EU" />
-    <country countryCode="SJ" countryName="Svalbard and Jan Mayen" north="80.762085" south="79.220306" east="33.287334" west="17.699389" capital="Longyearbyen" continentName="Europe" continent="EU" />
-    <country countryCode="SK" countryName="Slovakia" north="49.603168" south="47.728111" east="22.570444" west="16.84775" capital="Bratislava" continentName="Europe" continent="EU" />
-    <country countryCode="SL" countryName="Sierra Leone" north="10" south="6.929611" east="-10.284238" west="-13.307631" capital="Freetown" continentName="Africa" continent="AF" />
-    <country countryCode="SM" countryName="San Marino" north="43.99223730851663" south="43.8937092171425" east="12.51653186779788" west="12.403538978820734" capital="San Marino" continentName="Europe" continent="EU" />
-    <country countryCode="SN" countryName="Senegal" north="16.691633" south="12.307275" east="-11.355887" west="-17.535236" capital="Dakar" continentName="Africa" continent="AF" />
-    <country countryCode="SO" countryName="Somalia" north="11.979166" south="-1.674868" east="51.412636" west="40.986595" capital="Mogadishu" continentName="Africa" continent="AF" />
-    <country countryCode="SR" countryName="Suriname" north="6.004546" south="1.831145" east="-53.977493" west="-58.086563" capital="Paramaribo" continentName="South America" continent="SA" />
-    <country countryCode="SS" countryName="South Sudan" north="12.219148635864258" south="3.493394374847412" east="35.9405517578125" west="24.140274047851562" capital="Juba" continentName="Africa" continent="AF" />
-    <country countryCode="ST" countryName="São Tomé and Príncipe" north="1.701323" south="0.024766" east="7.466374" west="6.47017" capital="São Tomé" continentName="Africa" continent="AF" />
-    <country countryCode="SV" countryName="El Salvador" north="14.445067" south="13.148679" east="-87.692162" west="-90.128662" capital="San Salvador" continentName="North America" continent="NA" />
-    <country countryCode="SX" countryName="Sint Maarten" north="18.070248" south="18.011692" east="-63.012993" west="-63.144039" capital="Philipsburg" continentName="North America" continent="NA" />
-    <country countryCode="SY" countryName="Syria" north="37.319138" south="32.310665" east="42.385029" west="35.727222" capital="Damascus" continentName="Asia" continent="AS" />
-    <country countryCode="SZ" countryName="Swaziland" north="-25.719648" south="-27.317101" east="32.13726" west="30.794107" capital="Mbabane" continentName="Africa" continent="AF" />
-    <country countryCode="TC" countryName="Turks and Caicos Islands" north="21.961878" south="21.422626" east="-71.123642" west="-72.483871" capital="Cockburn Town" continentName="North America" continent="NA" />
-    <country countryCode="TD" countryName="Chad" north="23.450369" south="7.441068" east="24.002661" west="13.473475" capital="N'Djamena" continentName="Africa" continent="AF" />
-    <country countryCode="TF" countryName="French Southern Territories" north="-37.790722" south="-49.735184" east="77.598808" west="50.170258" capital="Port-aux-Français" continentName="Antarctica" continent="AN" />
-    <country countryCode="TG" countryName="Togo" north="11.138977" south="6.104417" east="1.806693" west="-0.147324" capital="Lomé" continentName="Africa" continent="AF" />
-    <country countryCode="TH" countryName="Thailand" north="20.463194" south="5.61" east="105.639389" west="97.345642" capital="Bangkok" continentName="Asia" continent="AS" />
-    <country countryCode="TJ" countryName="Tajikistan" north="41.042252" south="36.674137" east="75.137222" west="67.387138" capital="Dushanbe" continentName="Asia" continent="AS" />
-    <country countryCode="TK" countryName="Tokelau" north="-8.553613662719727" south="-9.381111145019531" east="-171.21142578125" west="-172.50033569335938" capital="Fakaofo" continentName="Oceania" continent="OC" />
-    <country countryCode="TL" countryName="East Timor" north="-8.135833740234375" south="-9.463626861572266" east="127.30859375" west="124.04609680175781" capital="Dili" continentName="Oceania" continent="OC" />
-    <country countryCode="TM" countryName="Turkmenistan" north="42.795555" south="35.141083" east="66.684303" west="52.441444" capital="Ashgabat" continentName="Asia" continent="AS" />
-    <country countryCode="TN" countryName="Tunisia" north="37.543915" south="30.240417" east="11.598278" west="7.524833" capital="Tunis" continentName="Africa" continent="AF" />
-    <country countryCode="TO" countryName="Tonga" north="-15.562988" south="-21.455057" east="-173.907578" west="-175.682266" capital="Nuku'alofa" continentName="Oceania" continent="OC" />
-    <country countryCode="TR" countryName="Turkey" north="42.107613" south="35.815418" east="44.834999" west="25.668501" capital="Ankara" continentName="Asia" continent="AS" />
-    <country countryCode="TT" countryName="Trinidad and Tobago" north="11.338342" south="10.036105" east="-60.517933" west="-61.923771" capital="Port of Spain" continentName="North America" continent="NA" />
-    <country countryCode="TV" countryName="Tuvalu" north="-5.641972" south="-10.801169" east="179.863281" west="176.064865" capital="Funafuti" continentName="Oceania" continent="OC" />
-    <country countryCode="TW" countryName="Taiwan" north="25.3002899036181" south="21.896606934717" east="122.006739823315" west="119.534691" capital="Taipei" continentName="Asia" continent="AS" />
-    <country countryCode="TZ" countryName="Tanzania" north="-0.990736" south="-11.745696" east="40.443222" west="29.327168" capital="Dodoma" continentName="Africa" continent="AF" />
-    <country countryCode="UA" countryName="Ukraine" north="52.369362" south="44.390415" east="40.20739" west="22.128889" capital="Kyiv" continentName="Europe" continent="EU" />
-    <country countryCode="UG" countryName="Uganda" north="4.214427" south="-1.48405" east="35.036049" west="29.573252" capital="Kampala" continentName="Africa" continent="AF" />
-    <country countryCode="UM" countryName="U.S. Minor Outlying Islands" north="28.219814" south="-0.389006" east="166.654526" west="-177.392029" capital="Wake Island" continentName="Oceania" continent="OC" />
-    <country countryCode="US" countryName="United States" north="49.388611" south="24.544245" east="-66.954811" west="-124.733253" capital="Washington, D.C." continentName="North America" continent="NA" />
-    <country countryCode="UY" countryName="Uruguay" north="-30.082224" south="-34.980816" east="-53.073933" west="-58.442722" capital="Montevideo" continentName="South America" continent="SA" />
-    <country countryCode="UZ" countryName="Uzbekistan" north="45.575001" south="37.184444" east="73.132278" west="55.996639" capital="Tashkent" continentName="Asia" continent="AS" />
-    <country countryCode="VA" countryName="Vatican City" north="41.90743830885576" south="41.90027960306854" east="12.45837546629481" west="12.44570678169205" capital="Vatican City" continentName="Europe" continent="EU" />
-    <country countryCode="VC" countryName="Saint Vincent and the Grenadines" north="13.377834" south="12.583984810969037" east="-61.11388" west="-61.46090317727658" capital="Kingstown" continentName="North America" continent="NA" />
-    <country countryCode="VE" countryName="Venezuela" north="12.201903" south="0.626311" east="-59.80378" west="-73.354073" capital="Caracas" continentName="South America" continent="SA" />
-    <country countryCode="VG" countryName="British Virgin Islands" north="18.757221" south="18.383710898211305" east="-64.268768" west="-64.71312752730364" capital="Road Town" continentName="North America" continent="NA" />
-    <country countryCode="VI" countryName="U.S. Virgin Islands" north="18.415382" south="17.673931" east="-64.565193" west="-65.101333" capital="Charlotte Amalie" continentName="North America" continent="NA" />
-    <country countryCode="VN" countryName="Vietnam" north="23.388834" south="8.559611" east="109.464638" west="102.148224" capital="Hanoi" continentName="Asia" continent="AS" />
-    <country countryCode="VU" countryName="Vanuatu" north="-13.073444" south="-20.248945" east="169.904785" west="166.524979" capital="Port Vila" continentName="Oceania" continent="OC" />
-    <country countryCode="WF" countryName="Wallis and Futuna" north="-13.216758181061444" south="-14.314559989820843" east="-176.16174317718253" west="-178.1848112896414" capital="Mata-Utu" continentName="Oceania" continent="OC" />
-    <country countryCode="WS" countryName="Samoa" north="-13.432207" south="-14.040939" east="-171.415741" west="-172.798599" capital="Apia" continentName="Oceania" continent="OC" />
-    <country countryCode="XK" countryName="Kosovo" north="43.2682495807952" south="41.856369601859925" east="21.80335088694943" west="19.977481504492914" capital="Pristina" continentName="Europe" continent="EU" />
-    <country countryCode="YE" countryName="Yemen" north="18.9999989031009" south="12.1110910264462" east="54.5305388163283" west="42.5325394314234" capital="Sanaa" continentName="Asia" continent="AS" />
-    <country countryCode="YT" countryName="Mayotte" north="-12.648891" south="-13.000132" east="45.29295" west="45.03796" capital="Mamoutzou" continentName="Africa" continent="AF" />
-    <country countryCode="ZA" countryName="South Africa" north="-22.126612" south="-34.839828" east="32.895973" west="16.458021" capital="Pretoria" continentName="Africa" continent="AF" />
-    <country countryCode="ZM" countryName="Zambia" north="-8.22436" south="-18.079473" east="33.705704" west="21.999371" capital="Lusaka" continentName="Africa" continent="AF" />
-    <country countryCode="ZW" countryName="Zimbabwe" north="-15.608835" south="-22.417738" east="33.056305" west="25.237028" capital="Harare" continentName="Africa" continent="AF" />
+<?xml version="1.0" encoding="UTF-8"?>
+
+<countries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="./xsd/countries.xsd">
+    <country id="AD">
+        <name>Andorra</name>
+        <continent>Europe</continent>
+        <westLongitude>1.4071867141112762</westLongitude>
+        <eastLongitude>1.7865427778319827</eastLongitude>
+        <northLatitude>42.65604389629997</northLatitude>
+        <southLatitude>42.42849259876837</southLatitude>
+        <capital id="temp">
+            <name>Andorra la Vella</name>
+            <longitude>1.3</longitude>
+            <latitude>42.3</latitude>
+        </capital>
+    </country>
+    <country id="AE">
+        <name>United Arab Emirates</name>
+        <continent>Asia</continent>
+        <westLongitude>51.58332824707031</westLongitude>
+        <eastLongitude>56.38166046142578</eastLongitude>
+        <northLatitude>26.08415985107422</northLatitude>
+        <southLatitude>22.633329391479492</southLatitude>
+        <capital id="temp">
+            <name>Abu Dhabi</name>
+            <longitude>54.36</longitude>
+            <latitude>24.27</latitude>
+        </capital>
+    </country>
+    <country id="AF">
+        <name>Afghanistan</name>
+        <continent>Asia</continent>
+        <westLongitude>60.478443</westLongitude>
+        <eastLongitude>74.879448</eastLongitude>
+        <northLatitude>38.483418</northLatitude>
+        <southLatitude>29.377472</southLatitude>
+        <capital id="temp">
+            <name>Kabul</name>
+            <longitude>69.2</longitude>
+            <latitude>34.5833</latitude>
+        </capital>
+    </country>
+    <country id="AG">
+        <name>Antigua and Barbuda</name>
+        <continent>North America</continent>
+        <westLongitude>-61.906425</westLongitude>
+        <eastLongitude>-61.672421</eastLongitude>
+        <northLatitude>17.729387</northLatitude>
+        <southLatitude>16.996979</southLatitude>
+        <capital id="temp">
+            <name>St. John's</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AI">
+        <name>Anguilla</name>
+        <continent>North America</continent>
+        <westLongitude>-63.172901</westLongitude>
+        <eastLongitude>-62.971359</eastLongitude>
+        <northLatitude>18.283424</northLatitude>
+        <southLatitude>18.166815</southLatitude>
+        <capital id="temp">
+            <name>The Valley</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AL">
+        <name>Albania</name>
+        <continent>Europe</continent>
+        <westLongitude>19.293972</westLongitude>
+        <eastLongitude>21.068472</eastLongitude>
+        <northLatitude>42.665611</northLatitude>
+        <southLatitude>39.648361</southLatitude>
+        <capital id="temp">
+            <name>Tirana</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AM">
+        <name>Armenia</name>
+        <continent>Asia</continent>
+        <westLongitude>43.44978</westLongitude>
+        <eastLongitude>46.772435045159995</eastLongitude>
+        <northLatitude>41.301834</northLatitude>
+        <southLatitude>38.830528</southLatitude>
+        <capital id="temp">
+            <name>Yerevan</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AO">
+        <name>Angola</name>
+        <continent>Africa</continent>
+        <westLongitude>11.679219</westLongitude>
+        <eastLongitude>24.082119</eastLongitude>
+        <northLatitude>-4.376826</northLatitude>
+        <southLatitude>-18.042076</southLatitude>
+        <capital id="temp">
+            <name>Luanda</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AQ">
+        <name>Antarctica</name>
+        <continent>Antarctica</continent>
+        <westLongitude>-179.9999</westLongitude>
+        <eastLongitude>179.9999</eastLongitude>
+        <northLatitude>-60.515533</northLatitude>
+        <southLatitude>-89.9999</southLatitude>
+    </country>
+    <country id="AR">
+        <name>Argentina</name>
+        <continent>South America</continent>
+        <westLongitude>-73.58297</westLongitude>
+        <eastLongitude>-53.591835</eastLongitude>
+        <northLatitude>-21.781277</northLatitude>
+        <southLatitude>-55.061314</southLatitude>
+        <capital id="temp">
+            <name>Buenos Aires</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AS">
+        <name>American Samoa</name>
+        <continent>Oceania</continent>
+        <westLongitude>-171.091888</westLongitude>
+        <eastLongitude>-169.416077</eastLongitude>
+        <northLatitude>-11.0497</northLatitude>
+        <southLatitude>-14.382478</southLatitude>
+        <capital id="temp">
+            <name>Pago Pago</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AT">
+        <name>Austria</name>
+        <continent>Europe</continent>
+        <westLongitude>9.53095237240833</westLongitude>
+        <eastLongitude>17.1620685652599</eastLongitude>
+        <northLatitude>49.0211627691393</northLatitude>
+        <southLatitude>46.3726520216244</southLatitude>
+        <capital id="temp">
+            <name>Vienna</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AU">
+        <name>Australia</name>
+        <continent>Oceania</continent>
+        <westLongitude>112.911057</westLongitude>
+        <eastLongitude>153.639252</eastLongitude>
+        <northLatitude>-10.062805</northLatitude>
+        <southLatitude>-43.64397</southLatitude>
+        <capital id="temp">
+            <name>Canberra</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AW">
+        <name>Aruba</name>
+        <continent>North America</continent>
+        <westLongitude>-70.0644737196045</westLongitude>
+        <eastLongitude>-69.86575120104982</eastLongitude>
+        <northLatitude>12.623718127152925</northLatitude>
+        <southLatitude>12.411707706190716</southLatitude>
+        <capital id="temp">
+            <name>Oranjestad</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AX">
+        <name>Åland</name>
+        <continent>Europe</continent>
+        <westLongitude>19.317694</westLongitude>
+        <eastLongitude>21.011862</eastLongitude>
+        <northLatitude>60.488861</northLatitude>
+        <southLatitude>59.90675</southLatitude>
+        <capital id="temp">
+            <name>Mariehamn</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="AZ">
+        <name>Azerbaijan</name>
+        <continent>Asia</continent>
+        <westLongitude>44.774113</westLongitude>
+        <eastLongitude>50.370083</eastLongitude>
+        <northLatitude>41.90564</northLatitude>
+        <southLatitude>38.38915252685547</southLatitude>
+        <capital id="temp">
+            <name>Baku</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BA">
+        <name>Bosnia and Herzegovina</name>
+        <continent>Europe</continent>
+        <westLongitude>15.718945</westLongitude>
+        <eastLongitude>19.622223</eastLongitude>
+        <northLatitude>45.239193</northLatitude>
+        <southLatitude>42.546112</southLatitude>
+        <capital id="temp">
+            <name>Sarajevo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BB">
+        <name>Barbados</name>
+        <continent>North America</continent>
+        <westLongitude>-59.648922</westLongitude>
+        <eastLongitude>-59.420376</eastLongitude>
+        <northLatitude>13.327257</northLatitude>
+        <southLatitude>13.039844</southLatitude>
+        <capital id="temp">
+            <name>Bridgetown</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BD">
+        <name>Bangladesh</name>
+        <continent>Asia</continent>
+        <westLongitude>88.028336</westLongitude>
+        <eastLongitude>92.673668</eastLongitude>
+        <northLatitude>26.631945</northLatitude>
+        <southLatitude>20.743334</southLatitude>
+        <capital id="temp">
+            <name>Dhaka</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BE">
+        <name>Belgium</name>
+        <continent>Europe</continent>
+        <westLongitude>2.546944</westLongitude>
+        <eastLongitude>6.403861</eastLongitude>
+        <northLatitude>51.505444</northLatitude>
+        <southLatitude>49.49361</southLatitude>
+        <capital id="temp">
+            <name>Brussels</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BF">
+        <name>Burkina Faso</name>
+        <continent>Africa</continent>
+        <westLongitude>-5.518916</westLongitude>
+        <eastLongitude>2.405395</eastLongitude>
+        <northLatitude>15.082593</northLatitude>
+        <southLatitude>9.401108</southLatitude>
+        <capital id="temp">
+            <name>Ouagadougou</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BG">
+        <name>Bulgaria</name>
+        <continent>Europe</continent>
+        <westLongitude>22.371166</westLongitude>
+        <eastLongitude>28.612167</eastLongitude>
+        <northLatitude>44.21764</northLatitude>
+        <southLatitude>41.242084</southLatitude>
+        <capital id="temp">
+            <name>Sofia</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BH">
+        <name>Bahrain</name>
+        <continent>Asia</continent>
+        <westLongitude>50.45414</westLongitude>
+        <eastLongitude>50.664471</eastLongitude>
+        <northLatitude>26.282583</northLatitude>
+        <southLatitude>25.796862</southLatitude>
+        <capital id="temp">
+            <name>Manama</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BI">
+        <name>Burundi</name>
+        <continent>Africa</continent>
+        <westLongitude>28.993061</westLongitude>
+        <eastLongitude>30.847729</eastLongitude>
+        <northLatitude>-2.310123</northLatitude>
+        <southLatitude>-4.465713</southLatitude>
+        <capital id="temp">
+            <name>Bujumbura</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BJ">
+        <name>Benin</name>
+        <continent>Africa</continent>
+        <westLongitude>0.774575</westLongitude>
+        <eastLongitude>3.851701</eastLongitude>
+        <northLatitude>12.418347</northLatitude>
+        <southLatitude>6.225748</southLatitude>
+        <capital id="temp">
+            <name>Porto-Novo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BL">
+        <name>Saint-Barthélemy</name>
+        <continent>North America</continent>
+        <westLongitude>-62.8739118253784</westLongitude>
+        <eastLongitude>-62.788983372985854</eastLongitude>
+        <northLatitude>17.928808791949283</northLatitude>
+        <southLatitude>17.878183227405575</southLatitude>
+        <capital id="temp">
+            <name>Gustavia</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BM">
+        <name>Bermuda</name>
+        <continent>North America</continent>
+        <westLongitude>-64.89605</westLongitude>
+        <eastLongitude>-64.651993</eastLongitude>
+        <northLatitude>32.393833</northLatitude>
+        <southLatitude>32.246639</southLatitude>
+        <capital id="temp">
+            <name>Hamilton</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BN">
+        <name>Brunei</name>
+        <continent>Asia</continent>
+        <westLongitude>114.071442</westLongitude>
+        <eastLongitude>115.359444</eastLongitude>
+        <northLatitude>5.047167</northLatitude>
+        <southLatitude>4.003083</southLatitude>
+        <capital id="temp">
+            <name>Bandar Seri Begawan</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BO">
+        <name>Bolivia</name>
+        <continent>South America</continent>
+        <westLongitude>-69.640762</westLongitude>
+        <eastLongitude>-57.45809600000001</eastLongitude>
+        <northLatitude>-9.680567</northLatitude>
+        <southLatitude>-22.896133</southLatitude>
+        <capital id="temp">
+            <name>Sucre</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BQ">
+        <name>Bonaire</name>
+        <continent>North America</continent>
+        <westLongitude>-68.416458</westLongitude>
+        <eastLongitude>-68.192307</eastLongitude>
+        <northLatitude>12.304535</northLatitude>
+        <southLatitude>12.017149</southLatitude>
+        <capital id="temp">
+            <name>Kralendijk</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BR">
+        <name>Brazil</name>
+        <continent>South America</continent>
+        <westLongitude>-73.985535</westLongitude>
+        <eastLongitude>-32.392998</eastLongitude>
+        <northLatitude>5.264877</northLatitude>
+        <southLatitude>-33.750706</southLatitude>
+        <capital id="temp">
+            <name>Brasília</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BS">
+        <name>Bahamas</name>
+        <continent>North America</continent>
+        <westLongitude>-78.995911</westLongitude>
+        <eastLongitude>-74.423874</eastLongitude>
+        <northLatitude>26.919243</northLatitude>
+        <southLatitude>22.852743</southLatitude>
+        <capital id="temp">
+            <name>Nassau</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BT">
+        <name>Bhutan</name>
+        <continent>Asia</continent>
+        <westLongitude>88.75972</westLongitude>
+        <eastLongitude>92.125191</eastLongitude>
+        <northLatitude>28.323778</northLatitude>
+        <southLatitude>26.70764</southLatitude>
+        <capital id="temp">
+            <name>Thimphu</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BV">
+        <name>Bouvet Island</name>
+        <continent>Antarctica</continent>
+        <westLongitude>3.335499</westLongitude>
+        <eastLongitude>3.487976</eastLongitude>
+        <northLatitude>-54.400322</northLatitude>
+        <southLatitude>-54.462383</southLatitude>
+    </country>
+    <country id="BW">
+        <name>Botswana</name>
+        <continent>Africa</continent>
+        <westLongitude>19.999535</westLongitude>
+        <eastLongitude>29.360781</eastLongitude>
+        <northLatitude>-17.780813</northLatitude>
+        <southLatitude>-26.907246</southLatitude>
+        <capital id="temp">
+            <name>Gaborone</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BY">
+        <name>Belarus</name>
+        <continent>Europe</continent>
+        <westLongitude>23.176889</westLongitude>
+        <eastLongitude>32.770805</eastLongitude>
+        <northLatitude>56.165806</northLatitude>
+        <southLatitude>51.256416</southLatitude>
+        <capital id="temp">
+            <name>Minsk</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="BZ">
+        <name>Belize</name>
+        <continent>North America</continent>
+        <westLongitude>-89.224815</westLongitude>
+        <eastLongitude>-87.776985</eastLongitude>
+        <northLatitude>18.496557</northLatitude>
+        <southLatitude>15.8893</southLatitude>
+        <capital id="temp">
+            <name>Belmopan</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CA">
+        <name>Canada</name>
+        <continent>North America</continent>
+        <westLongitude>-141</westLongitude>
+        <eastLongitude>-52.636291</eastLongitude>
+        <northLatitude>83.110626</northLatitude>
+        <southLatitude>41.67598</southLatitude>
+        <capital id="temp">
+            <name>Ottawa</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CC">
+        <name>Cocos (Keeling) Islands</name>
+        <continent>Asia</continent>
+        <westLongitude>96.816941408</westLongitude>
+        <eastLongitude>96.929489344</eastLongitude>
+        <northLatitude>-12.072459094</northLatitude>
+        <southLatitude>-12.208725839</southLatitude>
+        <capital id="temp">
+            <name>West Island</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CD">
+        <name>Democratic Republic of the Congo</name>
+        <continent>Africa</continent>
+        <westLongitude>12.204144</westLongitude>
+        <eastLongitude>31.305912</eastLongitude>
+        <northLatitude>5.386098</northLatitude>
+        <southLatitude>-13.455675</southLatitude>
+        <capital id="temp">
+            <name>Kinshasa</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CF">
+        <name>Central African Republic</name>
+        <continent>Africa</continent>
+        <westLongitude>14.420097</westLongitude>
+        <eastLongitude>27.463421</eastLongitude>
+        <northLatitude>11.007569</northLatitude>
+        <southLatitude>2.220514</southLatitude>
+        <capital id="temp">
+            <name>Bangui</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CG">
+        <name>Republic of the Congo</name>
+        <continent>Africa</continent>
+        <westLongitude>11.205009</westLongitude>
+        <eastLongitude>18.649839</eastLongitude>
+        <northLatitude>3.703082</northLatitude>
+        <southLatitude>-5.027223</southLatitude>
+        <capital id="temp">
+            <name>Brazzaville</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CH">
+        <name>Switzerland</name>
+        <continent>Europe</continent>
+        <westLongitude>5.957472</westLongitude>
+        <eastLongitude>10.491472</eastLongitude>
+        <northLatitude>47.805332</northLatitude>
+        <southLatitude>45.825695</southLatitude>
+        <capital id="temp">
+            <name>Berne</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CI">
+        <name>Ivory Coast</name>
+        <continent>Africa</continent>
+        <westLongitude>-8.599302</westLongitude>
+        <eastLongitude>-2.494897</eastLongitude>
+        <northLatitude>10.736642</northLatitude>
+        <southLatitude>4.357067</southLatitude>
+        <capital id="temp">
+            <name>Yamoussoukro</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CK">
+        <name>Cook Islands</name>
+        <continent>Oceania</continent>
+        <westLongitude>-161.093658</westLongitude>
+        <eastLongitude>-157.312134</eastLongitude>
+        <northLatitude>-10.023114</northLatitude>
+        <southLatitude>-21.944164</southLatitude>
+        <capital id="temp">
+            <name>Avarua</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CL">
+        <name>Chile</name>
+        <continent>South America</continent>
+        <westLongitude>-80.785851</westLongitude>
+        <eastLongitude>-66.417557</eastLongitude>
+        <northLatitude>-17.507553</northLatitude>
+        <southLatitude>-55.9256225109217</southLatitude>
+        <capital id="temp">
+            <name>Santiago</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CM">
+        <name>Cameroon</name>
+        <continent>Africa</continent>
+        <westLongitude>8.494763</westLongitude>
+        <eastLongitude>16.192116</eastLongitude>
+        <northLatitude>13.078056</northLatitude>
+        <southLatitude>1.652548</southLatitude>
+        <capital id="temp">
+            <name>Yaoundé</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CN">
+        <name>China</name>
+        <continent>Asia</continent>
+        <westLongitude>73.557693</westLongitude>
+        <eastLongitude>134.773911</eastLongitude>
+        <northLatitude>53.56086</northLatitude>
+        <southLatitude>15.775416</southLatitude>
+        <capital id="temp">
+            <name>Beijing</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CO">
+        <name>Colombia</name>
+        <continent>South America</continent>
+        <westLongitude>-81.728111</westLongitude>
+        <eastLongitude>-66.869835</eastLongitude>
+        <northLatitude>13.380502</northLatitude>
+        <southLatitude>-4.225869</southLatitude>
+        <capital id="temp">
+            <name>Bogotá</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CR">
+        <name>Costa Rica</name>
+        <continent>North America</continent>
+        <westLongitude>-85.950623</westLongitude>
+        <eastLongitude>-82.555992</eastLongitude>
+        <northLatitude>11.216819</northLatitude>
+        <southLatitude>8.032975</southLatitude>
+        <capital id="temp">
+            <name>San José</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CU">
+        <name>Cuba</name>
+        <continent>North America</continent>
+        <westLongitude>-84.957428</westLongitude>
+        <eastLongitude>-74.131775</eastLongitude>
+        <northLatitude>23.226042</northLatitude>
+        <southLatitude>19.828083</southLatitude>
+        <capital id="temp">
+            <name>Havana</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CV">
+        <name>Cape Verde</name>
+        <continent>Africa</continent>
+        <westLongitude>-25.358747</westLongitude>
+        <eastLongitude>-22.669443</eastLongitude>
+        <northLatitude>17.197178</northLatitude>
+        <southLatitude>14.808022</southLatitude>
+        <capital id="temp">
+            <name>Praia</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CW">
+        <name>Curacao</name>
+        <continent>North America</continent>
+        <westLongitude>-69.157204</westLongitude>
+        <eastLongitude>-68.733948</eastLongitude>
+        <northLatitude>12.385672</northLatitude>
+        <southLatitude>12.032745</southLatitude>
+        <capital id="temp">
+            <name>Willemstad</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CX">
+        <name>Christmas Island</name>
+        <continent>Asia</continent>
+        <westLongitude>105.533276992</westLongitude>
+        <eastLongitude>105.712596992</eastLongitude>
+        <northLatitude>-10.412356007</northLatitude>
+        <southLatitude>-10.5704829995</southLatitude>
+        <capital id="temp">
+            <name>The Settlement</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CY">
+        <name>Cyprus</name>
+        <continent>Europe</continent>
+        <westLongitude>32.27308300000004</westLongitude>
+        <eastLongitude>34.59791599999994</eastLongitude>
+        <northLatitude>35.701527</northLatitude>
+        <southLatitude>34.6332846722908</southLatitude>
+        <capital id="temp">
+            <name>Nicosia</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="CZ">
+        <name>Czech Republic</name>
+        <continent>Europe</continent>
+        <westLongitude>12.096194</westLongitude>
+        <eastLongitude>18.860111</eastLongitude>
+        <northLatitude>51.058887</northLatitude>
+        <southLatitude>48.542915</southLatitude>
+        <capital id="temp">
+            <name>Prague</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="DE">
+        <name>Germany</name>
+        <continent>Europe</continent>
+        <westLongitude>5.865639</westLongitude>
+        <eastLongitude>15.039889</eastLongitude>
+        <northLatitude>55.055637</northLatitude>
+        <southLatitude>47.275776</southLatitude>
+        <capital id="temp">
+            <name>Berlin</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="DJ">
+        <name>Djibouti</name>
+        <continent>Africa</continent>
+        <westLongitude>41.773472</westLongitude>
+        <eastLongitude>43.416973</eastLongitude>
+        <northLatitude>12.706833</northLatitude>
+        <southLatitude>10.909917</southLatitude>
+        <capital id="temp">
+            <name>Djibouti</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="DK">
+        <name>Denmark</name>
+        <continent>Europe</continent>
+        <westLongitude>8.075611</westLongitude>
+        <eastLongitude>15.158834</eastLongitude>
+        <northLatitude>57.748417</northLatitude>
+        <southLatitude>54.562389</southLatitude>
+        <capital id="temp">
+            <name>Copenhagen</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="DM">
+        <name>Dominica</name>
+        <continent>North America</continent>
+        <westLongitude>-61.484108</westLongitude>
+        <eastLongitude>-61.244152</eastLongitude>
+        <northLatitude>15.631809</northLatitude>
+        <southLatitude>15.20169</southLatitude>
+        <capital id="temp">
+            <name>Roseau</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="DO">
+        <name>Dominican Republic</name>
+        <continent>North America</continent>
+        <westLongitude>-72.003487</westLongitude>
+        <eastLongitude>-68.32</eastLongitude>
+        <northLatitude>19.929859</northLatitude>
+        <southLatitude>17.543159</southLatitude>
+        <capital id="temp">
+            <name>Santo Domingo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="DZ">
+        <name>Algeria</name>
+        <continent>Africa</continent>
+        <westLongitude>-8.673868</westLongitude>
+        <eastLongitude>11.979548</eastLongitude>
+        <northLatitude>37.093723</northLatitude>
+        <southLatitude>18.960028</southLatitude>
+        <capital id="temp">
+            <name>Algiers</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="EC">
+        <name>Ecuador</name>
+        <continent>South America</continent>
+        <westLongitude>-81.078598</westLongitude>
+        <eastLongitude>-75.184586</eastLongitude>
+        <northLatitude>1.43902</northLatitude>
+        <southLatitude>-4.998823</southLatitude>
+        <capital id="temp">
+            <name>Quito</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="EE">
+        <name>Estonia</name>
+        <continent>Europe</continent>
+        <westLongitude>21.837584</westLongitude>
+        <eastLongitude>28.209972</eastLongitude>
+        <northLatitude>59.676224</northLatitude>
+        <southLatitude>57.516193</southLatitude>
+        <capital id="temp">
+            <name>Tallinn</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="EG">
+        <name>Egypt</name>
+        <continent>Africa</continent>
+        <westLongitude>24.698111</westLongitude>
+        <eastLongitude>36.89833068847656</eastLongitude>
+        <northLatitude>31.667334</northLatitude>
+        <southLatitude>21.725389</southLatitude>
+        <capital id="temp">
+            <name>Cairo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="EH">
+        <name>Western Sahara</name>
+        <continent>Africa</continent>
+        <westLongitude>-17.103182</westLongitude>
+        <eastLongitude>-8.670276</eastLongitude>
+        <northLatitude>27.669674</northLatitude>
+        <southLatitude>20.774158</southLatitude>
+        <capital id="temp">
+            <name>El Aaiún</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ER">
+        <name>Eritrea</name>
+        <continent>Africa</continent>
+        <westLongitude>36.438778</westLongitude>
+        <eastLongitude>43.13464</eastLongitude>
+        <northLatitude>18.003084</northLatitude>
+        <southLatitude>12.359555</southLatitude>
+        <capital id="temp">
+            <name>Asmara</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ES">
+        <name>Spain</name>
+        <continent>Europe</continent>
+        <westLongitude>-9.30151567231899</westLongitude>
+        <eastLongitude>4.32778473043961</eastLongitude>
+        <northLatitude>43.7913565913767</northLatitude>
+        <southLatitude>36.0001044260548</southLatitude>
+        <capital id="temp">
+            <name>Madrid</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ET">
+        <name>Ethiopia</name>
+        <continent>Africa</continent>
+        <westLongitude>32.999939</westLongitude>
+        <eastLongitude>47.986179</eastLongitude>
+        <northLatitude>14.89375</northLatitude>
+        <southLatitude>3.402422</southLatitude>
+        <capital id="temp">
+            <name>Addis Ababa</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="FI">
+        <name>Finland</name>
+        <continent>Europe</continent>
+        <westLongitude>20.556944</westLongitude>
+        <eastLongitude>31.580944</eastLongitude>
+        <northLatitude>70.096054</northLatitude>
+        <southLatitude>59.808777</southLatitude>
+        <capital id="temp">
+            <name>Helsinki</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="FJ">
+        <name>Fiji</name>
+        <continent>Oceania</continent>
+        <westLongitude>177.129334</westLongitude>
+        <eastLongitude>-178.424438</eastLongitude>
+        <northLatitude>-12.480111</northLatitude>
+        <southLatitude>-20.67597</southLatitude>
+        <capital id="temp">
+            <name>Suva</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="FK">
+        <name>Falkland Islands</name>
+        <continent>South America</continent>
+        <westLongitude>-61.345192</westLongitude>
+        <eastLongitude>-57.712486</eastLongitude>
+        <northLatitude>-51.24065</northLatitude>
+        <southLatitude>-52.360512</southLatitude>
+        <capital id="temp">
+            <name>Stanley</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="FM">
+        <name>Micronesia</name>
+        <continent>Oceania</continent>
+        <westLongitude>137.33648</westLongitude>
+        <eastLongitude>163.03717</eastLongitude>
+        <northLatitude>10.08904</northLatitude>
+        <southLatitude>1.02629</southLatitude>
+        <capital id="temp">
+            <name>Palikir</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="FO">
+        <name>Faroe Islands</name>
+        <continent>Europe</continent>
+        <westLongitude>-7.458</westLongitude>
+        <eastLongitude>-6.399583</eastLongitude>
+        <northLatitude>62.400749</northLatitude>
+        <southLatitude>61.394943</southLatitude>
+        <capital id="temp">
+            <name>Tórshavn</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="FR">
+        <name>France</name>
+        <continent>Europe</continent>
+        <westLongitude>-5.142222</westLongitude>
+        <eastLongitude>9.561556</eastLongitude>
+        <northLatitude>51.092804</northLatitude>
+        <southLatitude>41.371582</southLatitude>
+        <capital id="temp">
+            <name>Paris</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GA">
+        <name>Gabon</name>
+        <continent>Africa</continent>
+        <westLongitude>8.695471</westLongitude>
+        <eastLongitude>14.502347</eastLongitude>
+        <northLatitude>2.322612</northLatitude>
+        <southLatitude>-3.978806</southLatitude>
+        <capital id="temp">
+            <name>Libreville</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GB">
+        <name>United Kingdom</name>
+        <continent>Europe</continent>
+        <westLongitude>-8.623555</westLongitude>
+        <eastLongitude>1.759</eastLongitude>
+        <northLatitude>59.360249</northLatitude>
+        <southLatitude>49.906193</southLatitude>
+        <capital id="temp">
+            <name>London</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GD">
+        <name>Grenada</name>
+        <continent>North America</continent>
+        <westLongitude>-61.802344</westLongitude>
+        <eastLongitude>-61.57676970108031</eastLongitude>
+        <northLatitude>12.318283928171299</northLatitude>
+        <southLatitude>11.986893</southLatitude>
+        <capital id="temp">
+            <name>St. George's</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GE">
+        <name>Georgia (country)</name>
+        <continent>Asia</continent>
+        <westLongitude>40.010139</westLongitude>
+        <eastLongitude>46.725971</eastLongitude>
+        <northLatitude>43.586498</northLatitude>
+        <southLatitude>41.053196</southLatitude>
+        <capital id="temp">
+            <name>Tbilisi</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GF">
+        <name>French Guiana</name>
+        <continent>South America</continent>
+        <westLongitude>-54.542511</westLongitude>
+        <eastLongitude>-51.613949</eastLongitude>
+        <northLatitude>5.776496</northLatitude>
+        <southLatitude>2.127094</southLatitude>
+        <capital id="temp">
+            <name>Cayenne</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GG">
+        <name>Guernsey</name>
+        <continent>Europe</continent>
+        <westLongitude>-2.673194593476069</westLongitude>
+        <eastLongitude>-2.1577152112246267</eastLongitude>
+        <northLatitude>49.731727816705416</northLatitude>
+        <southLatitude>49.40764156876899</southLatitude>
+        <capital id="temp">
+            <name>St Peter Port</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GH">
+        <name>Ghana</name>
+        <continent>Africa</continent>
+        <westLongitude>-3.25542</westLongitude>
+        <eastLongitude>1.191781</eastLongitude>
+        <northLatitude>11.173301</northLatitude>
+        <southLatitude>4.736723</southLatitude>
+        <capital id="temp">
+            <name>Accra</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GI">
+        <name>Gibraltar</name>
+        <continent>Europe</continent>
+        <westLongitude>-5.36626149743654</westLongitude>
+        <eastLongitude>-5.338285164001491</eastLongitude>
+        <northLatitude>36.155439135670726</northLatitude>
+        <southLatitude>36.10903070140248</southLatitude>
+        <capital id="temp">
+            <name>Gibraltar</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GL">
+        <name>Greenland</name>
+        <continent>North America</continent>
+        <westLongitude>-73.04203</westLongitude>
+        <eastLongitude>-11.312319</eastLongitude>
+        <northLatitude>83.627357</northLatitude>
+        <southLatitude>59.777401</southLatitude>
+        <capital id="temp">
+            <name>Nuuk</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GM">
+        <name>Gambia</name>
+        <continent>Africa</continent>
+        <westLongitude>-16.825079</westLongitude>
+        <eastLongitude>-13.797793</eastLongitude>
+        <northLatitude>13.826571</northLatitude>
+        <southLatitude>13.064252</southLatitude>
+        <capital id="temp">
+            <name>Banjul</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GN">
+        <name>Guinea</name>
+        <continent>Africa</continent>
+        <westLongitude>-14.926619</westLongitude>
+        <eastLongitude>-7.641071</eastLongitude>
+        <northLatitude>12.67622</northLatitude>
+        <southLatitude>7.193553</southLatitude>
+        <capital id="temp">
+            <name>Conakry</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GP">
+        <name>Guadeloupe</name>
+        <continent>North America</continent>
+        <westLongitude>-61.544765</westLongitude>
+        <eastLongitude>-61</eastLongitude>
+        <northLatitude>16.516848</northLatitude>
+        <southLatitude>15.867565</southLatitude>
+        <capital id="temp">
+            <name>Basse-Terre</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GQ">
+        <name>Equatorial Guinea</name>
+        <continent>Africa</continent>
+        <westLongitude>9.346865</westLongitude>
+        <eastLongitude>11.335724</eastLongitude>
+        <northLatitude>2.346989</northLatitude>
+        <southLatitude>0.92086</southLatitude>
+        <capital id="temp">
+            <name>Malabo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GR">
+        <name>Greece</name>
+        <continent>Europe</continent>
+        <westLongitude>19.3736035624134</westLongitude>
+        <eastLongitude>28.2470831714347</eastLongitude>
+        <northLatitude>41.7484999849641</northLatitude>
+        <southLatitude>34.8020663391466</southLatitude>
+        <capital id="temp">
+            <name>Athens</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GS">
+        <name>South Georgia and the South Sandwich Islands</name>
+        <continent>Antarctica</continent>
+        <westLongitude>-38.021175</westLongitude>
+        <eastLongitude>-26.229326</eastLongitude>
+        <northLatitude>-53.970467</northLatitude>
+        <southLatitude>-59.479259</southLatitude>
+        <capital id="temp">
+            <name>Grytviken</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GT">
+        <name>Guatemala</name>
+        <continent>North America</continent>
+        <westLongitude>-92.23629</westLongitude>
+        <eastLongitude>-88.223198</eastLongitude>
+        <northLatitude>17.81522</northLatitude>
+        <southLatitude>13.737302</southLatitude>
+        <capital id="temp">
+            <name>Guatemala City</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GU">
+        <name>Guam</name>
+        <continent>Oceania</continent>
+        <westLongitude>144.61806</westLongitude>
+        <eastLongitude>144.956894</eastLongitude>
+        <northLatitude>13.654402</northLatitude>
+        <southLatitude>13.23376</southLatitude>
+        <capital id="temp">
+            <name>Hagåtña</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GW">
+        <name>Guinea-Bissau</name>
+        <continent>Africa</continent>
+        <westLongitude>-16.717535</westLongitude>
+        <eastLongitude>-13.636522</eastLongitude>
+        <northLatitude>12.680789</northLatitude>
+        <southLatitude>10.924265</southLatitude>
+        <capital id="temp">
+            <name>Bissau</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="GY">
+        <name>Guyana</name>
+        <continent>South America</continent>
+        <westLongitude>-61.384762</westLongitude>
+        <eastLongitude>-56.480251</eastLongitude>
+        <northLatitude>8.557567</northLatitude>
+        <southLatitude>1.17508</southLatitude>
+        <capital id="temp">
+            <name>Georgetown</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="HK">
+        <name>Hong Kong</name>
+        <continent>Asia</continent>
+        <westLongitude>113.837753</westLongitude>
+        <eastLongitude>114.434753</eastLongitude>
+        <northLatitude>22.559778</northLatitude>
+        <southLatitude>22.15325</southLatitude>
+        <capital id="temp">
+            <name>Hong Kong</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="HM">
+        <name>Heard Island and McDonald Islands</name>
+        <continent>Antarctica</continent>
+        <westLongitude>72.596535</westLongitude>
+        <eastLongitude>73.859146</eastLongitude>
+        <northLatitude>-52.909416</northLatitude>
+        <southLatitude>-53.192001</southLatitude>
+    </country>
+    <country id="HN">
+        <name>Honduras</name>
+        <continent>North America</continent>
+        <westLongitude>-89.350792</westLongitude>
+        <eastLongitude>-83.155403</eastLongitude>
+        <northLatitude>16.510256</northLatitude>
+        <southLatitude>12.982411</southLatitude>
+        <capital id="temp">
+            <name>Tegucigalpa</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="HR">
+        <name>Croatia</name>
+        <continent>Europe</continent>
+        <westLongitude>13.493222</westLongitude>
+        <eastLongitude>19.427389</eastLongitude>
+        <northLatitude>46.53875</northLatitude>
+        <southLatitude>42.43589</southLatitude>
+        <capital id="temp">
+            <name>Zagreb</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="HT">
+        <name>Haiti</name>
+        <continent>North America</continent>
+        <westLongitude>-74.478584</westLongitude>
+        <eastLongitude>-71.613358</eastLongitude>
+        <northLatitude>20.08782</northLatitude>
+        <southLatitude>18.021032</southLatitude>
+        <capital id="temp">
+            <name>Port-au-Prince</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="HU">
+        <name>Hungary</name>
+        <continent>Europe</continent>
+        <westLongitude>16.111889</westLongitude>
+        <eastLongitude>22.906</eastLongitude>
+        <northLatitude>48.585667</northLatitude>
+        <southLatitude>45.74361</southLatitude>
+        <capital id="temp">
+            <name>Budapest</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ID">
+        <name>Indonesia</name>
+        <continent>Asia</continent>
+        <westLongitude>95.009331</westLongitude>
+        <eastLongitude>141.021805</eastLongitude>
+        <northLatitude>5.904417</northLatitude>
+        <southLatitude>-10.941861</southLatitude>
+        <capital id="temp">
+            <name>Jakarta</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IE">
+        <name>Ireland</name>
+        <continent>Europe</continent>
+        <westLongitude>-10.478556</westLongitude>
+        <eastLongitude>-6.002389</eastLongitude>
+        <northLatitude>55.387917</northLatitude>
+        <southLatitude>51.451584</southLatitude>
+        <capital id="temp">
+            <name>Dublin</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IL">
+        <name>Israel</name>
+        <continent>Asia</continent>
+        <westLongitude>34.270278754419145</westLongitude>
+        <eastLongitude>35.876804</eastLongitude>
+        <northLatitude>33.340137</northLatitude>
+        <southLatitude>29.496639</southLatitude>
+        <capital id="temp">
+            <name>Jerusalem</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IM">
+        <name>Isle of Man</name>
+        <continent>Europe</continent>
+        <westLongitude>-4.798722</westLongitude>
+        <eastLongitude>-4.3115</eastLongitude>
+        <northLatitude>54.419724</northLatitude>
+        <southLatitude>54.055916</southLatitude>
+        <capital id="temp">
+            <name>Douglas</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IN">
+        <name>India</name>
+        <continent>Asia</continent>
+        <westLongitude>68.186691</westLongitude>
+        <eastLongitude>97.403305</eastLongitude>
+        <northLatitude>35.504223</northLatitude>
+        <southLatitude>6.747139</southLatitude>
+        <capital id="temp">
+            <name>New Delhi</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IO">
+        <name>British Indian Ocean Territory</name>
+        <continent>Asia</continent>
+        <westLongitude>71.259972</westLongitude>
+        <eastLongitude>72.493164</eastLongitude>
+        <northLatitude>-5.268333</northLatitude>
+        <southLatitude>-7.438028</southLatitude>
+        <capital id="temp">
+            <name>Diego Garcia</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IQ">
+        <name>Iraq</name>
+        <continent>Asia</continent>
+        <westLongitude>38.795887</westLongitude>
+        <eastLongitude>48.575916</eastLongitude>
+        <northLatitude>37.378029</northLatitude>
+        <southLatitude>29.069445</southLatitude>
+        <capital id="temp">
+            <name>Baghdad</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IR">
+        <name>Iran</name>
+        <continent>Asia</continent>
+        <westLongitude>44.047279</westLongitude>
+        <eastLongitude>63.317471</eastLongitude>
+        <northLatitude>39.777222</northLatitude>
+        <southLatitude>25.064083</southLatitude>
+        <capital id="temp">
+            <name>Tehran</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IS">
+        <name>Iceland</name>
+        <continent>Europe</continent>
+        <westLongitude>-24.546524</westLongitude>
+        <eastLongitude>-13.495815</eastLongitude>
+        <northLatitude>66.53463</northLatitude>
+        <southLatitude>63.393253</southLatitude>
+        <capital id="temp">
+            <name>Reykjavik</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="IT">
+        <name>Italy</name>
+        <continent>Europe</continent>
+        <westLongitude>6.614889</westLongitude>
+        <eastLongitude>18.513445</eastLongitude>
+        <northLatitude>47.095196</northLatitude>
+        <southLatitude>36.652779</southLatitude>
+        <capital id="temp">
+            <name>Rome</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="JE">
+        <name>Jersey</name>
+        <continent>Europe</continent>
+        <westLongitude>-2.260028</westLongitude>
+        <eastLongitude>-2.022083</eastLongitude>
+        <northLatitude>49.265057</northLatitude>
+        <southLatitude>49.169834</southLatitude>
+        <capital id="temp">
+            <name>Saint Helier</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="JM">
+        <name>Jamaica</name>
+        <continent>North America</continent>
+        <westLongitude>-78.366638</westLongitude>
+        <eastLongitude>-76.180321</eastLongitude>
+        <northLatitude>18.526976</northLatitude>
+        <southLatitude>17.703554</southLatitude>
+        <capital id="temp">
+            <name>Kingston</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="JO">
+        <name>Jordan</name>
+        <continent>Asia</continent>
+        <westLongitude>34.959999</westLongitude>
+        <eastLongitude>39.301167</eastLongitude>
+        <northLatitude>33.367668</northLatitude>
+        <southLatitude>29.185888</southLatitude>
+        <capital id="temp">
+            <name>Amman</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="JP">
+        <name>Japan</name>
+        <continent>Asia</continent>
+        <westLongitude>122.93853</westLongitude>
+        <eastLongitude>145.820892</eastLongitude>
+        <northLatitude>45.52314</northLatitude>
+        <southLatitude>24.249472</southLatitude>
+        <capital id="temp">
+            <name>Tokyo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KE">
+        <name>Kenya</name>
+        <continent>Africa</continent>
+        <westLongitude>33.908859</westLongitude>
+        <eastLongitude>41.899078</eastLongitude>
+        <northLatitude>5.019938</northLatitude>
+        <southLatitude>-4.678047</southLatitude>
+        <capital id="temp">
+            <name>Nairobi</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KG">
+        <name>Kyrgyzstan</name>
+        <continent>Asia</continent>
+        <westLongitude>69.276611</westLongitude>
+        <eastLongitude>80.283165</eastLongitude>
+        <northLatitude>43.238224</northLatitude>
+        <southLatitude>39.172832</southLatitude>
+        <capital id="temp">
+            <name>Bishkek</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KH">
+        <name>Cambodia</name>
+        <continent>Asia</continent>
+        <westLongitude>102.339996</westLongitude>
+        <eastLongitude>107.627724</eastLongitude>
+        <northLatitude>14.686417</northLatitude>
+        <southLatitude>10.409083</southLatitude>
+        <capital id="temp">
+            <name>Phnom Penh</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KI">
+        <name>Kiribati</name>
+        <continent>Oceania</continent>
+        <westLongitude>169.556137</westLongitude>
+        <eastLongitude>-150.215347</eastLongitude>
+        <northLatitude>4.71957</northLatitude>
+        <southLatitude>-11.446881150186856</southLatitude>
+        <capital id="temp">
+            <name>Tarawa</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KM">
+        <name>Comoros</name>
+        <continent>Africa</continent>
+        <westLongitude>43.21579</westLongitude>
+        <eastLongitude>44.538223</eastLongitude>
+        <northLatitude>-11.362381</northLatitude>
+        <southLatitude>-12.387857</southLatitude>
+        <capital id="temp">
+            <name>Moroni</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KN">
+        <name>Saint Kitts and Nevis</name>
+        <continent>North America</continent>
+        <westLongitude>-62.86956</westLongitude>
+        <eastLongitude>-62.543266</eastLongitude>
+        <northLatitude>17.420118</northLatitude>
+        <southLatitude>17.095343</southLatitude>
+        <capital id="temp">
+            <name>Basseterre</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KP">
+        <name>North Korea</name>
+        <continent>Asia</continent>
+        <westLongitude>124.315887</westLongitude>
+        <eastLongitude>130.674866</eastLongitude>
+        <northLatitude>43.006054</northLatitude>
+        <southLatitude>37.673332</southLatitude>
+        <capital id="temp">
+            <name>Pyongyang</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KR">
+        <name>South Korea</name>
+        <continent>Asia</continent>
+        <westLongitude>125.887108</westLongitude>
+        <eastLongitude>129.584671</eastLongitude>
+        <northLatitude>38.612446</northLatitude>
+        <southLatitude>33.190945</southLatitude>
+        <capital id="temp">
+            <name>Seoul</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KW">
+        <name>Kuwait</name>
+        <continent>Asia</continent>
+        <westLongitude>46.555557</westLongitude>
+        <eastLongitude>48.431473</eastLongitude>
+        <northLatitude>30.095945</northLatitude>
+        <southLatitude>28.524611</southLatitude>
+        <capital id="temp">
+            <name>Kuwait City</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KY">
+        <name>Cayman Islands</name>
+        <continent>North America</continent>
+        <westLongitude>-81.432777</westLongitude>
+        <eastLongitude>-79.727272</eastLongitude>
+        <northLatitude>19.7617</northLatitude>
+        <southLatitude>19.263029</southLatitude>
+        <capital id="temp">
+            <name>George Town</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="KZ">
+        <name>Kazakhstan</name>
+        <continent>Asia</continent>
+        <westLongitude>46.491859</westLongitude>
+        <eastLongitude>87.312668</eastLongitude>
+        <northLatitude>55.451195</northLatitude>
+        <southLatitude>40.936333</southLatitude>
+        <capital id="temp">
+            <name>Astana</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LA">
+        <name>Laos</name>
+        <continent>Asia</continent>
+        <westLongitude>100.093056</westLongitude>
+        <eastLongitude>107.697029</eastLongitude>
+        <northLatitude>22.500389</northLatitude>
+        <southLatitude>13.910027</southLatitude>
+        <capital id="temp">
+            <name>Vientiane</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LB">
+        <name>Lebanon</name>
+        <continent>Asia</continent>
+        <westLongitude>35.114277</westLongitude>
+        <eastLongitude>36.639194</eastLongitude>
+        <northLatitude>34.691418</northLatitude>
+        <southLatitude>33.05386</southLatitude>
+        <capital id="temp">
+            <name>Beirut</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LC">
+        <name>Saint Lucia</name>
+        <continent>North America</continent>
+        <westLongitude>-61.07415</westLongitude>
+        <eastLongitude>-60.874203</eastLongitude>
+        <northLatitude>14.103245</northLatitude>
+        <southLatitude>13.704778</southLatitude>
+        <capital id="temp">
+            <name>Castries</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LI">
+        <name>Liechtenstein</name>
+        <continent>Europe</continent>
+        <westLongitude>9.47167359782014</westLongitude>
+        <eastLongitude>9.63564281136796</eastLongitude>
+        <northLatitude>47.2706251386959</northLatitude>
+        <southLatitude>47.0484284123471</southLatitude>
+        <capital id="temp">
+            <name>Vaduz</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LK">
+        <name>Sri Lanka</name>
+        <continent>Asia</continent>
+        <westLongitude>79.652916</westLongitude>
+        <eastLongitude>81.881279</eastLongitude>
+        <northLatitude>9.831361</northLatitude>
+        <southLatitude>5.916833</southLatitude>
+        <capital id="temp">
+            <name>Colombo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LR">
+        <name>Liberia</name>
+        <continent>Africa</continent>
+        <westLongitude>-11.492083</westLongitude>
+        <eastLongitude>-7.365113</eastLongitude>
+        <northLatitude>8.551791</northLatitude>
+        <southLatitude>4.353057</southLatitude>
+        <capital id="temp">
+            <name>Monrovia</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LS">
+        <name>Lesotho</name>
+        <continent>Africa</continent>
+        <westLongitude>27.029068</westLongitude>
+        <eastLongitude>29.465761</eastLongitude>
+        <northLatitude>-28.572058</northLatitude>
+        <southLatitude>-30.668964</southLatitude>
+        <capital id="temp">
+            <name>Maseru</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LT">
+        <name>Lithuania</name>
+        <continent>Europe</continent>
+        <westLongitude>20.941528</westLongitude>
+        <eastLongitude>26.871944</eastLongitude>
+        <northLatitude>56.446918</northLatitude>
+        <southLatitude>53.901306</southLatitude>
+        <capital id="temp">
+            <name>Vilnius</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LU">
+        <name>Luxembourg</name>
+        <continent>Europe</continent>
+        <westLongitude>5.734556</westLongitude>
+        <eastLongitude>6.528472</eastLongitude>
+        <northLatitude>50.184944</northLatitude>
+        <southLatitude>49.446583</southLatitude>
+        <capital id="temp">
+            <name>Luxembourg</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LV">
+        <name>Latvia</name>
+        <continent>Europe</continent>
+        <westLongitude>20.974277</westLongitude>
+        <eastLongitude>28.241167</eastLongitude>
+        <northLatitude>58.082306</northLatitude>
+        <southLatitude>55.668861</southLatitude>
+        <capital id="temp">
+            <name>Riga</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="LY">
+        <name>Libya</name>
+        <continent>Africa</continent>
+        <westLongitude>9.38702</westLongitude>
+        <eastLongitude>25.150612</eastLongitude>
+        <northLatitude>33.168999</northLatitude>
+        <southLatitude>19.508045</southLatitude>
+        <capital id="temp">
+            <name>Tripoli</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MA">
+        <name>Morocco</name>
+        <continent>Africa</continent>
+        <westLongitude>-13.168586</westLongitude>
+        <eastLongitude>-0.991750000000025</eastLongitude>
+        <northLatitude>35.9224966985384</northLatitude>
+        <southLatitude>27.662115</southLatitude>
+        <capital id="temp">
+            <name>Rabat</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MC">
+        <name>Monaco</name>
+        <continent>Europe</continent>
+        <westLongitude>7.408962249755859</westLongitude>
+        <eastLongitude>7.439939260482788</eastLongitude>
+        <northLatitude>43.75196717037228</northLatitude>
+        <southLatitude>43.72472839869377</southLatitude>
+        <capital id="temp">
+            <name>Monaco</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MD">
+        <name>Moldova</name>
+        <continent>Europe</continent>
+        <westLongitude>26.618944</westLongitude>
+        <eastLongitude>30.135445</eastLongitude>
+        <northLatitude>48.490166</northLatitude>
+        <southLatitude>45.468887</southLatitude>
+        <capital id="temp">
+            <name>Chișinău</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ME">
+        <name>Montenegro</name>
+        <continent>Europe</continent>
+        <westLongitude>18.461306</westLongitude>
+        <eastLongitude>20.358833</eastLongitude>
+        <northLatitude>43.570137</northLatitude>
+        <southLatitude>41.850166</southLatitude>
+        <capital id="temp">
+            <name>Podgorica</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MF">
+        <name>Saint Martin</name>
+        <continent>North America</continent>
+        <westLongitude>-63.152767</westLongitude>
+        <eastLongitude>-63.012993</eastLongitude>
+        <northLatitude>18.130354</northLatitude>
+        <southLatitude>18.052231</southLatitude>
+        <capital id="temp">
+            <name>Marigot</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MG">
+        <name>Madagascar</name>
+        <continent>Africa</continent>
+        <westLongitude>43.224876</westLongitude>
+        <eastLongitude>50.48378</eastLongitude>
+        <northLatitude>-11.945433</northLatitude>
+        <southLatitude>-25.608952</southLatitude>
+        <capital id="temp">
+            <name>Antananarivo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MH">
+        <name>Marshall Islands</name>
+        <continent>Oceania</continent>
+        <westLongitude>165.524918</westLongitude>
+        <eastLongitude>171.931808</eastLongitude>
+        <northLatitude>14.62</northLatitude>
+        <southLatitude>5.587639</southLatitude>
+        <capital id="temp">
+            <name>Majuro</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MK">
+        <name>Macedonia</name>
+        <continent>Europe</continent>
+        <westLongitude>20.464695</westLongitude>
+        <eastLongitude>23.038139</eastLongitude>
+        <northLatitude>42.361805</northLatitude>
+        <southLatitude>40.860195</southLatitude>
+        <capital id="temp">
+            <name>Skopje</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ML">
+        <name>Mali</name>
+        <continent>Africa</continent>
+        <westLongitude>-12.242614</westLongitude>
+        <eastLongitude>4.244968</eastLongitude>
+        <northLatitude>25.000002</northLatitude>
+        <southLatitude>10.159513</southLatitude>
+        <capital id="temp">
+            <name>Bamako</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MM">
+        <name>Burma</name>
+        <continent>Asia</continent>
+        <westLongitude>92.189278</westLongitude>
+        <eastLongitude>101.176781</eastLongitude>
+        <northLatitude>28.543249</northLatitude>
+        <southLatitude>9.784583</southLatitude>
+        <capital id="temp">
+            <name>Nay Pyi Taw</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MN">
+        <name>Mongolia</name>
+        <continent>Asia</continent>
+        <westLongitude>87.749664</westLongitude>
+        <eastLongitude>119.924309</eastLongitude>
+        <northLatitude>52.154251</northLatitude>
+        <southLatitude>41.567638</southLatitude>
+        <capital id="temp">
+            <name>Ulan Bator</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MO">
+        <name>Macao</name>
+        <continent>Asia</continent>
+        <westLongitude>113.528946</westLongitude>
+        <eastLongitude>113.565834</eastLongitude>
+        <northLatitude>22.222334</northLatitude>
+        <southLatitude>22.180389</southLatitude>
+        <capital id="temp">
+            <name>Macao</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MP">
+        <name>Northern Mariana Islands</name>
+        <continent>Oceania</continent>
+        <westLongitude>144.88626</westLongitude>
+        <eastLongitude>146.06528</eastLongitude>
+        <northLatitude>20.55344</northLatitude>
+        <southLatitude>14.11023</southLatitude>
+        <capital id="temp">
+            <name>Saipan</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MQ">
+        <name>Martinique</name>
+        <continent>North America</continent>
+        <westLongitude>-61.230118</westLongitude>
+        <eastLongitude>-60.81551</eastLongitude>
+        <northLatitude>14.878819</northLatitude>
+        <southLatitude>14.392262</southLatitude>
+        <capital id="temp">
+            <name>Fort-de-France</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MR">
+        <name>Mauritania</name>
+        <continent>Africa</continent>
+        <westLongitude>-17.066521</westLongitude>
+        <eastLongitude>-4.827674</eastLongitude>
+        <northLatitude>27.298073</northLatitude>
+        <southLatitude>14.715547</southLatitude>
+        <capital id="temp">
+            <name>Nouakchott</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MS">
+        <name>Montserrat</name>
+        <continent>North America</continent>
+        <westLongitude>-62.24138237036129</westLongitude>
+        <eastLongitude>-62.144100129608205</eastLongitude>
+        <northLatitude>16.824060205313184</northLatitude>
+        <southLatitude>16.674768935441556</southLatitude>
+        <capital id="temp">
+            <name>Plymouth</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MT">
+        <name>Malta</name>
+        <continent>Europe</continent>
+        <westLongitude>14.1834251000001</westLongitude>
+        <eastLongitude>14.5764915000002</eastLongitude>
+        <northLatitude>36.0821530995456</northLatitude>
+        <southLatitude>35.8061835000002</southLatitude>
+        <capital id="temp">
+            <name>Valletta</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MU">
+        <name>Mauritius</name>
+        <continent>Africa</continent>
+        <westLongitude>56.512718</westLongitude>
+        <eastLongitude>63.500179</eastLongitude>
+        <northLatitude>-10.319255</northLatitude>
+        <southLatitude>-20.525717</southLatitude>
+        <capital id="temp">
+            <name>Port Louis</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MV">
+        <name>Maldives</name>
+        <continent>Asia</continent>
+        <westLongitude>72.693222</westLongitude>
+        <eastLongitude>73.637276</eastLongitude>
+        <northLatitude>7.091587495414767</northLatitude>
+        <southLatitude>-0.692694</southLatitude>
+        <capital id="temp">
+            <name>Malé</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MW">
+        <name>Malawi</name>
+        <continent>Africa</continent>
+        <westLongitude>32.67395</westLongitude>
+        <eastLongitude>35.916821</eastLongitude>
+        <northLatitude>-9.367541</northLatitude>
+        <southLatitude>-17.125</southLatitude>
+        <capital id="temp">
+            <name>Lilongwe</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MX">
+        <name>Mexico</name>
+        <continent>North America</continent>
+        <westLongitude>-118.453949</westLongitude>
+        <eastLongitude>-86.703392</eastLongitude>
+        <northLatitude>32.716759</northLatitude>
+        <southLatitude>14.532866</southLatitude>
+        <capital id="temp">
+            <name>Mexico City</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MY">
+        <name>Malaysia</name>
+        <continent>Asia</continent>
+        <westLongitude>99.643448</westLongitude>
+        <eastLongitude>119.267502</eastLongitude>
+        <northLatitude>7.363417</northLatitude>
+        <southLatitude>0.855222</southLatitude>
+        <capital id="temp">
+            <name>Kuala Lumpur</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="MZ">
+        <name>Mozambique</name>
+        <continent>Africa</continent>
+        <westLongitude>30.217319</westLongitude>
+        <eastLongitude>40.842995</eastLongitude>
+        <northLatitude>-10.471883</northLatitude>
+        <southLatitude>-26.868685</southLatitude>
+        <capital id="temp">
+            <name>Maputo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NA">
+        <name>Namibia</name>
+        <continent>Africa</continent>
+        <westLongitude>11.71563</westLongitude>
+        <eastLongitude>25.256701</eastLongitude>
+        <northLatitude>-16.959894</northLatitude>
+        <southLatitude>-28.97143</southLatitude>
+        <capital id="temp">
+            <name>Windhoek</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NC">
+        <name>New Caledonia</name>
+        <continent>Oceania</continent>
+        <westLongitude>163.564667</westLongitude>
+        <eastLongitude>168.129135</eastLongitude>
+        <northLatitude>-19.549778</northLatitude>
+        <southLatitude>-22.698</southLatitude>
+        <capital id="temp">
+            <name>Noumea</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NE">
+        <name>Niger</name>
+        <continent>Africa</continent>
+        <westLongitude>0.16625</westLongitude>
+        <eastLongitude>15.995643</eastLongitude>
+        <northLatitude>23.525026</northLatitude>
+        <southLatitude>11.696975</southLatitude>
+        <capital id="temp">
+            <name>Niamey</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NF">
+        <name>Norfolk Island</name>
+        <continent>Oceania</continent>
+        <westLongitude>167.91543230151365</westLongitude>
+        <eastLongitude>167.99773740209957</eastLongitude>
+        <northLatitude>-28.995170686948427</northLatitude>
+        <southLatitude>-29.063076742954735</southLatitude>
+        <capital id="temp">
+            <name>Kingston</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NG">
+        <name>Nigeria</name>
+        <continent>Africa</continent>
+        <westLongitude>2.668432</westLongitude>
+        <eastLongitude>14.680073</eastLongitude>
+        <northLatitude>13.892007</northLatitude>
+        <southLatitude>4.277144</southLatitude>
+        <capital id="temp">
+            <name>Abuja</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NI">
+        <name>Nicaragua</name>
+        <continent>North America</continent>
+        <westLongitude>-87.690308</westLongitude>
+        <eastLongitude>-82.738289</eastLongitude>
+        <northLatitude>15.025909</northLatitude>
+        <southLatitude>10.707543</southLatitude>
+        <capital id="temp">
+            <name>Managua</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NL">
+        <name>Netherlands</name>
+        <continent>Europe</continent>
+        <westLongitude>3.362556</westLongitude>
+        <eastLongitude>7.227944</eastLongitude>
+        <northLatitude>53.512196</northLatitude>
+        <southLatitude>50.753918</southLatitude>
+        <capital id="temp">
+            <name>Amsterdam</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NO">
+        <name>Norway</name>
+        <continent>Europe</continent>
+        <westLongitude>4.650167</westLongitude>
+        <eastLongitude>31.078052520751953</eastLongitude>
+        <northLatitude>71.18811</northLatitude>
+        <southLatitude>57.977917</southLatitude>
+        <capital id="temp">
+            <name>Oslo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NP">
+        <name>Nepal</name>
+        <continent>Asia</continent>
+        <westLongitude>80.056274</westLongitude>
+        <eastLongitude>88.199333</eastLongitude>
+        <northLatitude>30.43339</northLatitude>
+        <southLatitude>26.356722</southLatitude>
+        <capital id="temp">
+            <name>Kathmandu</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NR">
+        <name>Nauru</name>
+        <continent>Oceania</continent>
+        <westLongitude>166.899033</westLongitude>
+        <eastLongitude>166.945282</eastLongitude>
+        <northLatitude>-0.504306</northLatitude>
+        <southLatitude>-0.552333</southLatitude>
+        <capital id="temp">
+            <name>Yaren</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NU">
+        <name>Niue</name>
+        <continent>Oceania</continent>
+        <westLongitude>-169.951004</westLongitude>
+        <eastLongitude>-169.775177</eastLongitude>
+        <northLatitude>-18.951069</northLatitude>
+        <southLatitude>-19.152193</southLatitude>
+        <capital id="temp">
+            <name>Alofi</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="NZ">
+        <name>New Zealand</name>
+        <continent>Oceania</continent>
+        <westLongitude>166.7155</westLongitude>
+        <eastLongitude>-180</eastLongitude>
+        <northLatitude>-34.389668</northLatitude>
+        <southLatitude>-47.286026</southLatitude>
+        <capital id="temp">
+            <name>Wellington</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="OM">
+        <name>Oman</name>
+        <continent>Asia</continent>
+        <westLongitude>51.882</westLongitude>
+        <eastLongitude>59.836582</eastLongitude>
+        <northLatitude>26.387972</northLatitude>
+        <southLatitude>16.64575</southLatitude>
+        <capital id="temp">
+            <name>Muscat</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PA">
+        <name>Panama</name>
+        <continent>North America</continent>
+        <westLongitude>-83.051445</westLongitude>
+        <eastLongitude>-77.17411</eastLongitude>
+        <northLatitude>9.637514</northLatitude>
+        <southLatitude>7.197906</southLatitude>
+        <capital id="temp">
+            <name>Panama City</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PE">
+        <name>Peru</name>
+        <continent>South America</continent>
+        <westLongitude>-81.326744</westLongitude>
+        <eastLongitude>-68.677986</eastLongitude>
+        <northLatitude>-0.012977</northLatitude>
+        <southLatitude>-18.349728</southLatitude>
+        <capital id="temp">
+            <name>Lima</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PF">
+        <name>French Polynesia</name>
+        <continent>Oceania</continent>
+        <westLongitude>-152.877167</westLongitude>
+        <eastLongitude>-134.929825</eastLongitude>
+        <northLatitude>-7.903573</northLatitude>
+        <southLatitude>-27.653572</southLatitude>
+        <capital id="temp">
+            <name>Papeete</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PG">
+        <name>Papua New Guinea</name>
+        <continent>Oceania</continent>
+        <westLongitude>140.842865</westLongitude>
+        <eastLongitude>155.96344</eastLongitude>
+        <northLatitude>-1.318639</northLatitude>
+        <southLatitude>-11.657861</southLatitude>
+        <capital id="temp">
+            <name>Port Moresby</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PH">
+        <name>Philippines</name>
+        <continent>Asia</continent>
+        <westLongitude>116.931557</westLongitude>
+        <eastLongitude>126.601524</eastLongitude>
+        <northLatitude>21.120611</northLatitude>
+        <southLatitude>4.643306</southLatitude>
+        <capital id="temp">
+            <name>Manila</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PK">
+        <name>Pakistan</name>
+        <continent>Asia</continent>
+        <westLongitude>60.878613</westLongitude>
+        <eastLongitude>77.840919</eastLongitude>
+        <northLatitude>37.097</northLatitude>
+        <southLatitude>23.786722</southLatitude>
+        <capital id="temp">
+            <name>Islamabad</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PL">
+        <name>Poland</name>
+        <continent>Europe</continent>
+        <westLongitude>14.123</westLongitude>
+        <eastLongitude>24.150749</eastLongitude>
+        <northLatitude>54.839138</northLatitude>
+        <southLatitude>49.006363</southLatitude>
+        <capital id="temp">
+            <name>Warsaw</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PM">
+        <name>Saint Pierre and Miquelon</name>
+        <continent>North America</continent>
+        <westLongitude>-56.420658</westLongitude>
+        <eastLongitude>-56.252991</eastLongitude>
+        <northLatitude>47.146286</northLatitude>
+        <southLatitude>46.786041</southLatitude>
+        <capital id="temp">
+            <name>Saint-Pierre</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PN">
+        <name>Pitcairn Islands</name>
+        <continent>Oceania</continent>
+        <westLongitude>-128.346436</westLongitude>
+        <eastLongitude>-124.77285</eastLongitude>
+        <northLatitude>-24.315865</northLatitude>
+        <southLatitude>-24.672565</southLatitude>
+        <capital id="temp">
+            <name>Adamstown</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PR">
+        <name>Puerto Rico</name>
+        <continent>North America</continent>
+        <westLongitude>-67.942726</westLongitude>
+        <eastLongitude>-65.242737</eastLongitude>
+        <northLatitude>18.520166</northLatitude>
+        <southLatitude>17.926405</southLatitude>
+        <capital id="temp">
+            <name>San Juan</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PS">
+        <name>Palestine</name>
+        <continent>Asia</continent>
+        <westLongitude>34.21665954589844</westLongitude>
+        <eastLongitude>35.5732955932617</eastLongitude>
+        <northLatitude>32.54638671875</northLatitude>
+        <southLatitude>31.216541290283203</southLatitude>
+        <capital id="temp">
+            <name>Ramallah</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PT">
+        <name>Portugal</name>
+        <continent>Europe</continent>
+        <westLongitude>-9.50052660716588</westLongitude>
+        <eastLongitude>-6.18915930748288</eastLongitude>
+        <northLatitude>42.154311127408</northLatitude>
+        <southLatitude>36.96125</southLatitude>
+        <capital id="temp">
+            <name>Lisbon</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PW">
+        <name>Palau</name>
+        <continent>Oceania</continent>
+        <westLongitude>131.11788</westLongitude>
+        <eastLongitude>134.72307</eastLongitude>
+        <northLatitude>8.46966</northLatitude>
+        <southLatitude>2.8036</southLatitude>
+        <capital id="temp">
+            <name>Melekeok - Palau State Capital</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="PY">
+        <name>Paraguay</name>
+        <continent>South America</continent>
+        <westLongitude>-62.647076</westLongitude>
+        <eastLongitude>-54.259354</eastLongitude>
+        <northLatitude>-19.294041</northLatitude>
+        <southLatitude>-27.608738</southLatitude>
+        <capital id="temp">
+            <name>Asunción</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="QA">
+        <name>Qatar</name>
+        <continent>Asia</continent>
+        <westLongitude>50.757221</westLongitude>
+        <eastLongitude>51.636639</eastLongitude>
+        <northLatitude>26.154722</northLatitude>
+        <southLatitude>24.482944</southLatitude>
+        <capital id="temp">
+            <name>Doha</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="RE">
+        <name>Réunion</name>
+        <continent>Africa</continent>
+        <westLongitude>55.21219224792685</westLongitude>
+        <eastLongitude>55.838193901930026</eastLongitude>
+        <northLatitude>-20.868391324576944</northLatitude>
+        <southLatitude>-21.383747301469107</southLatitude>
+        <capital id="temp">
+            <name>Saint-Denis</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="RO">
+        <name>Romania</name>
+        <continent>Europe</continent>
+        <westLongitude>20.269972</westLongitude>
+        <eastLongitude>29.691055</eastLongitude>
+        <northLatitude>48.266945</northLatitude>
+        <southLatitude>43.627304</southLatitude>
+        <capital id="temp">
+            <name>Bucharest</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="RS">
+        <name>Serbia</name>
+        <continent>Europe</continent>
+        <westLongitude>18.817020416259766</westLongitude>
+        <eastLongitude>23.00499725341797</eastLongitude>
+        <northLatitude>46.18138885498047</northLatitude>
+        <southLatitude>42.232215881347656</southLatitude>
+        <capital id="temp">
+            <name>Belgrade</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="RU">
+        <name>Russia</name>
+        <continent>Europe</continent>
+        <westLongitude>19.25</westLongitude>
+        <eastLongitude>-169.05</eastLongitude>
+        <northLatitude>81.857361</northLatitude>
+        <southLatitude>41.188862</southLatitude>
+        <capital id="temp">
+            <name>Moscow</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="RW">
+        <name>Rwanda</name>
+        <continent>Africa</continent>
+        <westLongitude>28.856794</westLongitude>
+        <eastLongitude>30.895958</eastLongitude>
+        <northLatitude>-1.053481</northLatitude>
+        <southLatitude>-2.840679</southLatitude>
+        <capital id="temp">
+            <name>Kigali</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SA">
+        <name>Saudi Arabia</name>
+        <continent>Asia</continent>
+        <westLongitude>34.495693</westLongitude>
+        <eastLongitude>55.666584</eastLongitude>
+        <northLatitude>32.158333</northLatitude>
+        <southLatitude>15.61425</southLatitude>
+        <capital id="temp">
+            <name>Riyadh</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SB">
+        <name>Solomon Islands</name>
+        <continent>Oceania</continent>
+        <westLongitude>155.508606</westLongitude>
+        <eastLongitude>166.980865</eastLongitude>
+        <northLatitude>-6.589611</northLatitude>
+        <southLatitude>-11.850555</southLatitude>
+        <capital id="temp">
+            <name>Honiara</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SC">
+        <name>Seychelles</name>
+        <continent>Africa</continent>
+        <westLongitude>46.204769</westLongitude>
+        <eastLongitude>56.29770287937299</eastLongitude>
+        <northLatitude>-4.283717</northLatitude>
+        <southLatitude>-9.753867</southLatitude>
+        <capital id="temp">
+            <name>Victoria</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SD">
+        <name>Sudan</name>
+        <continent>Africa</continent>
+        <westLongitude>21.827774047851562</westLongitude>
+        <eastLongitude>38.60749816894531</eastLongitude>
+        <northLatitude>22.232219696044922</northLatitude>
+        <southLatitude>8.684720993041992</southLatitude>
+        <capital id="temp">
+            <name>Khartoum</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SE">
+        <name>Sweden</name>
+        <continent>Europe</continent>
+        <westLongitude>11.118694</westLongitude>
+        <eastLongitude>24.1562924839185</eastLongitude>
+        <northLatitude>69.0625</northLatitude>
+        <southLatitude>55.337112</southLatitude>
+        <capital id="temp">
+            <name>Stockholm</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SG">
+        <name>Singapore</name>
+        <continent>Asia</continent>
+        <westLongitude>103.638275</westLongitude>
+        <eastLongitude>104.007469</eastLongitude>
+        <northLatitude>1.471278</northLatitude>
+        <southLatitude>1.258556</southLatitude>
+        <capital id="temp">
+            <name>Singapore</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SH">
+        <name>Saint Helena</name>
+        <continent>Africa</continent>
+        <westLongitude>-14.42123</westLongitude>
+        <eastLongitude>-5.638753</eastLongitude>
+        <northLatitude>-7.887815</northLatitude>
+        <southLatitude>-16.019543</southLatitude>
+        <capital id="temp">
+            <name>Jamestown</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SI">
+        <name>Slovenia</name>
+        <continent>Europe</continent>
+        <westLongitude>13.3753342064709</westLongitude>
+        <eastLongitude>16.6106311807</eastLongitude>
+        <northLatitude>46.8766275518195</northLatitude>
+        <southLatitude>45.421812998164</southLatitude>
+        <capital id="temp">
+            <name>Ljubljana</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SJ">
+        <name>Svalbard and Jan Mayen</name>
+        <continent>Europe</continent>
+        <westLongitude>17.699389</westLongitude>
+        <eastLongitude>33.287334</eastLongitude>
+        <northLatitude>80.762085</northLatitude>
+        <southLatitude>79.220306</southLatitude>
+        <capital id="temp">
+            <name>Longyearbyen</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SK">
+        <name>Slovakia</name>
+        <continent>Europe</continent>
+        <westLongitude>16.84775</westLongitude>
+        <eastLongitude>22.570444</eastLongitude>
+        <northLatitude>49.603168</northLatitude>
+        <southLatitude>47.728111</southLatitude>
+        <capital id="temp">
+            <name>Bratislava</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SL">
+        <name>Sierra Leone</name>
+        <continent>Africa</continent>
+        <westLongitude>-13.307631</westLongitude>
+        <eastLongitude>-10.284238</eastLongitude>
+        <northLatitude>10</northLatitude>
+        <southLatitude>6.929611</southLatitude>
+        <capital id="temp">
+            <name>Freetown</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SM">
+        <name>San Marino</name>
+        <continent>Europe</continent>
+        <westLongitude>12.403538978820734</westLongitude>
+        <eastLongitude>12.51653186779788</eastLongitude>
+        <northLatitude>43.99223730851663</northLatitude>
+        <southLatitude>43.8937092171425</southLatitude>
+        <capital id="temp">
+            <name>San Marino</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SN">
+        <name>Senegal</name>
+        <continent>Africa</continent>
+        <westLongitude>-17.535236</westLongitude>
+        <eastLongitude>-11.355887</eastLongitude>
+        <northLatitude>16.691633</northLatitude>
+        <southLatitude>12.307275</southLatitude>
+        <capital id="temp">
+            <name>Dakar</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SO">
+        <name>Somalia</name>
+        <continent>Africa</continent>
+        <westLongitude>40.986595</westLongitude>
+        <eastLongitude>51.412636</eastLongitude>
+        <northLatitude>11.979166</northLatitude>
+        <southLatitude>-1.674868</southLatitude>
+        <capital id="temp">
+            <name>Mogadishu</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SR">
+        <name>Suriname</name>
+        <continent>South America</continent>
+        <westLongitude>-58.086563</westLongitude>
+        <eastLongitude>-53.977493</eastLongitude>
+        <northLatitude>6.004546</northLatitude>
+        <southLatitude>1.831145</southLatitude>
+        <capital id="temp">
+            <name>Paramaribo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SS">
+        <name>South Sudan</name>
+        <continent>Africa</continent>
+        <westLongitude>24.140274047851562</westLongitude>
+        <eastLongitude>35.9405517578125</eastLongitude>
+        <northLatitude>12.219148635864258</northLatitude>
+        <southLatitude>3.493394374847412</southLatitude>
+        <capital id="temp">
+            <name>Juba</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ST">
+        <name>São Tomé and Príncipe</name>
+        <continent>Africa</continent>
+        <westLongitude>6.47017</westLongitude>
+        <eastLongitude>7.466374</eastLongitude>
+        <northLatitude>1.701323</northLatitude>
+        <southLatitude>0.024766</southLatitude>
+        <capital id="temp">
+            <name>São Tomé</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SV">
+        <name>El Salvador</name>
+        <continent>North America</continent>
+        <westLongitude>-90.128662</westLongitude>
+        <eastLongitude>-87.692162</eastLongitude>
+        <northLatitude>14.445067</northLatitude>
+        <southLatitude>13.148679</southLatitude>
+        <capital id="temp">
+            <name>San Salvador</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SX">
+        <name>Sint Maarten</name>
+        <continent>North America</continent>
+        <westLongitude>-63.144039</westLongitude>
+        <eastLongitude>-63.012993</eastLongitude>
+        <northLatitude>18.070248</northLatitude>
+        <southLatitude>18.011692</southLatitude>
+        <capital id="temp">
+            <name>Philipsburg</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SY">
+        <name>Syria</name>
+        <continent>Asia</continent>
+        <westLongitude>35.727222</westLongitude>
+        <eastLongitude>42.385029</eastLongitude>
+        <northLatitude>37.319138</northLatitude>
+        <southLatitude>32.310665</southLatitude>
+        <capital id="temp">
+            <name>Damascus</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="SZ">
+        <name>Swaziland</name>
+        <continent>Africa</continent>
+        <westLongitude>30.794107</westLongitude>
+        <eastLongitude>32.13726</eastLongitude>
+        <northLatitude>-25.719648</northLatitude>
+        <southLatitude>-27.317101</southLatitude>
+        <capital id="temp">
+            <name>Mbabane</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TC">
+        <name>Turks and Caicos Islands</name>
+        <continent>North America</continent>
+        <westLongitude>-72.483871</westLongitude>
+        <eastLongitude>-71.123642</eastLongitude>
+        <northLatitude>21.961878</northLatitude>
+        <southLatitude>21.422626</southLatitude>
+        <capital id="temp">
+            <name>Cockburn Town</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TD">
+        <name>Chad</name>
+        <continent>Africa</continent>
+        <westLongitude>13.473475</westLongitude>
+        <eastLongitude>24.002661</eastLongitude>
+        <northLatitude>23.450369</northLatitude>
+        <southLatitude>7.441068</southLatitude>
+        <capital id="temp">
+            <name>N'Djamena</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TF">
+        <name>French Southern Territories</name>
+        <continent>Antarctica</continent>
+        <westLongitude>50.170258</westLongitude>
+        <eastLongitude>77.598808</eastLongitude>
+        <northLatitude>-37.790722</northLatitude>
+        <southLatitude>-49.735184</southLatitude>
+        <capital id="temp">
+            <name>Port-aux-Français</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TG">
+        <name>Togo</name>
+        <continent>Africa</continent>
+        <westLongitude>-0.147324</westLongitude>
+        <eastLongitude>1.806693</eastLongitude>
+        <northLatitude>11.138977</northLatitude>
+        <southLatitude>6.104417</southLatitude>
+        <capital id="temp">
+            <name>Lomé</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TH">
+        <name>Thailand</name>
+        <continent>Asia</continent>
+        <westLongitude>97.345642</westLongitude>
+        <eastLongitude>105.639389</eastLongitude>
+        <northLatitude>20.463194</northLatitude>
+        <southLatitude>5.61</southLatitude>
+        <capital id="temp">
+            <name>Bangkok</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TJ">
+        <name>Tajikistan</name>
+        <continent>Asia</continent>
+        <westLongitude>67.387138</westLongitude>
+        <eastLongitude>75.137222</eastLongitude>
+        <northLatitude>41.042252</northLatitude>
+        <southLatitude>36.674137</southLatitude>
+        <capital id="temp">
+            <name>Dushanbe</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TK">
+        <name>Tokelau</name>
+        <continent>Oceania</continent>
+        <westLongitude>-172.50033569335938</westLongitude>
+        <eastLongitude>-171.21142578125</eastLongitude>
+        <northLatitude>-8.553613662719727</northLatitude>
+        <southLatitude>-9.381111145019531</southLatitude>
+        <capital id="temp">
+            <name>Fakaofo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TL">
+        <name>East Timor</name>
+        <continent>Oceania</continent>
+        <westLongitude>124.04609680175781</westLongitude>
+        <eastLongitude>127.30859375</eastLongitude>
+        <northLatitude>-8.135833740234375</northLatitude>
+        <southLatitude>-9.463626861572266</southLatitude>
+        <capital id="temp">
+            <name>Dili</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TM">
+        <name>Turkmenistan</name>
+        <continent>Asia</continent>
+        <westLongitude>52.441444</westLongitude>
+        <eastLongitude>66.684303</eastLongitude>
+        <northLatitude>42.795555</northLatitude>
+        <southLatitude>35.141083</southLatitude>
+        <capital id="temp">
+            <name>Ashgabat</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TN">
+        <name>Tunisia</name>
+        <continent>Africa</continent>
+        <westLongitude>7.524833</westLongitude>
+        <eastLongitude>11.598278</eastLongitude>
+        <northLatitude>37.543915</northLatitude>
+        <southLatitude>30.240417</southLatitude>
+        <capital id="temp">
+            <name>Tunis</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TO">
+        <name>Tonga</name>
+        <continent>Oceania</continent>
+        <westLongitude>-175.682266</westLongitude>
+        <eastLongitude>-173.907578</eastLongitude>
+        <northLatitude>-15.562988</northLatitude>
+        <southLatitude>-21.455057</southLatitude>
+        <capital id="temp">
+            <name>Nuku'alofa</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TR">
+        <name>Turkey</name>
+        <continent>Asia</continent>
+        <westLongitude>25.668501</westLongitude>
+        <eastLongitude>44.834999</eastLongitude>
+        <northLatitude>42.107613</northLatitude>
+        <southLatitude>35.815418</southLatitude>
+        <capital id="temp">
+            <name>Ankara</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TT">
+        <name>Trinidad and Tobago</name>
+        <continent>North America</continent>
+        <westLongitude>-61.923771</westLongitude>
+        <eastLongitude>-60.517933</eastLongitude>
+        <northLatitude>11.338342</northLatitude>
+        <southLatitude>10.036105</southLatitude>
+        <capital id="temp">
+            <name>Port of Spain</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TV">
+        <name>Tuvalu</name>
+        <continent>Oceania</continent>
+        <westLongitude>176.064865</westLongitude>
+        <eastLongitude>179.863281</eastLongitude>
+        <northLatitude>-5.641972</northLatitude>
+        <southLatitude>-10.801169</southLatitude>
+        <capital id="temp">
+            <name>Funafuti</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TW">
+        <name>Taiwan</name>
+        <continent>Asia</continent>
+        <westLongitude>119.534691</westLongitude>
+        <eastLongitude>122.006739823315</eastLongitude>
+        <northLatitude>25.3002899036181</northLatitude>
+        <southLatitude>21.896606934717</southLatitude>
+        <capital id="temp">
+            <name>Taipei</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="TZ">
+        <name>Tanzania</name>
+        <continent>Africa</continent>
+        <westLongitude>29.327168</westLongitude>
+        <eastLongitude>40.443222</eastLongitude>
+        <northLatitude>-0.990736</northLatitude>
+        <southLatitude>-11.745696</southLatitude>
+        <capital id="temp">
+            <name>Dodoma</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="UA">
+        <name>Ukraine</name>
+        <continent>Europe</continent>
+        <westLongitude>22.128889</westLongitude>
+        <eastLongitude>40.20739</eastLongitude>
+        <northLatitude>52.369362</northLatitude>
+        <southLatitude>44.390415</southLatitude>
+        <capital id="temp">
+            <name>Kyiv</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="UG">
+        <name>Uganda</name>
+        <continent>Africa</continent>
+        <westLongitude>29.573252</westLongitude>
+        <eastLongitude>35.036049</eastLongitude>
+        <northLatitude>4.214427</northLatitude>
+        <southLatitude>-1.48405</southLatitude>
+        <capital id="temp">
+            <name>Kampala</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="UM">
+        <name>U.S. Minor Outlying Islands</name>
+        <continent>Oceania</continent>
+        <westLongitude>-177.392029</westLongitude>
+        <eastLongitude>166.654526</eastLongitude>
+        <northLatitude>28.219814</northLatitude>
+        <southLatitude>-0.389006</southLatitude>
+        <capital id="temp">
+            <name>Wake Island</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="US">
+        <name>United States</name>
+        <continent>North America</continent>
+        <westLongitude>-124.733253</westLongitude>
+        <eastLongitude>-66.954811</eastLongitude>
+        <northLatitude>49.388611</northLatitude>
+        <southLatitude>24.544245</southLatitude>
+        <capital id="temp">
+            <name>Washington, D.C.</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="UY">
+        <name>Uruguay</name>
+        <continent>South America</continent>
+        <westLongitude>-58.442722</westLongitude>
+        <eastLongitude>-53.073933</eastLongitude>
+        <northLatitude>-30.082224</northLatitude>
+        <southLatitude>-34.980816</southLatitude>
+        <capital id="temp">
+            <name>Montevideo</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="UZ">
+        <name>Uzbekistan</name>
+        <continent>Asia</continent>
+        <westLongitude>55.996639</westLongitude>
+        <eastLongitude>73.132278</eastLongitude>
+        <northLatitude>45.575001</northLatitude>
+        <southLatitude>37.184444</southLatitude>
+        <capital id="temp">
+            <name>Tashkent</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="VA">
+        <name>Vatican City</name>
+        <continent>Europe</continent>
+        <westLongitude>12.44570678169205</westLongitude>
+        <eastLongitude>12.45837546629481</eastLongitude>
+        <northLatitude>41.90743830885576</northLatitude>
+        <southLatitude>41.90027960306854</southLatitude>
+        <capital id="temp">
+            <name>Vatican City</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="VC">
+        <name>Saint Vincent and the Grenadines</name>
+        <continent>North America</continent>
+        <westLongitude>-61.46090317727658</westLongitude>
+        <eastLongitude>-61.11388</eastLongitude>
+        <northLatitude>13.377834</northLatitude>
+        <southLatitude>12.583984810969037</southLatitude>
+        <capital id="temp">
+            <name>Kingstown</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="VE">
+        <name>Venezuela</name>
+        <continent>South America</continent>
+        <westLongitude>-73.354073</westLongitude>
+        <eastLongitude>-59.80378</eastLongitude>
+        <northLatitude>12.201903</northLatitude>
+        <southLatitude>0.626311</southLatitude>
+        <capital id="temp">
+            <name>Caracas</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="VG">
+        <name>British Virgin Islands</name>
+        <continent>North America</continent>
+        <westLongitude>-64.71312752730364</westLongitude>
+        <eastLongitude>-64.268768</eastLongitude>
+        <northLatitude>18.757221</northLatitude>
+        <southLatitude>18.383710898211305</southLatitude>
+        <capital id="temp">
+            <name>Road Town</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="VI">
+        <name>U.S. Virgin Islands</name>
+        <continent>North America</continent>
+        <westLongitude>-65.101333</westLongitude>
+        <eastLongitude>-64.565193</eastLongitude>
+        <northLatitude>18.415382</northLatitude>
+        <southLatitude>17.673931</southLatitude>
+        <capital id="temp">
+            <name>Charlotte Amalie</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="VN">
+        <name>Vietnam</name>
+        <continent>Asia</continent>
+        <westLongitude>102.148224</westLongitude>
+        <eastLongitude>109.464638</eastLongitude>
+        <northLatitude>23.388834</northLatitude>
+        <southLatitude>8.559611</southLatitude>
+        <capital id="temp">
+            <name>Hanoi</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="VU">
+        <name>Vanuatu</name>
+        <continent>Oceania</continent>
+        <westLongitude>166.524979</westLongitude>
+        <eastLongitude>169.904785</eastLongitude>
+        <northLatitude>-13.073444</northLatitude>
+        <southLatitude>-20.248945</southLatitude>
+        <capital id="temp">
+            <name>Port Vila</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="WF">
+        <name>Wallis and Futuna</name>
+        <continent>Oceania</continent>
+        <westLongitude>-178.1848112896414</westLongitude>
+        <eastLongitude>-176.16174317718253</eastLongitude>
+        <northLatitude>-13.216758181061444</northLatitude>
+        <southLatitude>-14.314559989820843</southLatitude>
+        <capital id="temp">
+            <name>Mata-Utu</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="WS">
+        <name>Samoa</name>
+        <continent>Oceania</continent>
+        <westLongitude>-172.798599</westLongitude>
+        <eastLongitude>-171.415741</eastLongitude>
+        <northLatitude>-13.432207</northLatitude>
+        <southLatitude>-14.040939</southLatitude>
+        <capital id="temp">
+            <name>Apia</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="XK">
+        <name>Kosovo</name>
+        <continent>Europe</continent>
+        <westLongitude>19.977481504492914</westLongitude>
+        <eastLongitude>21.80335088694943</eastLongitude>
+        <northLatitude>43.2682495807952</northLatitude>
+        <southLatitude>41.856369601859925</southLatitude>
+        <capital id="temp">
+            <name>Pristina</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="YE">
+        <name>Yemen</name>
+        <continent>Asia</continent>
+        <westLongitude>42.5325394314234</westLongitude>
+        <eastLongitude>54.5305388163283</eastLongitude>
+        <northLatitude>18.9999989031009</northLatitude>
+        <southLatitude>12.1110910264462</southLatitude>
+        <capital id="temp">
+            <name>Sanaa</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="YT">
+        <name>Mayotte</name>
+        <continent>Africa</continent>
+        <westLongitude>45.03796</westLongitude>
+        <eastLongitude>45.29295</eastLongitude>
+        <northLatitude>-12.648891</northLatitude>
+        <southLatitude>-13.000132</southLatitude>
+        <capital id="temp">
+            <name>Mamoutzou</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ZA">
+        <name>South Africa</name>
+        <continent>Africa</continent>
+        <westLongitude>16.458021</westLongitude>
+        <eastLongitude>32.895973</eastLongitude>
+        <northLatitude>-22.126612</northLatitude>
+        <southLatitude>-34.839828</southLatitude>
+        <capital id="temp">
+            <name>Pretoria</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ZM">
+        <name>Zambia</name>
+        <continent>Africa</continent>
+        <westLongitude>21.999371</westLongitude>
+        <eastLongitude>33.705704</eastLongitude>
+        <northLatitude>-8.22436</northLatitude>
+        <southLatitude>-18.079473</southLatitude>
+        <capital id="temp">
+            <name>Lusaka</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
+    <country id="ZW">
+        <name>Zimbabwe</name>
+        <continent>Africa</continent>
+        <westLongitude>25.237028</westLongitude>
+        <eastLongitude>33.056305</eastLongitude>
+        <northLatitude>-15.608835</northLatitude>
+        <southLatitude>-22.417738</southLatitude>
+        <capital id="temp">
+            <name>Harare</name>
+            <longitude></longitude>
+            <latitude></latitude>
+        </capital>
+    </country>
 </countries>

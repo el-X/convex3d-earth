@@ -65,8 +65,8 @@
             </h3>
             <ul>
                 <xsl:for-each select="/countries/country">
-                    <xsl:sort select="@countryName"/>
-                    <xsl:variable name="country" select="@countryName"/>
+                    <xsl:sort select="name"/>
+                    <xsl:variable name="country" select="name"/>
                     <xsl:if test="starts-with(substring($country, 1, 2), $letter)">
                         <li>
                             <b>
@@ -82,21 +82,21 @@
                             </b>
                             <xsl:value-of select="concat($space, $hyphen, $space)"/>
                             <xsl:choose>
-                                <xsl:when test="@capital != ''">
+                                <xsl:when test="capital/name != ''">
                                     <xsl:element name="a">
                                         <xsl:attribute name="href">
                                             <!-- See wikiEventHandler.js -->
-                                            javascript:Wiki.showPage("<xsl:value-of select="concat(@capital, $comma, $space, $country)"/>");
+                                            javascript:Wiki.showPage("<xsl:value-of select="concat(capital/name, $comma, $space, $country)"/>");
                                         </xsl:attribute>
                                         <font color="white">
-                                            <xsl:value-of select="@capital"/>
+                                            <xsl:value-of select="capital/name"/>
                                         </font>
                                     </xsl:element>
                                 </xsl:when>
                                 <xsl:otherwise>N/A</xsl:otherwise>
                             </xsl:choose>
                             (<i>
-                                <xsl:value-of select="@continentName"/>
+                                <xsl:value-of select="continent"/>
                             </i>)
                         </li>
                     </xsl:if>

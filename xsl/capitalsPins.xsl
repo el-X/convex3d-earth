@@ -63,27 +63,26 @@
 
         <!-- Generate pin for each country capital -->
         <xsl:for-each select="/countries/country">
-
-            <xsl:variable name="capitalLongitude" select="number(@longitude)"/>
-            <xsl:variable name="capitalLatitude" select="number(@latitude)"/>
+            <xsl:variable name="capitalLongitude" select="number(capital/longitude)"/>
+            <xsl:variable name="capitalLatitude" select="number(capital/latitude)"/>
 
             <xsl:if test="string($capitalLongitude)!='NaN' and string($capitalLatitude)!='NaN'">
 
                 <xsl:variable name="longitudeAngle">
-                    <xsl:value-of select="(capitalLongitude * $PI) div 180.0"/>
+                    <xsl:value-of select="($capitalLongitude * $PI) div 180.0"/>
                 </xsl:variable>
                 <xsl:variable name="latitudeAngle">
-                    <xsl:value-of select="((90 - capitalLatitude) * $PI) div 180.0"/>
+                    <xsl:value-of select="((90 - $capitalLatitude) * $PI) div 180.0"/>
                 </xsl:variable>
 
                 <!-- 2 rotations (params x y z angle) -->
                 <Transform>
-                    <!-- $longitudeAngle for a rotation around the y -->
+                    <!-- $longitudeAngle for a rotation around the y-axis -->
                     <xsl:attribute name="rotation">
                         0 1 0 <xsl:value-of select="$longitudeAngle"/>
                     </xsl:attribute>
                     <Transform>
-                        <!-- $latitudeAngle for a rotation around the x -->
+                        <!-- $latitudeAngle for a rotation around the x-axis -->
                         <xsl:attribute name="rotation">
                             1 0 0 <xsl:value-of select="$latitudeAngle"/>
                         </xsl:attribute>
@@ -92,7 +91,7 @@
                             <!-- Onlick attribute to call wikiEventHandler.js -->
                             <xsl:attribute name="onclick">
                                 <!-- See wikiEventHandler.js -->
-                                javascript:Wiki.showPage("<xsl:value-of select="concat(@capital, $comma, $space, @countryName)"/>");
+                                javascript:Wiki.showPage("<xsl:value-of select="concat(capital/name, $comma, $space, name)"/>");
                             </xsl:attribute>
                             <!-- Using the shape definition of the pin for the capital -->
                             <Shape USE="PIN"></Shape>
@@ -100,9 +99,6 @@
                     </Transform>
                 </Transform>
             </xsl:if>
-
         </xsl:for-each>
-
     </xsl:template>
-
 </xsl:stylesheet>
