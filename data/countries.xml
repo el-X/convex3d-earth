@@ -11,8 +11,8 @@
         <southLatitude>42.42849259876837</southLatitude>
         <capital id="temp">
             <name>Andorra la Vella</name>
-            <longitude>1.3</longitude>
-            <latitude>42.3</latitude>
+            <longitude>1.516667</longitude>
+            <latitude>42.5</latitude>
         </capital>
     </country>
     <country id="AE">
@@ -24,8 +24,8 @@
         <southLatitude>22.633329391479492</southLatitude>
         <capital id="temp">
             <name>Abu Dhabi</name>
-            <longitude>54.36</longitude>
-            <latitude>24.27</latitude>
+            <longitude>54.366667</longitude>
+            <latitude>24.46666667</latitude>
         </capital>
     </country>
     <country id="AF">
@@ -37,8 +37,8 @@
         <southLatitude>29.377472</southLatitude>
         <capital id="temp">
             <name>Kabul</name>
-            <longitude>69.2</longitude>
-            <latitude>34.5833</latitude>
+            <longitude>69.183333</longitude>
+            <latitude>34.51666667</latitude>
         </capital>
     </country>
     <country id="AG">
@@ -50,8 +50,8 @@
         <southLatitude>16.996979</southLatitude>
         <capital id="temp">
             <name>St. John's</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-61.85</longitude>
+            <latitude>17.11666667</latitude>
         </capital>
     </country>
     <country id="AI">
@@ -63,8 +63,8 @@
         <southLatitude>18.166815</southLatitude>
         <capital id="temp">
             <name>The Valley</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-63.05</longitude>
+            <latitude>18.21666667</latitude>
         </capital>
     </country>
     <country id="AL">
@@ -76,8 +76,8 @@
         <southLatitude>39.648361</southLatitude>
         <capital id="temp">
             <name>Tirana</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>19.816667</longitude>
+            <latitude>41.31666667</latitude>
         </capital>
     </country>
     <country id="AM">
@@ -102,8 +102,8 @@
         <southLatitude>-18.042076</southLatitude>
         <capital id="temp">
             <name>Luanda</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>44.5</longitude>
+            <latitude>40.16666667</latitude>
         </capital>
     </country>
     <country id="AQ">
@@ -123,8 +123,8 @@
         <southLatitude>-55.061314</southLatitude>
         <capital id="temp">
             <name>Buenos Aires</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-58.666667</longitude>
+            <latitude>-34.58333333</latitude>
         </capital>
     </country>
     <country id="AS">
@@ -136,8 +136,8 @@
         <southLatitude>-14.382478</southLatitude>
         <capital id="temp">
             <name>Pago Pago</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-170.7</longitude>
+            <latitude>-14.26666667</latitude>
         </capital>
     </country>
     <country id="AT">
@@ -149,8 +149,8 @@
         <southLatitude>46.3726520216244</southLatitude>
         <capital id="temp">
             <name>Vienna</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>16.366667</longitude>
+            <latitude>48.2</latitude>
         </capital>
     </country>
     <country id="AU">
@@ -162,8 +162,8 @@
         <southLatitude>-43.64397</southLatitude>
         <capital id="temp">
             <name>Canberra</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>149.133333</longitude>
+            <latitude>-35.26666667</latitude>
         </capital>
     </country>
     <country id="AW">
@@ -175,8 +175,8 @@
         <southLatitude>12.411707706190716</southLatitude>
         <capital id="temp">
             <name>Oranjestad</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-70.033333</longitude>
+            <latitude>12.51666667</latitude>
         </capital>
     </country>
     <country id="AX">
@@ -188,8 +188,8 @@
         <southLatitude>59.90675</southLatitude>
         <capital id="temp">
             <name>Mariehamn</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>19.9</longitude>
+            <latitude>60.116667</latitude>
         </capital>
     </country>
     <country id="AZ">
@@ -201,8 +201,8 @@
         <southLatitude>38.38915252685547</southLatitude>
         <capital id="temp">
             <name>Baku</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>49.866667</longitude>
+            <latitude>40.38333333</latitude>
         </capital>
     </country>
     <country id="BA">
@@ -214,8 +214,8 @@
         <southLatitude>42.546112</southLatitude>
         <capital id="temp">
             <name>Sarajevo</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>18.416667</longitude>
+            <latitude>43.86666667</latitude>
         </capital>
     </country>
     <country id="BB">
@@ -227,8 +227,8 @@
         <southLatitude>13.039844</southLatitude>
         <capital id="temp">
             <name>Bridgetown</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-59.616667</longitude>
+            <latitude>13.1</latitude>
         </capital>
     </country>
     <country id="BD">
@@ -240,8 +240,8 @@
         <southLatitude>20.743334</southLatitude>
         <capital id="temp">
             <name>Dhaka</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>13.1</longitude>
+            <latitude>23.71666667</latitude>
         </capital>
     </country>
     <country id="BE">
@@ -253,8 +253,8 @@
         <southLatitude>49.49361</southLatitude>
         <capital id="temp">
             <name>Brussels</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>4.333333</longitude>
+            <latitude>50.83333333</latitude>
         </capital>
     </country>
     <country id="BF">
@@ -266,8 +266,8 @@
         <southLatitude>9.401108</southLatitude>
         <capital id="temp">
             <name>Ouagadougou</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-1.516667</longitude>
+            <latitude>12.36666667</latitude>
         </capital>
     </country>
     <country id="BG">
@@ -279,8 +279,8 @@
         <southLatitude>41.242084</southLatitude>
         <capital id="temp">
             <name>Sofia</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>23.316667</longitude>
+            <latitude>42.68333333</latitude>
         </capital>
     </country>
     <country id="BH">
@@ -292,8 +292,8 @@
         <southLatitude>25.796862</southLatitude>
         <capital id="temp">
             <name>Manama</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>50.566667</longitude>
+            <latitude>26.23333333</latitude>
         </capital>
     </country>
     <country id="BI">
@@ -305,8 +305,8 @@
         <southLatitude>-4.465713</southLatitude>
         <capital id="temp">
             <name>Bujumbura</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>29.35</longitude>
+            <latitude>-3.366666667</latitude>
         </capital>
     </country>
     <country id="BJ">
@@ -318,8 +318,8 @@
         <southLatitude>6.225748</southLatitude>
         <capital id="temp">
             <name>Porto-Novo</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>2.616667</longitude>
+            <latitude>6.483333333</latitude>
         </capital>
     </country>
     <country id="BL">
@@ -344,8 +344,8 @@
         <southLatitude>32.246639</southLatitude>
         <capital id="temp">
             <name>Hamilton</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-64.783333</longitude>
+            <latitude>32.28333333</latitude>
         </capital>
     </country>
     <country id="BN">
@@ -357,8 +357,8 @@
         <southLatitude>4.003083</southLatitude>
         <capital id="temp">
             <name>Bandar Seri Begawan</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>114.933333</longitude>
+            <latitude>4.883333333</latitude>
         </capital>
     </country>
     <country id="BO">
@@ -370,8 +370,8 @@
         <southLatitude>-22.896133</southLatitude>
         <capital id="temp">
             <name>Sucre</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-68.15</longitude>
+            <latitude>-16.5</latitude>
         </capital>
     </country>
     <country id="BQ">
@@ -383,8 +383,8 @@
         <southLatitude>12.017149</southLatitude>
         <capital id="temp">
             <name>Kralendijk</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-68.2767</longitude>
+            <latitude>12.1507</latitude>
         </capital>
     </country>
     <country id="BR">
@@ -396,8 +396,8 @@
         <southLatitude>-33.750706</southLatitude>
         <capital id="temp">
             <name>Brasília</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-47.916667</longitude>
+            <latitude>-15.78333333</latitude>
         </capital>
     </country>
     <country id="BS">
@@ -409,8 +409,8 @@
         <southLatitude>22.852743</southLatitude>
         <capital id="temp">
             <name>Nassau</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-77.35</longitude>
+            <latitude>25.08333333</latitude>
         </capital>
     </country>
     <country id="BT">
@@ -422,8 +422,8 @@
         <southLatitude>26.70764</southLatitude>
         <capital id="temp">
             <name>Thimphu</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>89.633333</longitude>
+            <latitude>27.46666667</latitude>
         </capital>
     </country>
     <country id="BV">
@@ -443,8 +443,8 @@
         <southLatitude>-26.907246</southLatitude>
         <capital id="temp">
             <name>Gaborone</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>25.9</longitude>
+            <latitude>-24.63333333</latitude>
         </capital>
     </country>
     <country id="BY">
@@ -456,8 +456,8 @@
         <southLatitude>51.256416</southLatitude>
         <capital id="temp">
             <name>Minsk</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>27.566667</longitude>
+            <latitude>53.9</latitude>
         </capital>
     </country>
     <country id="BZ">
@@ -469,8 +469,8 @@
         <southLatitude>15.8893</southLatitude>
         <capital id="temp">
             <name>Belmopan</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-88.766667</longitude>
+            <latitude>17.25</latitude>
         </capital>
     </country>
     <country id="CA">
@@ -482,8 +482,8 @@
         <southLatitude>41.67598</southLatitude>
         <capital id="temp">
             <name>Ottawa</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-75.7</longitude>
+            <latitude>45.41666667</latitude>
         </capital>
     </country>
     <country id="CC">
@@ -495,8 +495,8 @@
         <southLatitude>-12.208725839</southLatitude>
         <capital id="temp">
             <name>West Island</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>96.833333</longitude>
+            <latitude>-12.16666667</latitude>
         </capital>
     </country>
     <country id="CD">
@@ -508,8 +508,8 @@
         <southLatitude>-13.455675</southLatitude>
         <capital id="temp">
             <name>Kinshasa</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>15.3</longitude>
+            <latitude>-4.316666667</latitude>
         </capital>
     </country>
     <country id="CF">
@@ -521,8 +521,8 @@
         <southLatitude>2.220514</southLatitude>
         <capital id="temp">
             <name>Bangui</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>18.583333</longitude>
+            <latitude>4.366666667</latitude>
         </capital>
     </country>
     <country id="CG">
@@ -534,8 +534,8 @@
         <southLatitude>-5.027223</southLatitude>
         <capital id="temp">
             <name>Brazzaville</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>15.283333</longitude>
+            <latitude>-4.25</latitude>
         </capital>
     </country>
     <country id="CH">
@@ -547,8 +547,8 @@
         <southLatitude>45.825695</southLatitude>
         <capital id="temp">
             <name>Berne</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>7.466667</longitude>
+            <latitude>46.91666667</latitude>
         </capital>
     </country>
     <country id="CI">
@@ -560,8 +560,8 @@
         <southLatitude>4.357067</southLatitude>
         <capital id="temp">
             <name>Yamoussoukro</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-5.266667</longitude>
+            <latitude>6.816666667</latitude>
         </capital>
     </country>
     <country id="CK">
@@ -573,8 +573,8 @@
         <southLatitude>-21.944164</southLatitude>
         <capital id="temp">
             <name>Avarua</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-159.766667</longitude>
+            <latitude>-21.2</latitude>
         </capital>
     </country>
     <country id="CL">
@@ -586,8 +586,8 @@
         <southLatitude>-55.9256225109217</southLatitude>
         <capital id="temp">
             <name>Santiago</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-70.666667</longitude>
+            <latitude>-33.45</latitude>
         </capital>
     </country>
     <country id="CM">
@@ -599,8 +599,8 @@
         <southLatitude>1.652548</southLatitude>
         <capital id="temp">
             <name>Yaoundé</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>11.516667</longitude>
+            <latitude>3.866666667</latitude>
         </capital>
     </country>
     <country id="CN">
@@ -612,8 +612,8 @@
         <southLatitude>15.775416</southLatitude>
         <capital id="temp">
             <name>Beijing</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>116.383333</longitude>
+            <latitude>39.91666667</latitude>
         </capital>
     </country>
     <country id="CO">
@@ -625,8 +625,8 @@
         <southLatitude>-4.225869</southLatitude>
         <capital id="temp">
             <name>Bogotá</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-74.083333</longitude>
+            <latitude>4.6</latitude>
         </capital>
     </country>
     <country id="CR">
@@ -638,8 +638,8 @@
         <southLatitude>8.032975</southLatitude>
         <capital id="temp">
             <name>San José</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-84.083333</longitude>
+            <latitude>9.933333333</latitude>
         </capital>
     </country>
     <country id="CU">
@@ -651,8 +651,8 @@
         <southLatitude>19.828083</southLatitude>
         <capital id="temp">
             <name>Havana</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-82.35</longitude>
+            <latitude>23.11666667</latitude>
         </capital>
     </country>
     <country id="CV">
@@ -664,8 +664,8 @@
         <southLatitude>14.808022</southLatitude>
         <capital id="temp">
             <name>Praia</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-23.516667</longitude>
+            <latitude>14.91666667</latitude>
         </capital>
     </country>
     <country id="CW">
@@ -677,8 +677,8 @@
         <southLatitude>12.032745</southLatitude>
         <capital id="temp">
             <name>Willemstad</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-68.916667</longitude>
+            <latitude>12.1</latitude>
         </capital>
     </country>
     <country id="CX">
@@ -690,8 +690,8 @@
         <southLatitude>-10.5704829995</southLatitude>
         <capital id="temp">
             <name>The Settlement</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>105.716667</longitude>
+            <latitude>-10.41666667</latitude>
         </capital>
     </country>
     <country id="CY">
@@ -703,8 +703,8 @@
         <southLatitude>34.6332846722908</southLatitude>
         <capital id="temp">
             <name>Nicosia</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>33.366667</longitude>
+            <latitude>35.16666667</latitude>
         </capital>
     </country>
     <country id="CZ">
@@ -716,8 +716,8 @@
         <southLatitude>48.542915</southLatitude>
         <capital id="temp">
             <name>Prague</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>14.466667</longitude>
+            <latitude>50.08333333</latitude>
         </capital>
     </country>
     <country id="DE">
@@ -729,8 +729,8 @@
         <southLatitude>47.275776</southLatitude>
         <capital id="temp">
             <name>Berlin</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>13.4</longitude>
+            <latitude>52.51666667</latitude>
         </capital>
     </country>
     <country id="DJ">
@@ -742,8 +742,8 @@
         <southLatitude>10.909917</southLatitude>
         <capital id="temp">
             <name>Djibouti</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>43.15</longitude>
+            <latitude>11.58333333</latitude>
         </capital>
     </country>
     <country id="DK">
@@ -755,8 +755,8 @@
         <southLatitude>54.562389</southLatitude>
         <capital id="temp">
             <name>Copenhagen</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>12.583333</longitude>
+            <latitude>55.66666667</latitude>
         </capital>
     </country>
     <country id="DM">
@@ -768,8 +768,8 @@
         <southLatitude>15.20169</southLatitude>
         <capital id="temp">
             <name>Roseau</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-61.4</longitude>
+            <latitude>15.3</latitude>
         </capital>
     </country>
     <country id="DO">
@@ -781,8 +781,8 @@
         <southLatitude>17.543159</southLatitude>
         <capital id="temp">
             <name>Santo Domingo</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-69.9</longitude>
+            <latitude>18.46666667</latitude>
         </capital>
     </country>
     <country id="DZ">
@@ -794,8 +794,8 @@
         <southLatitude>18.960028</southLatitude>
         <capital id="temp">
             <name>Algiers</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>3.05</longitude>
+            <latitude>36.75</latitude>
         </capital>
     </country>
     <country id="EC">
@@ -807,8 +807,8 @@
         <southLatitude>-4.998823</southLatitude>
         <capital id="temp">
             <name>Quito</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-78.5</longitude>
+            <latitude>-0.216666667</latitude>
         </capital>
     </country>
     <country id="EE">
@@ -820,8 +820,8 @@
         <southLatitude>57.516193</southLatitude>
         <capital id="temp">
             <name>Tallinn</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>24.716667</longitude>
+            <latitude>59.43333333</latitude>
         </capital>
     </country>
     <country id="EG">
@@ -833,8 +833,8 @@
         <southLatitude>21.725389</southLatitude>
         <capital id="temp">
             <name>Cairo</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>31.25</longitude>
+            <latitude>30.05</latitude>
         </capital>
     </country>
     <country id="EH">
@@ -846,8 +846,8 @@
         <southLatitude>20.774158</southLatitude>
         <capital id="temp">
             <name>El Aaiún</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-13.203333</longitude>
+            <latitude>27.153611</latitude>
         </capital>
     </country>
     <country id="ER">
@@ -859,8 +859,8 @@
         <southLatitude>12.359555</southLatitude>
         <capital id="temp">
             <name>Asmara</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>38.933333</longitude>
+            <latitude>15.33333333</latitude>
         </capital>
     </country>
     <country id="ES">
@@ -872,8 +872,8 @@
         <southLatitude>36.0001044260548</southLatitude>
         <capital id="temp">
             <name>Madrid</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-3.683333</longitude>
+            <latitude>40.4</latitude>
         </capital>
     </country>
     <country id="ET">
@@ -885,8 +885,8 @@
         <southLatitude>3.402422</southLatitude>
         <capital id="temp">
             <name>Addis Ababa</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>38.7</longitude>
+            <latitude>9.033333333</latitude>
         </capital>
     </country>
     <country id="FI">
@@ -898,8 +898,8 @@
         <southLatitude>59.808777</southLatitude>
         <capital id="temp">
             <name>Helsinki</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>24.933333</longitude>
+            <latitude>60.16666667</latitude>
         </capital>
     </country>
     <country id="FJ">
@@ -911,8 +911,8 @@
         <southLatitude>-20.67597</southLatitude>
         <capital id="temp">
             <name>Suva</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>178.416667</longitude>
+            <latitude>-18.13333333</latitude>
         </capital>
     </country>
     <country id="FK">
@@ -924,8 +924,8 @@
         <southLatitude>-52.360512</southLatitude>
         <capital id="temp">
             <name>Stanley</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-57.85</longitude>
+            <latitude>-51.7</latitude>
         </capital>
     </country>
     <country id="FM">
@@ -937,8 +937,8 @@
         <southLatitude>1.02629</southLatitude>
         <capital id="temp">
             <name>Palikir</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>158.15</longitude>
+            <latitude>6.916666667</latitude>
         </capital>
     </country>
     <country id="FO">
@@ -950,8 +950,8 @@
         <southLatitude>61.394943</southLatitude>
         <capital id="temp">
             <name>Tórshavn</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-6.766667</longitude>
+            <latitude>62</latitude>
         </capital>
     </country>
     <country id="FR">
@@ -963,8 +963,8 @@
         <southLatitude>41.371582</southLatitude>
         <capital id="temp">
             <name>Paris</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>2.333333</longitude>
+            <latitude>48.86666667</latitude>
         </capital>
     </country>
     <country id="GA">
@@ -976,8 +976,8 @@
         <southLatitude>-3.978806</southLatitude>
         <capital id="temp">
             <name>Libreville</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>9.45</longitude>
+            <latitude>0.383333333</latitude>
         </capital>
     </country>
     <country id="GB">
@@ -989,8 +989,8 @@
         <southLatitude>49.906193</southLatitude>
         <capital id="temp">
             <name>London</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-0.083333</longitude>
+            <latitude>51.5</latitude>
         </capital>
     </country>
     <country id="GD">
@@ -1002,8 +1002,8 @@
         <southLatitude>11.986893</southLatitude>
         <capital id="temp">
             <name>St. George's</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-61.75</longitude>
+            <latitude>12.05</latitude>
         </capital>
     </country>
     <country id="GE">
@@ -1015,8 +1015,8 @@
         <southLatitude>41.053196</southLatitude>
         <capital id="temp">
             <name>Tbilisi</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>44.833333</longitude>
+            <latitude>41.68333333</latitude>
         </capital>
     </country>
     <country id="GF">
@@ -1028,8 +1028,8 @@
         <southLatitude>2.127094</southLatitude>
         <capital id="temp">
             <name>Cayenne</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-52.3269</longitude>
+            <latitude>4.9227</latitude>
         </capital>
     </country>
     <country id="GG">
@@ -1041,8 +1041,8 @@
         <southLatitude>49.40764156876899</southLatitude>
         <capital id="temp">
             <name>St Peter Port</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-2.533333</longitude>
+            <latitude>49.45</latitude>
         </capital>
     </country>
     <country id="GH">
@@ -1054,8 +1054,8 @@
         <southLatitude>4.736723</southLatitude>
         <capital id="temp">
             <name>Accra</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-0.216667</longitude>
+            <latitude>5.55</latitude>
         </capital>
     </country>
     <country id="GI">
@@ -1067,8 +1067,8 @@
         <southLatitude>36.10903070140248</southLatitude>
         <capital id="temp">
             <name>Gibraltar</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-5.35</longitude>
+            <latitude>36.13333333</latitude>
         </capital>
     </country>
     <country id="GL">
@@ -1080,8 +1080,8 @@
         <southLatitude>59.777401</southLatitude>
         <capital id="temp">
             <name>Nuuk</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-51.75</longitude>
+            <latitude>64.18333333</latitude>
         </capital>
     </country>
     <country id="GM">
@@ -1093,8 +1093,8 @@
         <southLatitude>13.064252</southLatitude>
         <capital id="temp">
             <name>Banjul</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-16.566667</longitude>
+            <latitude>13.45</latitude>
         </capital>
     </country>
     <country id="GN">
@@ -1106,8 +1106,8 @@
         <southLatitude>7.193553</southLatitude>
         <capital id="temp">
             <name>Conakry</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-13.7</longitude>
+            <latitude>9.5</latitude>
         </capital>
     </country>
     <country id="GP">
@@ -1119,8 +1119,8 @@
         <southLatitude>15.867565</southLatitude>
         <capital id="temp">
             <name>Basse-Terre</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-61.2767</longitude>
+            <latitude>16.0000</latitude>
         </capital>
     </country>
     <country id="GQ">
@@ -1132,8 +1132,8 @@
         <southLatitude>0.92086</southLatitude>
         <capital id="temp">
             <name>Malabo</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>8.783333</longitude>
+            <latitude>3.75</latitude>
         </capital>
     </country>
     <country id="GR">
@@ -1145,8 +1145,8 @@
         <southLatitude>34.8020663391466</southLatitude>
         <capital id="temp">
             <name>Athens</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>23.733333</longitude>
+            <latitude>37.98333333</latitude>
         </capital>
     </country>
     <country id="GS">
@@ -1158,8 +1158,8 @@
         <southLatitude>-59.479259</southLatitude>
         <capital id="temp">
             <name>Grytviken</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-36.5080</longitude>
+            <latitude>-54.28149</latitude>
         </capital>
     </country>
     <country id="GT">
@@ -1171,8 +1171,8 @@
         <southLatitude>13.737302</southLatitude>
         <capital id="temp">
             <name>Guatemala City</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-90.516667</longitude>
+            <latitude>14.61666667</latitude>
         </capital>
     </country>
     <country id="GU">
@@ -1184,8 +1184,8 @@
         <southLatitude>13.23376</southLatitude>
         <capital id="temp">
             <name>Hagåtña</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>144.733333</longitude>
+            <latitude>13.46666667</latitude>
         </capital>
     </country>
     <country id="GW">
@@ -1210,8 +1210,8 @@
         <southLatitude>1.17508</southLatitude>
         <capital id="temp">
             <name>Georgetown</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-15.583333</longitude>
+            <latitude>11.85</latitude>
         </capital>
     </country>
     <country id="HK">
@@ -1223,8 +1223,8 @@
         <southLatitude>22.15325</southLatitude>
         <capital id="temp">
             <name>Hong Kong</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>114.04211</longitude>
+            <latitude>22.31296</latitude>
         </capital>
     </country>
     <country id="HM">
@@ -1244,8 +1244,8 @@
         <southLatitude>12.982411</southLatitude>
         <capital id="temp">
             <name>Tegucigalpa</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-87.216667</longitude>
+            <latitude>14.1</latitude>
         </capital>
     </country>
     <country id="HR">
@@ -1257,8 +1257,8 @@
         <southLatitude>42.43589</southLatitude>
         <capital id="temp">
             <name>Zagreb</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>16</longitude>
+            <latitude>45.8</latitude>
         </capital>
     </country>
     <country id="HT">
@@ -1270,8 +1270,8 @@
         <southLatitude>18.021032</southLatitude>
         <capital id="temp">
             <name>Port-au-Prince</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-72.333333</longitude>
+            <latitude>18.53333333</latitude>
         </capital>
     </country>
     <country id="HU">
@@ -1283,8 +1283,8 @@
         <southLatitude>45.74361</southLatitude>
         <capital id="temp">
             <name>Budapest</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>19.083333</longitude>
+            <latitude>47.5</latitude>
         </capital>
     </country>
     <country id="ID">
@@ -1296,8 +1296,8 @@
         <southLatitude>-10.941861</southLatitude>
         <capital id="temp">
             <name>Jakarta</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>106.816667</longitude>
+            <latitude>-6.166666667</latitude>
         </capital>
     </country>
     <country id="IE">
@@ -1309,8 +1309,8 @@
         <southLatitude>51.451584</southLatitude>
         <capital id="temp">
             <name>Dublin</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-6.233333</longitude>
+            <latitude>53.31666667</latitude>
         </capital>
     </country>
     <country id="IL">
@@ -1322,8 +1322,8 @@
         <southLatitude>29.496639</southLatitude>
         <capital id="temp">
             <name>Jerusalem</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>35.233333</longitude>
+            <latitude>31.76666667</latitude>
         </capital>
     </country>
     <country id="IM">
@@ -1335,8 +1335,8 @@
         <southLatitude>54.055916</southLatitude>
         <capital id="temp">
             <name>Douglas</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-4.483333</longitude>
+            <latitude>54.15</latitude>
         </capital>
     </country>
     <country id="IN">
@@ -1348,8 +1348,8 @@
         <southLatitude>6.747139</southLatitude>
         <capital id="temp">
             <name>New Delhi</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>77.2</longitude>
+            <latitude>28.6</latitude>
         </capital>
     </country>
     <country id="IO">
@@ -1361,8 +1361,8 @@
         <southLatitude>-7.438028</southLatitude>
         <capital id="temp">
             <name>Diego Garcia</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>72.4</longitude>
+            <latitude>-7.3</latitude>
         </capital>
     </country>
     <country id="IQ">
@@ -1374,8 +1374,8 @@
         <southLatitude>29.069445</southLatitude>
         <capital id="temp">
             <name>Baghdad</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>44.4</longitude>
+            <latitude>33.33333333</latitude>
         </capital>
     </country>
     <country id="IR">
@@ -1387,8 +1387,8 @@
         <southLatitude>25.064083</southLatitude>
         <capital id="temp">
             <name>Tehran</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>51.416667</longitude>
+            <latitude>35.7</latitude>
         </capital>
     </country>
     <country id="IS">
@@ -1400,8 +1400,8 @@
         <southLatitude>63.393253</southLatitude>
         <capital id="temp">
             <name>Reykjavik</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-21.95</longitude>
+            <latitude>64.15</latitude>
         </capital>
     </country>
     <country id="IT">
@@ -1413,8 +1413,8 @@
         <southLatitude>36.652779</southLatitude>
         <capital id="temp">
             <name>Rome</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>12.483333</longitude>
+            <latitude>41.9</latitude>
         </capital>
     </country>
     <country id="JE">
@@ -1426,8 +1426,8 @@
         <southLatitude>49.169834</southLatitude>
         <capital id="temp">
             <name>Saint Helier</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-2.1</longitude>
+            <latitude>49.18333333</latitude>
         </capital>
     </country>
     <country id="JM">
@@ -1439,8 +1439,8 @@
         <southLatitude>17.703554</southLatitude>
         <capital id="temp">
             <name>Kingston</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-76.8</longitude>
+            <latitude>18</latitude>
         </capital>
     </country>
     <country id="JO">
@@ -1452,8 +1452,8 @@
         <southLatitude>29.185888</southLatitude>
         <capital id="temp">
             <name>Amman</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>35.933333</longitude>
+            <latitude>31.95</latitude>
         </capital>
     </country>
     <country id="JP">
@@ -1465,8 +1465,8 @@
         <southLatitude>24.249472</southLatitude>
         <capital id="temp">
             <name>Tokyo</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>139.75</longitude>
+            <latitude>35.68333333</latitude>
         </capital>
     </country>
     <country id="KE">
@@ -1478,8 +1478,8 @@
         <southLatitude>-4.678047</southLatitude>
         <capital id="temp">
             <name>Nairobi</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>36.816667</longitude>
+            <latitude>-1.283333333</latitude>
         </capital>
     </country>
     <country id="KG">
@@ -1491,8 +1491,8 @@
         <southLatitude>39.172832</southLatitude>
         <capital id="temp">
             <name>Bishkek</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>74.6</longitude>
+            <latitude>42.86666667</latitude>
         </capital>
     </country>
     <country id="KH">
@@ -1504,8 +1504,8 @@
         <southLatitude>10.409083</southLatitude>
         <capital id="temp">
             <name>Phnom Penh</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>104.916667</longitude>
+            <latitude>11.55</latitude>
         </capital>
     </country>
     <country id="KI">
@@ -1517,8 +1517,8 @@
         <southLatitude>-11.446881150186856</southLatitude>
         <capital id="temp">
             <name>Tarawa</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>172.9790</longitude>
+            <latitude>1.3290</latitude>
         </capital>
     </country>
     <country id="KM">
@@ -1530,8 +1530,8 @@
         <southLatitude>-12.387857</southLatitude>
         <capital id="temp">
             <name>Moroni</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>43.233333</longitude>
+            <latitude>-11.7</latitude>
         </capital>
     </country>
     <country id="KN">
@@ -1543,8 +1543,8 @@
         <southLatitude>17.095343</southLatitude>
         <capital id="temp">
             <name>Basseterre</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-62.716667</longitude>
+            <latitude>17.3</latitude>
         </capital>
     </country>
     <country id="KP">
@@ -1556,8 +1556,8 @@
         <southLatitude>37.673332</southLatitude>
         <capital id="temp">
             <name>Pyongyang</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>125.75</longitude>
+            <latitude>39.01666667</latitude>
         </capital>
     </country>
     <country id="KR">
@@ -1569,8 +1569,8 @@
         <southLatitude>33.190945</southLatitude>
         <capital id="temp">
             <name>Seoul</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>126.983333</longitude>
+            <latitude>37.55</latitude>
         </capital>
     </country>
     <country id="KW">
@@ -1582,8 +1582,8 @@
         <southLatitude>28.524611</southLatitude>
         <capital id="temp">
             <name>Kuwait City</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>47.966667</longitude>
+            <latitude>29.36666667</latitude>
         </capital>
     </country>
     <country id="KY">
@@ -1595,8 +1595,8 @@
         <southLatitude>19.263029</southLatitude>
         <capital id="temp">
             <name>George Town</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>-81.383333</longitude>
+            <latitude>19.3</latitude>
         </capital>
     </country>
     <country id="KZ">
@@ -1608,8 +1608,8 @@
         <southLatitude>40.936333</southLatitude>
         <capital id="temp">
             <name>Astana</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>71.416667</longitude>
+            <latitude>51.16666667</latitude>
         </capital>
     </country>
     <country id="LA">
@@ -1621,8 +1621,8 @@
         <southLatitude>13.910027</southLatitude>
         <capital id="temp">
             <name>Vientiane</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>102.6</longitude>
+            <latitude>17.96666667</latitude>
         </capital>
     </country>
     <country id="LB">
@@ -1634,8 +1634,8 @@
         <southLatitude>33.05386</southLatitude>
         <capital id="temp">
             <name>Beirut</name>
-            <longitude></longitude>
-            <latitude></latitude>
+            <longitude>35.5</longitude>
+            <latitude>33.86666667</latitude>
         </capital>
     </country>
     <country id="LC">
