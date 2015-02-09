@@ -31,6 +31,7 @@
                  showProgress="true" disableDoubleClick="true" disableRightDrag="true">
                 <div id="tools">
                     <button id="resetButton" onclick="Earth.resetView();">Reset view</button>
+                    <button id="resolutionButton" onclick="Earth.toggleResolution(this);">High resolution</button>
                     <button id="boundariesButton" onclick="Earth.toggleCountryBoundaries(this);">Country boundaries</button>
                 </div>
                 <Scene>
@@ -38,7 +39,7 @@
                     <Transform>
                         <Shape>
                             <Appearance>
-                                <ImageTexture id="earthTexture" url="img/blue_marble.png"></ImageTexture>
+                                <ImageTexture id="earthTexture" url="img/blue_marble_low.jpg"></ImageTexture>
                             </Appearance>
                             <Sphere></Sphere>
                         </Shape>
