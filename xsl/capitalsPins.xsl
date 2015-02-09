@@ -58,11 +58,14 @@
 
             <xsl:if test="string($capitalLongitude)!='NaN' and string($capitalLatitude)!='NaN'">
 
+                <!-- Simple conversion of degrees to radians. -->
                 <xsl:variable name="longitudeAngle">
+                    <!--<xsl:value-of select="($capitalLongitude * 2 * $PI) div 360.0"/>-->
                     <xsl:value-of select="($capitalLongitude * $PI) div 180.0"/>
                 </xsl:variable>
                 <xsl:variable name="latitudeAngle">
-                    <xsl:value-of select="((90 - $capitalLatitude) * $PI) div 180.0"/>
+                    <!--<xsl:value-of select="((180.0 * $PI) - ($capitalLatitude * 2 * $PI)) div 360.0"/>-->
+                    <xsl:value-of select="((90.0 - $capitalLatitude) * $PI) div 180.0"/>
                 </xsl:variable>
 
                 <!-- 2 rotations (params x y z angle) -->
