@@ -30,18 +30,26 @@ Earth.toggleCountryBoundaries = function (button) {
     var earthTexture = document.getElementById("earthTexture");
     var textureUrl = earthTexture.getAttribute("url");
 
-    if (textureUrl === Earth.imgNormalLow) {
-        earthTexture.setAttribute("url", Earth.imgBoundariesLow);
-        button.style.backgroundColor = "blue";
-    } else if (textureUrl === Earth.imgBoundariesLow) {
-        earthTexture.setAttribute("url", Earth.imgNormalLow);
-        button.style.backgroundColor = "transparent";
-    } else if (textureUrl === Earth.imgNormalHigh) {
-        earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
-        button.style.backgroundColor = "blue";
-    } else if (textureUrl === Earth.imgBoundariesHigh) {
-        earthTexture.setAttribute("url", Earth.imgNormalHigh);
-        button.style.backgroundColor = "transparent";
+    switch (textureUrl) {
+        case Earth.imgNormalLow:
+            earthTexture.setAttribute("url", Earth.imgBoundariesLow);
+            button.style.backgroundColor = "blue";
+            break;
+        case Earth.imgBoundariesLow:
+            earthTexture.setAttribute("url", Earth.imgNormalLow);
+            button.style.backgroundColor = "transparent";
+            break;
+        case Earth.imgNormalHigh:
+            earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
+            button.style.backgroundColor = "blue";
+            break;
+        case Earth.imgBoundariesHigh:
+            earthTexture.setAttribute("url", Earth.imgNormalHigh);
+            button.style.backgroundColor = "transparent";
+            break;
+        default:
+            earthTexture.setAttribute("url", Earth.imgNormalLow);
+            button.style.backgroundColor = "transparent";
     }
 };
 
@@ -55,18 +63,26 @@ Earth.toggleResolution = function (button) {
     var earthTexture = document.getElementById("earthTexture");
     var textureUrl = earthTexture.getAttribute("url");
 
-    if (textureUrl === Earth.imgNormalLow) {
-        earthTexture.setAttribute("url", Earth.imgNormalHigh);
-        button.style.backgroundColor = "blue";
-    } else if (textureUrl === Earth.imgNormalHigh) {
-        earthTexture.setAttribute("url", Earth.imgNormalLow);
-        button.style.backgroundColor = "transparent";
-    } else if (textureUrl === Earth.imgBoundariesHigh) {
-        earthTexture.setAttribute("url", Earth.imgBoundariesLow);
-        button.style.backgroundColor = "transparent";
-    } else if (textureUrl === Earth.imgBoundariesLow) {
-        earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
-        button.style.backgroundColor = "blue";
+    switch (textureUrl) {
+        case Earth.imgNormalLow:
+            earthTexture.setAttribute("url", Earth.imgNormalHigh);
+            button.style.backgroundColor = "blue";
+            break;
+        case Earth.imgNormalHigh:
+            earthTexture.setAttribute("url", Earth.imgNormalLow);
+            button.style.backgroundColor = "transparent";
+            break;
+        case Earth.imgBoundariesHigh:
+            earthTexture.setAttribute("url", Earth.imgBoundariesLow);
+            button.style.backgroundColor = "transparent";
+            break;
+        case Earth.imgBoundariesLow:
+            earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
+            button.style.backgroundColor = "blue";
+            break;
+        default:
+            earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
+            button.style.backgroundColor = "blue";
     }
 };
 
