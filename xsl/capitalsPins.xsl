@@ -5,7 +5,7 @@
     <xsl:variable name="comma">&#44;</xsl:variable>
     <xsl:variable name="space">&#160;</xsl:variable>
 
-    <xsl:variable name="pinScale" select="0.008"/>
+    <xsl:variable name="pinScale" select="0.004"/>
     <xsl:variable name="PI" select="number(3.14159265359)"/>
 
     <!-- Creates markups for capitals by defining an pin and using it for each capital. -->
@@ -32,7 +32,7 @@
                 <Transform translation="0 1.5 0">
                     <Shape>
                         <Appearance>
-                            <Material diffuseColor="cyan" specularColor=".5 .5 .5"></Material>
+                            <Material diffuseColor="silver" specularColor=".5 .5 .5"></Material>
                         </Appearance>
                         <Cylinder radius="0.2" height="3.0"></Cylinder>
                     </Shape>
