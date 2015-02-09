@@ -57,7 +57,7 @@
     <xsl:template name="for-each-character">
         <xsl:param name="characters"/>
         <!-- Check characters string for content before proceed -->
-        <xsl:if test="string-length($data) &gt; 0">
+        <xsl:if test="string-length($characters) &gt; 0">
             <!-- Pick the first letter of the string -->
             <xsl:variable name="character" select="substring($characters, 1, 1)" />
             <h3>
