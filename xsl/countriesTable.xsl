@@ -35,12 +35,12 @@
                 <tr>
                     <td style="color:white;" valign="top">
                         <xsl:call-template name="for-each-character">
-                            <xsl:with-param name="data" select="$firstPart"/>
+                            <xsl:with-param name="characters" select="$firstPart"/>
                         </xsl:call-template>
                     </td>
                     <td style="color:white;" valign="top">
                         <xsl:call-template name="for-each-character">
-                            <xsl:with-param name="data" select="$secondPart"/>
+                            <xsl:with-param name="characters" select="$secondPart"/>
                         </xsl:call-template>
                     </td>
                     <td style="color:white;" valign="top">
