@@ -90,9 +90,9 @@
                                                 <xsl:value-of select="capital/wikiName"/>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <!-- If there are no special search criterias, the -->
-                                                <!-- country will act as an additional search criteria -->
-                                                <xsl:value-of select="concat(capital/name, $comma, $space, $country)"/>
+                                                <!-- If there are no special search strings, the country -->
+                                                <!-- name itself will be used as the search string -->
+                                                <xsl:value-of select="capital/name"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:variable>
@@ -106,6 +106,7 @@
                                         </font>
                                     </xsl:element>
                                 </xsl:when>
+                                <!-- In case no capitals are available -->
                                 <xsl:otherwise>N/A</xsl:otherwise>
                             </xsl:choose>
                             (<i>

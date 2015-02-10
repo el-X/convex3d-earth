@@ -50,6 +50,7 @@
         <eastLongitude>-61.672421</eastLongitude>
         <capital>
             <name>St. John's</name>
+            <wikiName>St. John's, Antigua and Barbuda</wikiName>
             <latitude>17.11666667</latitude>
             <longitude>-61.85</longitude>
         </capital>
@@ -63,6 +64,7 @@
         <eastLongitude>-62.971359</eastLongitude>
         <capital>
             <name>The Valley</name>
+            <wikiName>The Valley, Anguilla</wikiName>
             <latitude>18.21666667</latitude>
             <longitude>-63.05</longitude>
         </capital>
@@ -175,6 +177,7 @@
         <eastLongitude>-69.86575120104982</eastLongitude>
         <capital>
             <name>Oranjestad</name>
+            <wikiName>Oranjestad, Aruba</wikiName>
             <latitude>12.51666667</latitude>
             <longitude>-70.033333</longitude>
         </capital>
@@ -188,7 +191,6 @@
         <eastLongitude>21.011862</eastLongitude>
         <capital>
             <name>Mariehamn</name>
-            <wikiName>Mariehamn</wikiName>
             <latitude>60.116667</latitude>
             <longitude>19.9</longitude>
         </capital>
@@ -332,6 +334,7 @@
         <eastLongitude>-62.788983372985854</eastLongitude>
         <capital>
             <name>Gustavia</name>
+            <wikiName>Gustavia, Saint Barthélemy</wikiName>
             <latitude>17.895921</latitude>
             <longitude>-62.8516</longitude>
         </capital>
@@ -345,6 +348,7 @@
         <eastLongitude>-64.651993</eastLongitude>
         <capital>
             <name>Hamilton</name>
+            <wikiName>Hamilton, Bermuda</wikiName>
             <latitude>32.28333333</latitude>
             <longitude>-64.783333</longitude>
         </capital>
@@ -384,7 +388,6 @@
         <eastLongitude>-68.192307</eastLongitude>
         <capital>
             <name>Kralendijk</name>
-            <wikiName>Kralendijk</wikiName>
             <latitude>12.1507</latitude>
             <longitude>-68.2767</longitude>
         </capital>
@@ -411,6 +414,7 @@
         <eastLongitude>-74.423874</eastLongitude>
         <capital>
             <name>Nassau</name>
+            <wikiName>Nassau, Bahamas</wikiName>
             <latitude>25.08333333</latitude>
             <longitude>-77.35</longitude>
         </capital>
@@ -562,7 +566,6 @@
         <eastLongitude>-2.494897</eastLongitude>
         <capital>
             <name>Yamoussoukro</name>
-            <wikiName>Yamoussoukro</wikiName>
             <latitude>6.816666667</latitude>
             <longitude>-5.266667</longitude>
         </capital>
@@ -641,6 +644,7 @@
         <eastLongitude>-82.555992</eastLongitude>
         <capital>
             <name>San José</name>
+            <wikiName>San José, Costa Rica</wikiName>
             <latitude>9.933333333</latitude>
             <longitude>-84.083333</longitude>
         </capital>
@@ -692,7 +696,7 @@
         <westLongitude>105.533276992</westLongitude>
         <eastLongitude>105.712596992</eastLongitude>
         <capital>
-            <name>The Settlement</name>
+            <name>Flying Fish Cove</name>
             <latitude>-10.41666667</latitude>
             <longitude>105.716667</longitude>
         </capital>
@@ -849,7 +853,6 @@
         <eastLongitude>-8.670276</eastLongitude>
         <capital>
             <name>El Aaiún</name>
-            <wikiName>El Aaiún</wikiName>
             <latitude>27.153611</latitude>
             <longitude>-13.203333</longitude>
         </capital>
@@ -928,6 +931,7 @@
         <eastLongitude>-57.712486</eastLongitude>
         <capital>
             <name>Stanley</name>
+            <wikiName>Stanley, Falkland Islands</wikiName>
             <latitude>-51.7</latitude>
             <longitude>-57.85</longitude>
         </capital>
@@ -941,7 +945,6 @@
         <eastLongitude>163.03717</eastLongitude>
         <capital>
             <name>Palikir</name>
-            <wikiName>Palikir</wikiName>
             <latitude>6.916666667</latitude>
             <longitude>158.15</longitude>
         </capital>
@@ -1007,6 +1010,7 @@
         <eastLongitude>-61.57676970108031</eastLongitude>
         <capital>
             <name>St. George's</name>
+            <wikiName>St. George's, Grenada</wikiName>
             <latitude>12.05</latitude>
             <longitude>-61.75</longitude>
         </capital>
@@ -1020,7 +1024,6 @@
         <eastLongitude>46.725971</eastLongitude>
         <capital>
             <name>Tbilisi</name>
-            <wikiName>Tbilisi</wikiName>
             <latitude>41.68333333</latitude>
             <longitude>44.833333</longitude>
         </capital>
@@ -1125,7 +1128,6 @@
         <eastLongitude>-61</eastLongitude>
         <capital>
             <name>Basse-Terre</name>
-            <wikiName>Basse-Terre</wikiName>
             <latitude>16.0000</latitude>
             <longitude>-61.2767</longitude>
         </capital>
@@ -1165,7 +1167,6 @@
         <eastLongitude>-26.229326</eastLongitude>
         <capital>
             <name>Grytviken</name>
-            <wikiName>Grytviken</wikiName>
             <latitude>-54.28149</latitude>
             <longitude>-36.5080</longitude>
         </capital>
@@ -1218,6 +1219,7 @@
         <eastLongitude>-56.480251</eastLongitude>
         <capital>
             <name>Georgetown</name>
+            <wikiName>Georgetown, Guyana</wikiName>
             <latitude>11.85</latitude>
             <longitude>-15.583333</longitude>
         </capital>
@@ -1343,6 +1345,7 @@
         <eastLongitude>-4.3115</eastLongitude>
         <capital>
             <name>Douglas</name>
+            <wikiName>Douglas, Isle of Man</wikiName>
             <latitude>54.15</latitude>
             <longitude>-4.483333</longitude>
         </capital>
@@ -1447,6 +1450,7 @@
         <eastLongitude>-76.180321</eastLongitude>
         <capital>
             <name>Kingston</name>
+            <wikiName>Kingston, Jamaica</wikiName>
             <latitude>18</latitude>
             <longitude>-76.8</longitude>
         </capital>
@@ -1538,6 +1542,7 @@
         <eastLongitude>44.538223</eastLongitude>
         <capital>
             <name>Moroni</name>
+            <wikiName>Moroni, Comoros</wikiName>
             <latitude>-11.7</latitude>
             <longitude>43.233333</longitude>
         </capital>
@@ -1603,6 +1608,7 @@
         <eastLongitude>-79.727272</eastLongitude>
         <capital>
             <name>George Town</name>
+            <wikiName>George Town, Cayman Islands</wikiName>
             <latitude>19.3</latitude>
             <longitude>-81.383333</longitude>
         </capital>
@@ -1824,6 +1830,7 @@
         <eastLongitude>-63.012993</eastLongitude>
         <capital>
             <name>Marigot</name>
+            <wikiName>Marigot, Saint Martin</wikiName>
             <latitude>18.0731</latitude>
             <longitude>-63.0822</longitude>
         </capital>
@@ -1890,7 +1897,6 @@
         <eastLongitude>101.176781</eastLongitude>
         <capital>
             <name>Naypyitaw</name>
-            <wikiName>Naypyitaw</wikiName>
             <latitude>19.750018</latitude>
             <longitude>96.100449</longitude>
         </capital>
@@ -1917,7 +1923,6 @@
         <eastLongitude>113.565834</eastLongitude>
         <capital>
             <name>Macao</name>
-            <wikiName>Macao</wikiName>
             <latitude>22.1960033</latitude>
             <longitude>113.5460653</longitude>
         </capital>
@@ -1970,6 +1975,7 @@
         <eastLongitude>-62.144100129608205</eastLongitude>
         <capital>
             <name>Plymouth</name>
+            <wikiName>Plymouth, Montserrat</wikiName>
             <latitude>16.7</latitude>
             <longitude>-62.216667</longitude>
         </capital>
@@ -2113,6 +2119,7 @@
         <eastLongitude>167.99773740209957</eastLongitude>
         <capital>
             <name>Kingston</name>
+            <wikiName>Kingston, Norfolk Island</wikiName>
             <latitude>-29.05</latitude>
             <longitude>167.966667</longitude>
         </capital>
@@ -2191,6 +2198,7 @@
         <eastLongitude>166.945282</eastLongitude>
         <capital>
             <name>Yaren</name>
+            <wikiName>Yaren District</wikiName>
             <latitude>-0.5477</latitude>
             <longitude>166.920867</longitude>
         </capital>
@@ -2230,6 +2238,7 @@
         <eastLongitude>59.836582</eastLongitude>
         <capital>
             <name>Muscat</name>
+            <wikiName>Muscat, Oman</wikiName>
             <latitude>23.61666667</latitude>
             <longitude>58.583333</longitude>
         </capital>
@@ -2334,6 +2343,7 @@
         <eastLongitude>-56.252991</eastLongitude>
         <capital>
             <name>Saint-Pierre</name>
+            <wikiName>Saint-Pierre, Saint Pierre and Miquelon</wikiName>
             <latitude>46.76666667</latitude>
             <longitude>-56.183333</longitude>
         </capital>
@@ -2347,6 +2357,7 @@
         <eastLongitude>-124.77285</eastLongitude>
         <capital>
             <name>Adamstown</name>
+            <wikiName>Adamstown, Pitcairn Islands</wikiName>
             <latitude>-25.06666667</latitude>
             <longitude>-130.083333</longitude>
         </capital>
@@ -2360,6 +2371,7 @@
         <eastLongitude>-65.242737</eastLongitude>
         <capital>
             <name>San Juan</name>
+            <wikiName>San Juan, Puerto Rico</wikiName>
             <latitude>18.46666667</latitude>
             <longitude>-66.116667</longitude>
         </capital>
@@ -2399,7 +2411,6 @@
         <eastLongitude>134.72307</eastLongitude>
         <capital>
             <name>Ngerulmud</name>
-            <wikiName>Ngerulmud</wikiName>
             <latitude>7.483333333</latitude>
             <longitude>134.633333</longitude>
         </capital>
@@ -2530,6 +2541,7 @@
         <eastLongitude>56.29770287937299</eastLongitude>
         <capital>
             <name>Victoria</name>
+            <wikiName>Victoria, Seychelles</wikiName>
             <latitude>-4.616666667</latitude>
             <longitude>55.45</longitude>
         </capital>
@@ -2582,6 +2594,7 @@
         <eastLongitude>-5.638753</eastLongitude>
         <capital>
             <name>Jamestown</name>
+            <wikiName>Jamestown, Saint Helena</wikiName>
             <latitude>-15.93333333</latitude>
             <longitude>-5.716667</longitude>
         </capital>
@@ -2608,7 +2621,6 @@
         <eastLongitude>33.287334</eastLongitude>
         <capital>
             <name>Longyearbyen</name>
-            <wikiName>Longyearbyen</wikiName>
             <latitude>78.21666667</latitude>
             <longitude>15.633333</longitude>
         </capital>
@@ -2739,6 +2751,7 @@
         <eastLongitude>-63.012993</eastLongitude>
         <capital>
             <name>Philipsburg</name>
+            <wikiName>Philipsburg, Sint Maarten</wikiName>
             <latitude>18.01666667</latitude>
             <longitude>-63.033333</longitude>
         </capital>
@@ -2778,7 +2791,6 @@
         <eastLongitude>-71.123642</eastLongitude>
         <capital>
             <name>Cockburn Town</name>
-            <wikiName>Cockburn Town</wikiName>
             <latitude>21.459</latitude>
             <longitude>-71.13900000000001</longitude>
         </capital>
@@ -2805,7 +2817,6 @@
         <eastLongitude>77.598808</eastLongitude>
         <capital>
             <name>Port-aux-Français</name>
-            <wikiName>Port-aux-Français</wikiName>
             <latitude>-49.35</latitude>
             <longitude>70.216667</longitude>
         </capital>
@@ -2949,7 +2960,6 @@
         <eastLongitude>179.863281</eastLongitude>
         <capital>
             <name>Funafuti</name>
-            <wikiName>Funafuti</wikiName>
             <latitude>-8.516666667</latitude>
             <longitude>179.216667</longitude>
         </capital>
@@ -3067,7 +3077,6 @@
         <eastLongitude>12.45837546629481</eastLongitude>
         <capital>
             <name>Vatican City</name>
-            <wikiName>Vatican City</wikiName>
             <latitude>41.9001</latitude>
             <longitude>12.45</longitude>
         </capital>
@@ -3120,6 +3129,7 @@
         <eastLongitude>-64.565193</eastLongitude>
         <capital>
             <name>Charlotte Amalie</name>
+            <wikiName>Charlotte Amalie, United States Virgin Islands</wikiName>
             <latitude>18.35</latitude>
             <longitude>-64.933333</longitude>
         </capital>
@@ -3159,7 +3169,6 @@
         <eastLongitude>-176.16174317718253</eastLongitude>
         <capital>
             <name>Mata-Utu</name>
-            <wikiName>Mata-Utu</wikiName>
             <latitude>-13.95</latitude>
             <longitude>-171.933333</longitude>
         </capital>
@@ -3198,7 +3207,7 @@
         <westLongitude>42.5325394314234</westLongitude>
         <eastLongitude>54.5305388163283</eastLongitude>
         <capital>
-            <name>Sanaa</name>
+            <name>Sana'a</name>
             <latitude>15.35</latitude>
             <longitude>44.2</longitude>
         </capital>
@@ -3212,7 +3221,6 @@
         <eastLongitude>45.29295</eastLongitude>
         <capital>
             <name>Mamoudzou</name>
-            <wikiName>Mamoudzou</wikiName>
             <latitude>-12.7806</latitude>
             <longitude>45.2278</longitude>
         </capital>

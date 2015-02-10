@@ -8,7 +8,7 @@
     <xsl:variable name="pinScale" select="0.004"/>
     <xsl:variable name="PI" select="number(3.14159265359)"/>
 
-    <!-- Creates markups for capitals by defining an pin and using it for each capital. -->
+    <!-- Creates markups for capitals by defining a pin and using it for each capital. -->
     <xsl:template match="/">
         <!-- Definition of a pin for each capital. -->
         <Group DEF="PIN">
@@ -59,16 +59,16 @@
             <xsl:if test="string($capitalLongitude)!='NaN' and string($capitalLatitude)!='NaN'">
 
                 <!-- Simple conversion of degrees to radians. -->
-                <xsl:variable name="longitudeAngle">
-                    <!-- the following conversion formula is the short form of: -->
-                    <!-- ($capitalLongitude * 2 * $PI) div 360.0 -->
-                    <xsl:value-of select="($capitalLongitude * $PI) div 180.0"/>
-                </xsl:variable>
                 <xsl:variable name="latitudeAngle">
                     <!-- the next conversion formula is also a short form, but this time -->
                     <!-- its lacking 180°, since latitudes have a max range of 180° -->
                     <!-- ((180.0 * $PI) - ($capitalLatitude * 2 * $PI)) div 360.0 -->
                     <xsl:value-of select="((90.0 - $capitalLatitude) * $PI) div 180.0"/>
+                </xsl:variable>
+                <xsl:variable name="longitudeAngle">
+                    <!-- the following conversion formula is the short form of: -->
+                    <!-- ($capitalLongitude * 2 * $PI) div 360.0 -->
+                    <xsl:value-of select="($capitalLongitude * $PI) div 180.0"/>
                 </xsl:variable>
 
                 <!-- 2 rotations (params x y z angle) -->
@@ -98,9 +98,9 @@
     </xsl:template>
 
     <!--
-        Clickable transparent box over the pin with onlick action to call wikiEventHandler.js.
+        Create a clickable transparent box over the pin with onlick action to call wikiEventHandler.js.
         The box provides better usability (pins are sometimes hard to reach with the mouse).
-        Also needed for the onlick event, since the event propagates through all group elements.
+        Also needed for the onlick event, since the event would propagate through all group elements otherwise.
     -->
     <xsl:template name="generateClickableBox">
         <xsl:param name="country"/>
@@ -109,11 +109,23 @@
                 <Material transparency="1.0" />
             </Appearance>
             <Box>
+                <!-- Look if there is a special wiki search string for the capital-->
+                <xsl:variable name="wikiSearch">
+                    <xsl:choose>
+                        <xsl:when test="boolean(capital/wikiName)">
+                            <xsl:value-of select="capital/wikiName"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- If that is not the case, simply use the capital name -->
+                            <xsl:value-of select="capital/name"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
                 <xsl:attribute name="onclick">
                     <!-- See wikiEventHandler.js -->
-                    javascript:Wiki.showPage("<xsl:value-of select="concat($country/capital/name, $comma, $space, $country/name)"/>");
+                    javascript:Wiki.showPage("<xsl:value-of select="$wikiSearch"/>");
                 </xsl:attribute>
-                <!-- Make the box bigger than the pin to provide better user interaction. -->
+                <!-- Make the box bigger than the pin in order to provide better user interaction. -->
                 <xsl:attribute name="size">
                     <xsl:value-of select="number($pinScale) * 4"/>,
                     <xsl:value-of select="number($pinScale) * 12"/>,
