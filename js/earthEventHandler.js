@@ -86,3 +86,20 @@ Earth.toggleResolution = function (button) {
     }
 };
 
+/**
+ * Toggles the visibility of capital pins.
+ *
+ * @param button used for toggling the capital pins visibility
+ */
+Earth.toggleCapitalPins = function (button) {
+    var capitalPinsGroup = document.getElementById("capitalPins");
+    var renderAttrValue = capitalPinsGroup.getAttribute("render");
+    if (renderAttrValue === "false") {
+        capitalPinsGroup.setAttribute("render", true);
+        button.style.backgroundColor = "blue";
+    } else {
+        capitalPinsGroup.setAttribute("render", false);
+        button.style.backgroundColor = "transparent";
+    }
+};
+
