@@ -33,23 +33,23 @@ Earth.toggleCountryBoundaries = function (button) {
     switch (textureUrl) {
         case Earth.imgNormalLow:
             earthTexture.setAttribute("url", Earth.imgBoundariesLow);
-            button.style.backgroundColor = "blue";
+            this.setButtonActive(button);
             break;
         case Earth.imgBoundariesLow:
             earthTexture.setAttribute("url", Earth.imgNormalLow);
-            button.style.backgroundColor = "transparent";
+            this.setButtonDeactive(button);
             break;
         case Earth.imgNormalHigh:
             earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
-            button.style.backgroundColor = "blue";
+            this.setButtonActive(button);
             break;
         case Earth.imgBoundariesHigh:
             earthTexture.setAttribute("url", Earth.imgNormalHigh);
-            button.style.backgroundColor = "transparent";
+            this.setButtonDeactive(button);
             break;
         default:
             earthTexture.setAttribute("url", Earth.imgNormalLow);
-            button.style.backgroundColor = "transparent";
+            this.setButtonDeactive(button);
     }
 };
 
@@ -66,23 +66,57 @@ Earth.toggleResolution = function (button) {
     switch (textureUrl) {
         case Earth.imgNormalLow:
             earthTexture.setAttribute("url", Earth.imgNormalHigh);
-            button.style.backgroundColor = "blue";
+            this.setButtonActive(button);
             break;
         case Earth.imgNormalHigh:
             earthTexture.setAttribute("url", Earth.imgNormalLow);
-            button.style.backgroundColor = "transparent";
+            this.setButtonDeactive(button);
             break;
         case Earth.imgBoundariesHigh:
             earthTexture.setAttribute("url", Earth.imgBoundariesLow);
-            button.style.backgroundColor = "transparent";
+            this.setButtonDeactive(button);
             break;
         case Earth.imgBoundariesLow:
             earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
-            button.style.backgroundColor = "blue";
+            this.setButtonActive(button);
             break;
         default:
             earthTexture.setAttribute("url", Earth.imgBoundariesHigh);
-            button.style.backgroundColor = "blue";
+            this.setButtonActive(button);
     }
 };
 
+/**
+ * Toggles the visibility of capital pins.
+ *
+ * @param button used for toggling the capital pins visibility
+ */
+Earth.toggleCapitalPins = function (button) {
+    var capitalPinsGroup = document.getElementById("capitalPins");
+    var renderAttrValue = capitalPinsGroup.getAttribute("render");
+    if (renderAttrValue === "false") {
+        capitalPinsGroup.setAttribute("render", true);
+        this.setButtonActive(button);
+    } else {
+        capitalPinsGroup.setAttribute("render", false);
+        this.setButtonDeactive(button);
+    }
+};
+
+/**
+ * Sets the given button active by changing the background color to blue.
+ *
+ * @param button which should be changed
+ */
+Earth.setButtonActive = function (button) {
+    button.style.backgroundColor = "blue";
+};
+
+/**
+ * Sets the given button deactive by changing the background color to transparent.
+ *
+ * @param button which should be changed
+ */
+Earth.setButtonDeactive = function (button) {
+    button.style.backgroundColor = "transparent";
+};
