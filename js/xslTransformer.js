@@ -12,6 +12,7 @@ function XSLTransformer() {
  */
 XSLTransformer.loadXMLDoc = function (filename)
 {
+    // Internet Explorer handling
     if (window.ActiveXObject)
     {
         // IE5 and 6
@@ -32,12 +33,15 @@ XSLTransformer.loadXMLDoc = function (filename)
 
 /**
  * Proceeds an XSL-Transformation with the given XML and XSL files.
+ * Set ieXmlOutput to true, if the output method of the stylesheet should be changed to xml.
+ * The ieXmlOutput parameter is used only for internet explorer.
  *
  * @param {string} xmlFilename with data
  * @param {string} xslFilename stylesheet for transformation
+ * @param {boolean} ieXmlOutput if the stylesheet should have xml output (only IE!)
  * @returns {XMLDocument} transformation result
  */
-XSLTransformer.proceedXslt = function (xmlFilename, xslFilename)
+XSLTransformer.proceedXslt = function (xmlFilename, xslFilename, ieXmlOutput)
 {
     result = "";
     xml = XSLTransformer.loadXMLDoc(xmlFilename);
@@ -45,7 +49,10 @@ XSLTransformer.proceedXslt = function (xmlFilename, xslFilename)
     // Internet Explorer handling
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
     {
-        // IE5 and 6
+        if (ieXmlOutput === true) {
+            var outputElements = xsl.getElementsByTagName("xsl:output");
+            outputElements[0].setAttribute("method", "xml");
+        }
         result = xml.transformNode(xsl);
     }
     // Chrome, Firefox, Opera, etc. (modern browsers) handling

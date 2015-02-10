@@ -22,7 +22,10 @@ MainPage.initConvexedEarth = function () {
  */
 MainPage.loadCountries = function ()
 {
-    countryTable = XSLTransformer.proceedXslt("data/countries.xml", "xsl/countryTable.xsl");
+    // Third parameter is used for Internet Explorer handling.
+    // Sets the output method to "xml", since only IE has encoding
+    // problems with country/capital names.
+    countryTable = XSLTransformer.proceedXslt("data/countries.xml", "xsl/countryTable.xsl", true);
 
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
     {
@@ -41,6 +44,8 @@ MainPage.loadCountries = function ()
  * Stylesheet: xsl/capitalPins.xsl.
  */
 MainPage.loadCapitals = function () {
+    // Third parameter not provided, since X3D elements
+    // need the output method "html" in IE.
     capitals = XSLTransformer.proceedXslt("data/countries.xml", "xsl/capitalPins.xsl");
 
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
