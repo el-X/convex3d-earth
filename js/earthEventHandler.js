@@ -8,27 +8,45 @@ Earth.imgBoundariesLow = "img/blue_marble_boundaries_low.jpg";
 Earth.imgNormalHigh = "img/blue_marble_high.jpg";
 Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
 
+/**
+ * Displays a country.
+ * @param {type} northLatitude
+ * @param {type} southLatitude
+ * @param {type} westLongitude
+ * @param {type} eastLongitude
+ */
 Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
-    // Berlin
-//    var centerLatitude = 52.51666667;
-//    var centerLongitude = 13.4;
-    var centerLatitude = (northLatitude + southLatitude) / 2.0;
-    var centerLongitude = (westLongitude + eastLongitude) / 2.0;
-    var lat = centerLatitude * Math.PI / 180.0;
-    var lon = centerLongitude * Math.PI / 180.0;
+    var scale = 1.5;
 
-    // Wiki - Kugelkoordinaten
-    var coordinates = "";
-    var xCoordinate = Math.cos(lat) * Math.sin(lon);
-    var yCoordinate = Math.sin(lat);
-    var zCoordinate = Math.cos(lat) * Math.cos(lon);
+    // Center of the longitude values
+    var lonLeftSin = Math.sin(westLongitude * Math.PI / 180);
+    var lonRightSin = Math.sin(eastLongitude * Math.PI / 180);
+    var lonLeftCos = Math.cos(westLongitude * Math.PI / 180);
+    var lonRightCos = Math.cos(eastLongitude * Math.PI / 180);
 
-    coordinates = coordinates.concat(xCoordinate, " ", yCoordinate, " ", zCoordinate);
-    alert(coordinates);
+    var weightSin = (lonLeftSin + lonRightSin) / 2;
+    var weightCos = (lonLeftCos + lonRightCos) / 2;
+
+    var lonCenter = Math.atan2(weightSin, weightCos);
+
+    // Center of the latitude values
+    var lat = (northLatitude + southLatitude) / 2;
+    var latCenter = lat * Math.PI / 180;
+
+    // Calculate the position with a scaling factor
+    var position = "";
+    var xCenter = Math.cos(latCenter) * Math.sin(lonCenter) * scale;
+    var yCenter = Math.sin(latCenter) * scale;
+    var zCenter = Math.cos(latCenter) * Math.cos(lonCenter) * scale;
+    position = position.concat(xCenter, " ", yCenter, " ", zCenter);
+
+    var trans = document.getElementById("trans");
+//    var orientation = new SFRotation(trans.subtract(position), new SFVec3f(xCenter, yCenter, zCenter));
 
     var view = document.getElementById("view");
-    view.setAttribute("position", coordinates);
-    view.setAttribute("orientation", "0 0 0 0");
+    view.setAttribute("position", position);
+//    view.setAttribute("orientation", orientation);
+//    view.setAttribute("orientation", "0 0 0 0");
 };
 
 
