@@ -74,6 +74,7 @@
                                     <xsl:attribute name="href">
                                         <!-- See wikiEventHandler.js -->
                                         javascript:Wiki.showPage("<xsl:value-of select="$country"/>");
+                                        javascript:Earth.showCountry(<xsl:value-of select="(concat(northLatitude, $comma, southLatitude, $comma, westLongitude, $comma, eastLongitude))"/>);
                                     </xsl:attribute>
                                     <font color="white">
                                         <xsl:value-of select="$country"/>

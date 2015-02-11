@@ -8,6 +8,16 @@ Earth.imgBoundariesLow = "img/blue_marble_boundaries_low.jpg";
 Earth.imgNormalHigh = "img/blue_marble_high.jpg";
 Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
 
+Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
+    var centerLatitude = (northLatitude + southLatitude) / 2;
+    var centerLongitude = (westLongitude + eastLongitude) / 2;
+
+//    alert(concat(toString(centerLatitude), toString(centerLongitude)));
+    alert(centerLatitude);
+}
+
+
+
 /**
  * Resets the view of the earth to the prime meridian (Greenwich) and the
  * equator line.
