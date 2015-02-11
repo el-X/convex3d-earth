@@ -9,12 +9,27 @@ Earth.imgNormalHigh = "img/blue_marble_high.jpg";
 Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
 
 Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
-    var centerLatitude = (northLatitude + southLatitude) / 2;
-    var centerLongitude = (westLongitude + eastLongitude) / 2;
+    // Berlin
+//    var centerLatitude = 52.51666667;
+//    var centerLongitude = 13.4;
+    var centerLatitude = (northLatitude + southLatitude) / 2.0;
+    var centerLongitude = (westLongitude + eastLongitude) / 2.0;
+    var lat = centerLatitude * Math.PI / 180.0;
+    var lon = centerLongitude * Math.PI / 180.0;
 
-//    alert(concat(toString(centerLatitude), toString(centerLongitude)));
-    alert(centerLatitude);
-}
+    // Wiki - Kugelkoordinaten
+    var coordinates = "";
+    var xCoordinate = Math.cos(lat) * Math.sin(lon);
+    var yCoordinate = Math.sin(lat);
+    var zCoordinate = Math.cos(lat) * Math.cos(lon);
+
+    coordinates = coordinates.concat(xCoordinate, " ", yCoordinate, " ", zCoordinate);
+    alert(coordinates);
+
+    var view = document.getElementById("view");
+    view.setAttribute("position", coordinates);
+    view.setAttribute("orientation", "0 0 0 0");
+};
 
 
 
