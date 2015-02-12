@@ -16,6 +16,7 @@ Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
  * @param {type} eastLongitude
  */
 Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
+    // TODO: calculate the scale factor dynamicly
     var scale = 1.5;
 
     // Center of the longitude values
@@ -40,17 +41,46 @@ Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastL
     var zCenter = Math.cos(latCenter) * Math.cos(lonCenter) * scale;
     position = position.concat(xCenter, " ", yCenter, " ", zCenter);
 
-    var trans = document.getElementById("trans");
-//    var orientation = new SFRotation(trans.subtract(position), new SFVec3f(xCenter, yCenter, zCenter));
-
+    // Get the viewpoint specified in index.html
     var view = document.getElementById("view");
+
     view.setAttribute("position", position);
-//    view.setAttribute("orientation", orientation);
-//    view.setAttribute("orientation", "0 0 0 0");
+
+    var a, b, a1, a2, a3, b1, b2, b3, a_dot_b, axis1, axis2, axis3, angle;
+    a1 = 0.0;
+    a2 = 0.0;
+    a3 = -1.0;
+    // Target is origin (0, 0, 0)
+    b1 = 0.0 - xCenter;
+    b2 = 0.0 - yCenter;
+    b3 = 0.0 - zCenter;
+    a = Math.sqrt(a1 * a1 + a2 * a2 + a3 * a3); // magnitude
+    b = Math.sqrt(b1 * b1 + b2 * b2 + b3 * b3); // magnitude
+    a_dot_b = a1 * b1 + a2 * b2 + a3 * b3;
+
+    // compute axis and angle values
+    axis1 = a2 * b3 - a3 * b2;
+    axis2 = a3 * b1 - a1 * b3;
+    axis3 = a1 * b2 - a2 * b1;
+
+    var axisLength = Math.sqrt(axis1 * axis1 + axis2 * axis2 + axis3 * axis3);
+    if (axisLength > 0.0) // normalize
+    {
+        axis1 /= axisLength;
+        axis2 /= axisLength;
+        axis3 /= axisLength;
+    }
+
+    if ((a !== 0.0) && (b !== 0.0)) // avoid divide by zero
+    {
+        angle = Math.acos(a_dot_b / (a * b));
+    } else {
+        angle = 0.0;
+    }
+
+    var orientation = "" + axis1 + " " + axis2 + " " + axis3 + " " + angle;
+    view.setAttribute("orientation", orientation);
 };
-
-
-
 /**
  * Resets the view of the earth to the prime meridian (Greenwich) and the
  * equator line.
