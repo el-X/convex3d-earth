@@ -10,14 +10,14 @@ Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
 
 /**
  * Displays a country.
- * @param {type} northLatitude
- * @param {type} southLatitude
- * @param {type} westLongitude
- * @param {type} eastLongitude
+ * @param {Number} northLatitude
+ * @param {Number} southLatitude
+ * @param {Number} westLongitude
+ * @param {Number} eastLongitude
  */
 Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
-    // TODO: calculate the scale factor dynamicly
-    var scale = 1.5;
+
+    var scaleFactor = Earth.calculateScaleFactor(northLatitude, southLatitude, westLongitude, eastLongitude);
 
     // Center of the longitude values
     var lonLeftSin = Math.sin(westLongitude * Math.PI / 180);
@@ -36,9 +36,9 @@ Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastL
 
     // Calculate the position with a scaling factor
     var position = "";
-    var xCenter = Math.cos(latCenter) * Math.sin(lonCenter) * scale;
-    var yCenter = Math.sin(latCenter) * scale;
-    var zCenter = Math.cos(latCenter) * Math.cos(lonCenter) * scale;
+    var xCenter = Math.cos(latCenter) * Math.sin(lonCenter) * scaleFactor;
+    var yCenter = Math.sin(latCenter) * scaleFactor;
+    var zCenter = Math.cos(latCenter) * Math.cos(lonCenter) * scaleFactor;
     position = position.concat(xCenter, " ", yCenter, " ", zCenter);
 
     // Get the viewpoint specified in index.html
@@ -81,6 +81,44 @@ Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastL
     var orientation = "" + axis1 + " " + axis2 + " " + axis3 + " " + angle;
     view.setAttribute("orientation", orientation);
 };
+
+/**
+ * Calculates scale factor for the camera position (viewpoint) with given borders.
+ *
+ * @param {Number} northLatitude
+ * @param {Number} southLatitude
+ * @param {Number} westLongitude
+ * @param {Number} eastLongitude
+ */
+Earth.calculateScaleFactor = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
+    var scaleFactor = 0.0;
+
+    var minScaleFactor = 1.2;
+    var maxScaleFactor = 2.1;
+
+    var scaleBase = 0.0;
+    var latitudeDist = Math.abs(northLatitude - southLatitude);
+    var longitudeDist = Math.abs(westLongitude - eastLongitude);
+
+    if (latitudeDist < longitudeDist) {
+        scaleBase = longitudeDist;
+    } else {
+        scaleBase = latitudeDist;
+    }
+
+    scaleFactor = minScaleFactor + ((maxScaleFactor - minScaleFactor) * (scaleBase / 180));
+
+    if (scaleFactor < minScaleFactor) {
+        scaleFactor = minScaleFactor;
+    }
+    if (scaleFactor > maxScaleFactor) {
+        scaleFactor = maxScaleFactor;
+    }
+//    alert("Scalefactor: " + scaleFactor + " ScaleBase: " + scaleBase + "\n"
+//            + " latDist: " + latitudeDist + " lonDist: " + longitudeDist);
+    return scaleFactor;
+};
+
 /**
  * Resets the view of the earth to the prime meridian (Greenwich) and the
  * equator line.
