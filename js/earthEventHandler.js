@@ -17,6 +17,34 @@ Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
  */
 Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
 
+    // Get the viewpoint specified in index.html
+    var view = document.getElementById("view");
+
+    var cameraPosition = Earth.calculateCameraPosition(northLatitude, southLatitude, westLongitude, eastLongitude);
+    var position = "" + cameraPosition[0] +
+            " " + cameraPosition[1] +
+            " " + cameraPosition[2];
+    view.setAttribute("position", position);
+
+    var cameraOrientation = Earth.calculateCameraOrientation(cameraPosition);
+    var orientation = "" + cameraOrientation[0] +
+            " " + cameraOrientation[1] +
+            " " + cameraOrientation[2] +
+            " " + cameraOrientation[3];
+    view.setAttribute("orientation", orientation);
+};
+
+/**
+ * Calculates position for the camera (viewpoint) with given borders.
+ *
+ * @param {Number} northLatitude
+ * @param {Number} southLatitude
+ * @param {Number} westLongitude
+ * @param {Number} eastLongitude
+ * @return {Array} camera position x y z
+ */
+Earth.calculateCameraPosition = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
+
     var scaleFactor = Earth.calculateScaleFactor(northLatitude, southLatitude, westLongitude, eastLongitude);
 
     // Center of the longitude values
@@ -35,51 +63,10 @@ Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastL
     var latCenter = lat * Math.PI / 180;
 
     // Calculate the position with a scaling factor
-    var position = "";
-    var xCenter = Math.cos(latCenter) * Math.sin(lonCenter) * scaleFactor;
-    var yCenter = Math.sin(latCenter) * scaleFactor;
-    var zCenter = Math.cos(latCenter) * Math.cos(lonCenter) * scaleFactor;
-    position = position.concat(xCenter, " ", yCenter, " ", zCenter);
-
-    // Get the viewpoint specified in index.html
-    var view = document.getElementById("view");
-
-    view.setAttribute("position", position);
-
-    var a, b, a1, a2, a3, b1, b2, b3, a_dot_b, axis1, axis2, axis3, angle;
-    a1 = 0.0;
-    a2 = 0.0;
-    a3 = -1.0;
-    // Target is origin (0, 0, 0)
-    b1 = 0.0 - xCenter;
-    b2 = 0.0 - yCenter;
-    b3 = 0.0 - zCenter;
-    a = Math.sqrt(a1 * a1 + a2 * a2 + a3 * a3); // magnitude
-    b = Math.sqrt(b1 * b1 + b2 * b2 + b3 * b3); // magnitude
-    a_dot_b = a1 * b1 + a2 * b2 + a3 * b3;
-
-    // compute axis and angle values
-    axis1 = a2 * b3 - a3 * b2;
-    axis2 = a3 * b1 - a1 * b3;
-    axis3 = a1 * b2 - a2 * b1;
-
-    var axisLength = Math.sqrt(axis1 * axis1 + axis2 * axis2 + axis3 * axis3);
-    if (axisLength > 0.0) // normalize
-    {
-        axis1 /= axisLength;
-        axis2 /= axisLength;
-        axis3 /= axisLength;
-    }
-
-    if ((a !== 0.0) && (b !== 0.0)) // avoid divide by zero
-    {
-        angle = Math.acos(a_dot_b / (a * b));
-    } else {
-        angle = 0.0;
-    }
-
-    var orientation = "" + axis1 + " " + axis2 + " " + axis3 + " " + angle;
-    view.setAttribute("orientation", orientation);
+    var x = Math.cos(latCenter) * Math.sin(lonCenter) * scaleFactor;
+    var y = Math.sin(latCenter) * scaleFactor;
+    var z = Math.cos(latCenter) * Math.cos(lonCenter) * scaleFactor;
+    return new Array(x, y, z);
 };
 
 /**
@@ -89,6 +76,7 @@ Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastL
  * @param {Number} southLatitude
  * @param {Number} westLongitude
  * @param {Number} eastLongitude
+ * @return {Number} scale factor
  */
 Earth.calculateScaleFactor = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
     var scaleFactor = 0.0;
@@ -114,9 +102,49 @@ Earth.calculateScaleFactor = function (northLatitude, southLatitude, westLongitu
     if (scaleFactor > maxScaleFactor) {
         scaleFactor = maxScaleFactor;
     }
-//    alert("Scalefactor: " + scaleFactor + " ScaleBase: " + scaleBase + "\n"
-//            + " latDist: " + latitudeDist + " lonDist: " + longitudeDist);
     return scaleFactor;
+};
+
+/**
+ * Calculates position for the camera (viewpoint) with given borders.
+ *
+ * @param {Array} cameraPosition (x y z)
+ * @return {Array} camera orientation (x y z angle)
+ */
+Earth.calculateCameraOrientation = function (cameraPosition) {
+    var a, b, a1, a2, a3, b1, b2, b3, a_dot_b, axis1, axis2, axis3, angle;
+
+    a1 = 0.0;
+    a2 = 0.0;
+    a3 = -1.0;
+    // Target is origin (0, 0, 0)
+    b1 = 0.0 - cameraPosition[0];
+    b2 = 0.0 - cameraPosition[1];
+    b3 = 0.0 - cameraPosition[2];
+    a = Math.sqrt(a1 * a1 + a2 * a2 + a3 * a3); // magnitude
+    b = Math.sqrt(b1 * b1 + b2 * b2 + b3 * b3); // magnitude
+    a_dot_b = a1 * b1 + a2 * b2 + a3 * b3;
+
+    // compute axis and angle values
+    axis1 = a2 * b3 - a3 * b2;
+    axis2 = a3 * b1 - a1 * b3;
+    axis3 = a1 * b2 - a2 * b1;
+
+    var axisLength = Math.sqrt(axis1 * axis1 + axis2 * axis2 + axis3 * axis3);
+    if (axisLength > 0.0) // normalize
+    {
+        axis1 /= axisLength;
+        axis2 /= axisLength;
+        axis3 /= axisLength;
+    }
+
+    if ((a !== 0.0) && (b !== 0.0)) // avoid divide by zero
+    {
+        angle = Math.acos(a_dot_b / (a * b));
+    } else {
+        angle = 0.0;
+    }
+    return new Array(axis1, axis2, axis3, angle);
 };
 
 /**
