@@ -26,9 +26,8 @@ Wiki.showPage = function (name) {
 
 /**
  * Resets the wikiFrame on page load/reload.
- * This is needed due to the fact that a country selection followed
- * by a page reload causes the content of the wikiFrame not to
- * disappear.
+ * This is needed due to the fact that a country/capital selection followed
+ * by a page reload causes the content of the wikiFrame not to disappear.
  */
 Wiki.resetInfoView = function () {
     var wikiFrame = document.getElementById("wikiFrame");

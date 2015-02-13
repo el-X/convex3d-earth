@@ -40,6 +40,7 @@ MainPage.loadCountries = function ()
 
 /**
  * Creates X3D objects for capitals which are shown as pins on the map.
+ * The code is derived from http://www.w3schools.com/xsl/xsl_client.asp
  *
  * Data: data/countries.xml.
  * Stylesheet: xsl/capitalPins.xsl.

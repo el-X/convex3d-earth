@@ -1,25 +1,22 @@
-/* Code inspired by http://www.w3schools.com/xsl/xsl_client.asp */
 
 function XSLTransformer() {
 }
 ;
 
 /**
- * Loads an xml file with given a filename and retuns it.
+ * Loads an xml file with a given filename and retuns it.
+ * Code adapted from http://www.w3schools.com/xsl/xsl_client.asp
  *
- * @param {string} filename
- * @returns {XMLDocument} xml file
+ * @param {string} filename the name of the xml document to be loaded
+ * @returns {XMLDocument} xml the xml document
  */
 XSLTransformer.loadXMLDoc = function (filename)
 {
     // Internet Explorer handling
-    if (window.ActiveXObject)
-    {
+    if (window.ActiveXObject) {
         // IE5 and 6
         xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-    }
-    else
-    {
+    } else {
         xhttp = new XMLHttpRequest();
     }
     xhttp.open("GET", filename, false);
@@ -27,18 +24,20 @@ XSLTransformer.loadXMLDoc = function (filename)
         xhttp.responseType = "msxml-document";
     } catch (err) {
     } // Helping IE11
+
     xhttp.send("");
     return xhttp.responseXML;
 };
 
 /**
- * Proceeds an XSL-Transformation with the given XML and XSL files.
- * Set ieXmlOutput to true, if the output method of the stylesheet should be changed to xml.
- * The ieXmlOutput parameter is used only for internet explorer.
+ * Processes an XSL-Transformation with the given XML and XSL files.
+ * Set ieXmlOutput to true, if the output method of the stylesheet should be
+ * changed to "xml". The ieXmlOutput parameter is only used for the Internet
+ * Explorer. Code adapted from http://www.w3schools.com/xsl/xsl_client.asp
  *
  * @param {string} xmlFilename with data
  * @param {string} xslFilename stylesheet for transformation
- * @param {boolean} ieXmlOutput if the stylesheet should have xml output (only IE!)
+ * @param {boolean} ieXmlOutput if the stylesheet should have xml output (IE only !)
  * @returns {XMLDocument} transformation result
  */
 XSLTransformer.processTransformation = function (xmlFilename, xslFilename, ieXmlOutput)
