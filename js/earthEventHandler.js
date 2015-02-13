@@ -16,26 +16,40 @@ Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
  * @param {Number} eastLongitude
  */
 Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
-
-    // Get the viewpoint specified in index.html
-    var view = document.getElementById("view");
+    var view = Earth.getNextView();
 
     var cameraPosition = Earth.calculateCameraPosition(northLatitude, southLatitude, westLongitude, eastLongitude);
-    var position = "" + cameraPosition[0] +
-            " " + cameraPosition[1] +
-            " " + cameraPosition[2];
-    view.setAttribute("position", position);
-
     var cameraOrientation = Earth.calculateCameraOrientation(cameraPosition);
-    var orientation = "" + cameraOrientation[0] +
-            " " + cameraOrientation[1] +
-            " " + cameraOrientation[2] +
-            " " + cameraOrientation[3];
-    view.setAttribute("orientation", orientation);
+
+    view.setAttribute("position", cameraPosition.toString());
+    view.setAttribute("orientation", cameraOrientation.toString());
+    view.setAttribute("set_bind", "true");
 };
 
 /**
- * Calculates position for the camera (viewpoint) with given borders.
+ * In order to enable the camera animation for the displayment of a certain
+ * country, two Viewpoints need to be defined. Switching from one Viewpoint
+ * to another and vice versa, is done here.
+ * @returns the next Viewpoint object
+ */
+Earth.getNextView = function () {
+    var earth = document.getElementById("earth");
+    var currentView = earth.runtime.viewpoint()._xmlNode;
+    var nextView;
+
+    if (currentView.id === "view1") {
+        nextView = document.getElementById("view2");
+    } else {
+        nextView = document.getElementById("view1");
+    }
+
+    return nextView;
+}
+
+/**
+ * Calculates the position for the camera (viewpoint) with given borders.
+ * For a detailed explanation at why and how the following calculation of the
+ * central longitude works, please refer to: http://blog.cartodb.com/center-of-points/
  *
  * @param {Number} northLatitude
  * @param {Number} southLatitude
@@ -44,17 +58,16 @@ Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastL
  * @return {Array} camera position x y z
  */
 Earth.calculateCameraPosition = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
-
     var scaleFactor = Earth.calculateScaleFactor(northLatitude, southLatitude, westLongitude, eastLongitude);
 
     // Center of the longitude values
-    var lonLeftSin = Math.sin(westLongitude * Math.PI / 180);
-    var lonRightSin = Math.sin(eastLongitude * Math.PI / 180);
-    var lonLeftCos = Math.cos(westLongitude * Math.PI / 180);
-    var lonRightCos = Math.cos(eastLongitude * Math.PI / 180);
+    var lonWestSin = Math.sin(westLongitude * Math.PI / 180);
+    var lonEastSin = Math.sin(eastLongitude * Math.PI / 180);
+    var lonWestCos = Math.cos(westLongitude * Math.PI / 180);
+    var lonEastCos = Math.cos(eastLongitude * Math.PI / 180);
 
-    var weightSin = (lonLeftSin + lonRightSin) / 2;
-    var weightCos = (lonLeftCos + lonRightCos) / 2;
+    var weightSin = (lonWestSin + lonEastSin) / 2;
+    var weightCos = (lonWestCos + lonEastCos) / 2;
 
     var lonCenter = Math.atan2(weightSin, weightCos);
 
@@ -66,6 +79,7 @@ Earth.calculateCameraPosition = function (northLatitude, southLatitude, westLong
     var x = Math.cos(latCenter) * Math.sin(lonCenter) * scaleFactor;
     var y = Math.sin(latCenter) * scaleFactor;
     var z = Math.cos(latCenter) * Math.cos(lonCenter) * scaleFactor;
+
     return new Array(x, y, z);
 };
 
@@ -106,45 +120,23 @@ Earth.calculateScaleFactor = function (northLatitude, southLatitude, westLongitu
 };
 
 /**
- * Calculates position for the camera (viewpoint) with given borders.
+ * Calculates the camera orientation by providing its position, the point at
+ * which to look at (the origin) and the upright position (the Y-Axis).
  *
  * @param {Array} cameraPosition (x y z)
  * @return {Array} camera orientation (x y z angle)
  */
 Earth.calculateCameraOrientation = function (cameraPosition) {
-    var a, b, a1, a2, a3, b1, b2, b3, a_dot_b, axis1, axis2, axis3, angle;
+    var cameraPosition = new x3dom.fields.SFVec3f(cameraPosition[0], cameraPosition[1], cameraPosition[2]);
+    var earthCenterPosition = new x3dom.fields.SFVec3f(0, 0, 0);
+    var uprightPosition = new x3dom.fields.SFVec3f(0, 1, 0);
 
-    a1 = 0.0;
-    a2 = 0.0;
-    a3 = -1.0;
-    // Target is origin (0, 0, 0)
-    b1 = 0.0 - cameraPosition[0];
-    b2 = 0.0 - cameraPosition[1];
-    b3 = 0.0 - cameraPosition[2];
-    a = Math.sqrt(a1 * a1 + a2 * a2 + a3 * a3); // magnitude
-    b = Math.sqrt(b1 * b1 + b2 * b2 + b3 * b3); // magnitude
-    a_dot_b = a1 * b1 + a2 * b2 + a3 * b3;
+    var lookAtMatrix = x3dom.fields.SFMatrix4f.lookAt(cameraPosition, earthCenterPosition, uprightPosition);
+    var rotation = new x3dom.fields.Quaternion(0, 0, 0, 0);
+    rotation.setValue(lookAtMatrix);
+    var orientation = rotation.toAxisAngle();
 
-    // compute axis and angle values
-    axis1 = a2 * b3 - a3 * b2;
-    axis2 = a3 * b1 - a1 * b3;
-    axis3 = a1 * b2 - a2 * b1;
-
-    var axisLength = Math.sqrt(axis1 * axis1 + axis2 * axis2 + axis3 * axis3);
-    if (axisLength > 0.0) // normalize
-    {
-        axis1 /= axisLength;
-        axis2 /= axisLength;
-        axis3 /= axisLength;
-    }
-
-    if ((a !== 0.0) && (b !== 0.0)) // avoid divide by zero
-    {
-        angle = Math.acos(a_dot_b / (a * b));
-    } else {
-        angle = 0.0;
-    }
-    return new Array(axis1, axis2, axis3, angle);
+    return orientation;
 };
 
 /**
