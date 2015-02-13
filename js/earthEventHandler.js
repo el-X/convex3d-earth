@@ -10,6 +10,7 @@ Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
 
 /**
  * Displays a country.
+ *
  * @param {Number} northLatitude
  * @param {Number} southLatitude
  * @param {Number} westLongitude
@@ -30,6 +31,7 @@ Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastL
  * In order to enable the camera animation for the displayment of a certain
  * country, two Viewpoints need to be defined. Switching from one Viewpoint
  * to another and vice versa, is done here.
+ * 
  * @returns the next Viewpoint object
  */
 Earth.getNextView = function () {
@@ -44,7 +46,7 @@ Earth.getNextView = function () {
     }
 
     return nextView;
-}
+};
 
 /**
  * Calculates the position for the camera (viewpoint) with given borders.
