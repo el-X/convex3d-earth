@@ -27,10 +27,6 @@ table > table > tbody > tr > td > h3 {
     padding-left: 20px;
 }
 
-#toggler:hover {
-    background-color:blue;
-}
-
 #earth {
     width:100%;
     height:600px;

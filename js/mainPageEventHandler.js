@@ -4,7 +4,7 @@ function MainPage() {
 ;
 
 /**
- * Initializes the website.
+ * Initializes the website by filling it with content.
  */
 MainPage.initConvexedEarth = function () {
     Earth.resetView();
@@ -15,23 +15,24 @@ MainPage.initConvexedEarth = function () {
 
 /**
  * Creates a table containing all available countries. This is done
- * by using an XSL-Transformation.
+ * by using an XSL-Transformation. The code is derived from
+ * http://www.w3schools.com/xsl/xsl_client.asp
  *
  * Data: data/countries.xml.
  * Stylesheet: xsl/countryTable.xsl.
  */
 MainPage.loadCountries = function ()
 {
-    // Third parameter is used for Internet Explorer handling.
-    // Sets the output method to "xml", since only IE has encoding
-    // problems with country/capital names.
-    countryTable = XSLTransformer.proceedXslt("data/countries.xml", "xsl/countryTable.xsl", true);
+    // The Internet Explorer has encoding problems when it comes to outputting
+    // html for the country and capital names, which is why the transformation
+    // process is done with the output method "xml" in this case
+    var ieXmlOutput = true;
 
-    if (window.ActiveXObject || xhttp.responseType === "msxml-document")
-    {
+    countryTable = XSLTransformer.processTransformation("data/countries.xml", "xsl/countryTable.xsl", ieXmlOutput);
+
+    if (window.ActiveXObject || xhttp.responseType === "msxml-document") {
         document.getElementById("countryTable").innerHTML = countryTable;
-    } else if (document.implementation && document.implementation.createDocument)
-    {
+    } else if (document.implementation && document.implementation.createDocument) {
         document.getElementById("countryTable").appendChild(countryTable);
     }
 
@@ -44,9 +45,9 @@ MainPage.loadCountries = function ()
  * Stylesheet: xsl/capitalPins.xsl.
  */
 MainPage.loadCapitals = function () {
-    // Third parameter not provided, since X3D elements
-    // need the output method "html" in IE.
-    capitals = XSLTransformer.proceedXslt("data/countries.xml", "xsl/capitalPins.xsl");
+    // The output method for X3D elements is "html"; even for the Internet Explorer
+    var ieXmlOutput = false;
+    capitals = XSLTransformer.processTransformation("data/countries.xml", "xsl/capitalPins.xsl", ieXmlOutput);
 
     if (window.ActiveXObject || xhttp.responseType === "msxml-document")
     {

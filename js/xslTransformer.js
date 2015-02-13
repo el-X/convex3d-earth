@@ -41,7 +41,7 @@ XSLTransformer.loadXMLDoc = function (filename)
  * @param {boolean} ieXmlOutput if the stylesheet should have xml output (only IE!)
  * @returns {XMLDocument} transformation result
  */
-XSLTransformer.proceedXslt = function (xmlFilename, xslFilename, ieXmlOutput)
+XSLTransformer.processTransformation = function (xmlFilename, xslFilename, ieXmlOutput)
 {
     result = "";
     xml = XSLTransformer.loadXMLDoc(xmlFilename);
