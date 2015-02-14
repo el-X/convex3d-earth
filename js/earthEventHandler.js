@@ -3,7 +3,10 @@ function Earth() {
 }
 ;
 
-// Static variables for the earth textures.
+// The earth textures were taken from a NASA picture series called "Blue Marble Next Generation",
+// which is accessible through http://visibleearth.nasa.gov/view_cat.php?categoryID=1484.
+// The mask for the country boundaries, which was used to overlay the earth
+// textures with, is availabe at http://www.shadedrelief.com/natural3/pages/extra.html
 Earth.imgNormalLow = "img/blue_marble_low.jpg";
 Earth.imgBoundariesLow = "img/blue_marble_boundaries_low.jpg";
 Earth.imgNormalHigh = "img/blue_marble_high.jpg";
@@ -16,8 +19,8 @@ Earth.imgBoundariesHigh = "img/blue_marble_boundaries_high.jpg";
  *
  * @param {Number} northLatitude the northernmost latitude (in °) of the country
  * @param {Number} southLatitude the southernmost latitude (in °) of the country
- * @param {Number} westLongitude the westernmost latitude (in °) of the country
- * @param {Number} eastLongitude the easternmost latitude (in °) of the country
+ * @param {Number} westLongitude the westernmost longitude (in °) of the country
+ * @param {Number} eastLongitude the easternmost longitude (in °) of the country
  */
 Earth.showCountry = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
     var view = Earth.getNextView();
@@ -57,8 +60,8 @@ Earth.getNextView = function () {
  *
  * @param {Number} northLatitude the northernmost latitude (in °) of the country
  * @param {Number} southLatitude the southernmost latitude (in °) of the country
- * @param {Number} westLongitude the westernmost latitude (in °) of the country
- * @param {Number} eastLongitude the easternmost latitude (in °) of the country
+ * @param {Number} westLongitude the westernmost longitude (in °) of the country
+ * @param {Number} eastLongitude the easternmost longitude (in °) of the country
  * @return {Array} the camera position (x, y, z)
  */
 Earth.calculateCameraPosition = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
@@ -66,7 +69,7 @@ Earth.calculateCameraPosition = function (northLatitude, southLatitude, westLong
     var lonCenter = Earth.calculateLongitudeCenter(westLongitude, eastLongitude);
     var scaleFactor = Earth.calculateScaleFactor(northLatitude, southLatitude, westLongitude, eastLongitude);
 
-    // Spherical coordinates -> Cartesian coordinates
+    // Spherical coordinates -> Cartesian coordinates + scaling
     var x = Math.cos(latCenter) * Math.sin(lonCenter) * scaleFactor;
     var y = Math.sin(latCenter) * scaleFactor;
     var z = Math.cos(latCenter) * Math.cos(lonCenter) * scaleFactor;
@@ -76,6 +79,7 @@ Earth.calculateCameraPosition = function (northLatitude, southLatitude, westLong
 
 /**
  * Simple calculation for the central latitude.
+ *
  * @param {Number} northLatitude the northernmost latitude (in °) of the country
  * @param {Number} southLatitude the southernmost latitude (in °) of the country
  * @returns {Number} the center latitude (in radians)
@@ -88,15 +92,16 @@ Earth.calculateLatitudeCenter = function (northLatitude, southLatitude) {
 };
 
 /**
- * Determine the center of the longitude. For a detailed explanation at why and
+ * Determine the longitude center. For a detailed explanation at why and
  * how the following calculation works, please refer to:
  * http://blog.cartodb.com/center-of-points/
- * @param {type} westLongitude the westernmost latitude (in °) of the country
- * @param {type} eastLongitude the easternmost latitude (in °) of the country
+ *
+ * @param {type} westLongitude the westernmost longitude (in °) of the country
+ * @param {type} eastLongitude the easternmost longitude (in °) of the country
  * @returns {Number} the center longitude (in radians)
  */
 Earth.calculateLongitudeCenter = function (westLongitude, eastLongitude) {
-    // mapp the longitudes to a two-dimensional ring of radius one (unit circle)
+    // map the longitudes to a two-dimensional ring of radius one (unit circle)
     var lonWestSin = Math.sin(westLongitude * Math.PI / 180);
     var lonEastSin = Math.sin(eastLongitude * Math.PI / 180);
     var lonWestCos = Math.cos(westLongitude * Math.PI / 180);
@@ -117,8 +122,8 @@ Earth.calculateLongitudeCenter = function (westLongitude, eastLongitude) {
  *
  * @param {Number} northLatitude the northernmost latitude (in °) of the country
  * @param {Number} southLatitude the southernmost latitude (in °) of the country
- * @param {Number} westLongitude the westernmost latitude (in °) of the country
- * @param {Number} eastLongitude the easternmost latitude (in °) of the country
+ * @param {Number} westLongitude the westernmost longitude (in °) of the country
+ * @param {Number} eastLongitude the easternmost longitude (in °) of the country
  * @return {Number} the scale factor for the camera position
  */
 Earth.calculateScaleFactor = function (northLatitude, southLatitude, westLongitude, eastLongitude) {
@@ -168,7 +173,7 @@ Earth.calculateCameraOrientation = function (cameraPosition) {
     var rotation = new x3dom.fields.Quaternion(0, 0, 0, 0);
     rotation.setValue(lookAtMatrix);
 
-    // transform Quaternion to Axis angles (axis [x,y,z] and the angle to rotate around that axis)
+    // transform Quaternion to Axis angles (axis [x,y,z] and the rotation angle for that axis)
     var orientation = rotation.toAxisAngle();
 
     return orientation;
@@ -176,7 +181,7 @@ Earth.calculateCameraOrientation = function (cameraPosition) {
 
 /**
  * Resets the view of the earth to the prime meridian (Greenwich) and the
- * equator line. Also resets the center of rotation, since X3DOM sometimes
+ * equator line. Also resets the center of rotation, because X3DOM sometimes
  * randomly changes it.
  */
 Earth.resetView = function () {
@@ -223,8 +228,8 @@ Earth.toggleCountryBoundaries = function (button) {
 
 /**
  * Toggles the texture resolution of the earth whenever the appropriate button
- * has been clicked. Since country boundaries can be displayed, a
- * differentiation of four textures has to be made.
+ * has been clicked. Since country boundaries can be displayed aswell, a
+ * distinction between four textures has to be made.
  *
  * @param button used for toggling its background color
  */
@@ -282,7 +287,7 @@ Earth.setButtonActive = function (button) {
 };
 
 /**
- * Sets the given button deactive by changing the background color to transparent.
+ * Sets the given button inactive by changing the background color to transparent.
  *
  * @param button whose color should be changed
  */

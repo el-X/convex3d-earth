@@ -1,4 +1,7 @@
 <?xml version="1.0"?>
+<!--
+The XML Schema Defintion for the country dataset is defined here.
+-->
 
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -72,8 +75,8 @@
     <xs:complexType name="capitalType">
         <xs:sequence>
             <xs:element name="name" type="nameType"/>
-            <!-- "wikiName" is used as an alternative search string, -->
-            <!-- whenever "name" fails to deliver proper results -->
+            <!-- "wikiName" is used as an alternative search string -->
+            <!-- whenever "name" fails to deliver proper results    -->
             <xs:element name="wikiName" type="nameType" minOccurs="0"/>
             <xs:element name="latitude" type="latitudeType"/>
             <xs:element name="longitude" type="longitudeType"/>

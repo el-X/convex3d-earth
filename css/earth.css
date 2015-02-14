@@ -1,101 +1,112 @@
 body {
-    background-color:black;
-    background-image:url("../img/starry_sky.gif");
+    background-color: black;
+    background-image: url("../img/starry_sky.gif");
     font-family: "Calibri";
 }
 
 body > div > h1 {
-    color:white;
+    color: white;
 }
 
 a {
     text-decoration: none;
 }
 
-table > table > tbody > tr {
+#container {
+    width: 50%;
+    overflow: hidden;
+}
+
+#earth {
+    width: 100%;
+    height: 600px;
+}
+
+#tools {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    float: left;
+}
+
+#tools button {
+    border: 1px solid #666666;
+    background-color: transparent;
+    font-size: 12px;
+    color: #ccc;
+    padding: 3px;
+    margin: 0;
+    display: inline;
+    margin-top: 0px;
+}
+
+#tools button:hover {
+    background-color: blue;
+}
+
+#iframe_container {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    z-index: 500;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 2px 2px 2px 2px #666;
+    -webkit-box-shadow: 2px 2px 2px 2px #666;
+    box-shadow: 2px 2px 2px 2px #666;
+    padding: 10px;
+    background-color: #fff;
+    width:450px;
+    height: 500px;
+    overflow: hidden;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 40%;
+}
+
+#wikiFrame {
+    width: 100%;
+    height: 100%;
+}
+
+#wiki {
+    overflow: hidden;
+    height: 98%;
+}
+
+#info {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+table > tbody > tr {
     font-size: 1.3em;
     font-variant: normal;
 }
 
-table > table > tbody > tr > th > b {
+table > tbody > tr > th {
     font-size: 1.2em;
+    text-align: left;
+    width: 33%;
+    color: white;
     padding-left: 10px;
     text-decoration: underline;
 }
 
-table > table > tbody > tr > td > h3 {
-    padding-left: 20px;
+table > tbody > tr > td {
+    color: white;
+    vertical-align: text-top;
 }
 
-#earth {
-    width:100%;
-    height:600px;
-}
-
-#container {
-    width:50%;
-    overflow:hidden;
-}
-
-#iframe_container {
-    position:absolute;
-    top:80px;
-    right:10px;
-    z-index:500;
-    -moz-border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    border-radius: 0.5em;
-    -moz-box-shadow:2px 2px 2px 2px #666;
-    -webkit-box-shadow:2px 2px 2px 2px #666;
-    box-shadow:2px 2px 2px 2px #666;
-    padding:10px;
-    background-color:#FFF;
-    width:450px;
-    height:500px;
-    overflow:hidden;
-    opacity:0.8;
-    filter: alpha(opacity=80);
-    width:40%;
-}
-
-#wikiFrame {
-    position:relative;
-    width:100%;
-    height:100%;
-}
-
-#wiki {
-    overflow:hidden;
-    height:98%;
-}
-
-#info {
-    width:100%;
-    height:100%;
-}
-
-#tools {
-    top:0;
-    left:0;
-    margin:0;
-    padding:0;
-    position:absolute;
-    display:inline-block;
-    z-index:100;
-    float:left;
-}
-
-#tools button {
-    border:1px solid #666666;
-    background-color:transparent;
-    font-size: 12px;
-    color:#ccc;
-    padding:3px;
-    margin:0;
-    display:inline;
-    margin-top:0px;
-}
-
-#tools button:hover {
-    background-color:blue;
+table > tbody > tr > td > h3 {
+    padding-left: 15px;
 }

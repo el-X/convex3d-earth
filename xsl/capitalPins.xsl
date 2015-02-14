@@ -8,18 +8,18 @@
     <xsl:variable name="pinScale" select="0.004"/>
     <xsl:variable name="PI" select="number(3.14159265359)"/>
 
-    <!-- Creates markups for capitals by defining a pin and using it for each capital. -->
+    <!-- Creates markings for capitals by defining a pin and using it for each capital. -->
     <xsl:template match="/">
-        <!-- Definition of a pin for each capital. -->
+        <!-- Define the X3D model of a pin. -->
         <Group DEF="PIN">
             <xsl:element name="Transform">
-                <!-- Scaling of the pin. Done by setting x y z scalings.  -->
+                <!-- The scaling of the pins is done by applying a factor to the x, y and z coordinates -->
                 <xsl:attribute name="scale">
                     <xsl:value-of select="$pinScale"/>,
                     <xsl:value-of select="$pinScale"/>,
                     <xsl:value-of select="$pinScale"/>
                 </xsl:attribute>
-                <!-- Pin head. -->
+                <!-- The pin head is a simple sphere. -->
                 <Transform translation="0 4 0">
                     <Shape>
                         <Appearance>
@@ -28,7 +28,7 @@
                         <Sphere radius="1"></Sphere>
                     </Shape>
                 </Transform>
-                <!-- Pin foot. -->
+                <!-- The pin tip on the other hand is a cylinder. -->
                 <Transform translation="0 1.5 0">
                     <Shape>
                         <Appearance>
@@ -39,54 +39,54 @@
                 </Transform>
             </xsl:element>
         </Group>
-        <!-- Actual generation of capitals pins -->
+        <!-- Actual generation of the pins for the capitals -->
         <xsl:call-template name="generatePins"/>
     </xsl:template>
 
     <!--
-        For undertanding see http://de.wikipedia.org/wiki/Kugelkoordinaten
-                             http://de.wikipedia.org/wiki/Geographische_Breite
-                             http://de.wikipedia.org/wiki/Geographische_L%C3%A4nge
+        For a better understanding take a look at:
+            http://en.wikipedia.org/wiki/Spherical_coordinate_system
+            http://en.wikipedia.org/wiki/Latitude
+            http://en.wikipedia.org/wiki/Longitude
     -->
     <!-- Generates capital pins for all countries. -->
     <xsl:template name="generatePins">
-
-        <!-- Generate pin for each country capital -->
         <xsl:for-each select="/countries/country">
-            <xsl:variable name="capitalLongitude" select="number(capital/longitude)"/>
             <xsl:variable name="capitalLatitude" select="number(capital/latitude)"/>
+            <xsl:variable name="capitalLongitude" select="number(capital/longitude)"/>
 
-            <xsl:if test="string($capitalLongitude)!='NaN' and string($capitalLatitude)!='NaN'">
-
-                <!-- Simple conversion of degrees to radians. -->
+            <xsl:if test="string($capitalLatitude)!='NaN' and string($capitalLongitude)!='NaN'">
+                <!-- Conversion from degrees to radians. -->
                 <xsl:variable name="latitudeAngle">
-                    <!-- the next conversion formula is also a short form, but this time -->
-                    <!-- its lacking 180°, since latitudes have a max range of 180° -->
+                    <!-- the following conversion formula is a short form for:    -->
                     <!-- ((180.0 * $PI) - ($capitalLatitude * 2 * $PI)) div 360.0 -->
+                    <!-- the calculation is based on the fact that latitudes have -->
+                    <!-- a max range of 180° -->
                     <xsl:value-of select="((90.0 - $capitalLatitude) * $PI) div 180.0"/>
                 </xsl:variable>
                 <xsl:variable name="longitudeAngle">
-                    <!-- the following conversion formula is the short form of: -->
-                    <!-- ($capitalLongitude * 2 * $PI) div 360.0 -->
+                    <!-- the longitude radian can be calculated the normal way: -->
+                    <!-- ($capitalLongitude * 2 * $PI) div 360.0                -->
                     <xsl:value-of select="($capitalLongitude * $PI) div 180.0"/>
                 </xsl:variable>
 
-                <!-- 2 rotations (params x y z angle) -->
+                <!-- 2 rotations and 1 translation are needed for     -->
+                <!-- properly placing the pins on the earth's surface -->
                 <Transform>
-                    <!-- $longitudeAngle for a rotation around the y-axis -->
+                    <!-- first rotate around the y-axis by the $longitudeAngle -->
                     <xsl:attribute name="rotation">
                         0 1 0 <xsl:value-of select="$longitudeAngle"/>
                     </xsl:attribute>
                     <Transform>
-                        <!-- $latitudeAngle for a rotation around the x-axis -->
+                        <!-- then rotate around the x-axis by the $latitudeAngle -->
                         <xsl:attribute name="rotation">
                             1 0 0 <xsl:value-of select="$latitudeAngle"/>
                         </xsl:attribute>
-                        <!-- Move the pin to the earth surface (y->1 since the earth radius is 1) -->
+                        <!-- at last move the pin to the surface (y -> 1 since the earth's radius is 1) -->
                         <Transform translation="0 1 0">
-                            <!-- Using the shape definition of the pin for the capital -->
+                            <!-- Use the shape definition of the pin for the capital -->
                             <Shape USE="PIN"></Shape>
-                            <!-- Generate an invisible box over the pin for click event. -->
+                            <!-- Generate an invisible box surrounding the pin for click events. -->
                             <xsl:call-template name="generateClickableBox">
                                 <xsl:with-param name="country" select="."/>
                             </xsl:call-template>
@@ -98,9 +98,9 @@
     </xsl:template>
 
     <!--
-        Create a clickable transparent box over the pin with onlick action to call wikiEventHandler.js.
-        The box provides better usability (pins are sometimes hard to reach with the mouse).
-        Also needed for the onlick event, since the event would propagate through all group elements otherwise.
+        Create a clickable transparent box that surrounds the pin. Onlick actions
+        that call the wiki page of that capital can be triggered much more easily,
+        because the box is easier to reach with the mouse than the actual pin itself.
     -->
     <xsl:template name="generateClickableBox">
         <xsl:param name="country"/>
@@ -109,7 +109,7 @@
                 <Material transparency="1.0" />
             </Appearance>
             <Box>
-                <!-- Look if there is a special wiki search string for the capital-->
+                <!-- Look if there is a special wiki search string for the capital  -->
                 <xsl:variable name="wikiSearch">
                     <xsl:choose>
                         <xsl:when test="boolean(capital/wikiName)">
@@ -134,5 +134,4 @@
             </Box>
         </Shape>
     </xsl:template>
-
 </xsl:stylesheet>

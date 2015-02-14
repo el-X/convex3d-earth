@@ -35,4 +35,3 @@ Wiki.resetInfoView = function () {
     var wikiLink = document.getElementById("outlink");
     wikiLink.style.display = "none";
 };
-

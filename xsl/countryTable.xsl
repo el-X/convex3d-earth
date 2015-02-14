@@ -5,9 +5,9 @@
     <xsl:variable name="hyphen">&#45;</xsl:variable>
     <xsl:variable name="space">&#160;</xsl:variable>
 
-    <xsl:variable name="firstPart" select="'AÅBCDEFG'"/>
-    <xsl:variable name="secondPart" select="'HIJKLMNOPQ'"/>
-    <xsl:variable name="thirdPart" select="'RSTUVWYZ'"/>
+    <xsl:variable name="firstColumn" select="'AÅBCDEFG'"/>
+    <xsl:variable name="secondColumn" select="'HIJKLMNOPQ'"/>
+    <xsl:variable name="thirdColumn" select="'RSTUVWYZ'"/>
 
     <xsl:template match="/">
         <xsl:element name="html">
@@ -15,37 +15,29 @@
         </xsl:element>
     </xsl:template>
 
+    <!-- Creates a table containing all available countries and capitals -->
     <xsl:template name="countryTable">
         <xsl:element name="table">
-            <xsl:attribute name="width">
-                100%;
-            </xsl:attribute>
             <table>
                 <tr>
-                    <th style="text-align:left; width: 33%; color:white;">
-                        <b>A - G</b>
-                    </th>
-                    <th style="text-align:left; width: 33%; color:white;">
-                        <b>H - Q</b>
-                    </th>
-                    <th style="text-align:left; width: 33%; color:white;">
-                        <b>R - Z</b>
-                    </th>
+                    <th>A - G</th>
+                    <th>H - Q</th>
+                    <th>R - Z</th>
                 </tr>
                 <tr>
-                    <td style="color:white;" valign="top">
+                    <td>
                         <xsl:call-template name="for-each-character">
-                            <xsl:with-param name="characters" select="$firstPart"/>
+                            <xsl:with-param name="characters" select="$firstColumn"/>
                         </xsl:call-template>
                     </td>
-                    <td style="color:white;" valign="top">
+                    <td>
                         <xsl:call-template name="for-each-character">
-                            <xsl:with-param name="characters" select="$secondPart"/>
+                            <xsl:with-param name="characters" select="$secondColumn"/>
                         </xsl:call-template>
                     </td>
-                    <td style="color:white;" valign="top">
+                    <td>
                         <xsl:call-template name="for-each-character">
-                            <xsl:with-param name="characters" select="$thirdPart"/>
+                            <xsl:with-param name="characters" select="$thirdColumn"/>
                         </xsl:call-template>
                     </td>
                 </tr>
@@ -53,13 +45,13 @@
         </xsl:element>
     </xsl:template>
 
-    <!-- Recursive template. Depth is the length of the characters string. -->
+    <!-- Recursive template. The depth of the recursion is the length of the character string. -->
     <xsl:template name="for-each-character">
         <xsl:param name="characters"/>
-        <!-- Check characters string for content before proceed -->
+        <!-- Check character string for content before proceeding -->
         <xsl:if test="string-length($characters) &gt; 0">
             <!-- Pick the first letter of the string -->
-            <xsl:variable name="character" select="substring($characters, 1, 1)" />
+            <xsl:variable name="character" select="substring($characters, 1, 1)"/>
             <h3>
                 <xsl:value-of select="$character"/>
             </h3>
@@ -67,7 +59,7 @@
                 <xsl:for-each select="/countries/country">
                     <xsl:sort select="name"/>
                     <xsl:variable name="country" select="name"/>
-                    <xsl:if test="starts-with(substring($country, 1, 2), $character)">
+                    <xsl:if test="starts-with(substring($country, 1, 1), $character)">
                         <li>
                             <b>
                                 <xsl:element name="a">
@@ -92,7 +84,7 @@
                                             </xsl:when>
                                             <xsl:otherwise>
                                                 <!-- If there are no special search strings, the country -->
-                                                <!-- name itself will be used as the search string -->
+                                                <!-- name itself will be used as the search string       -->
                                                 <xsl:value-of select="capital/name"/>
                                             </xsl:otherwise>
                                         </xsl:choose>

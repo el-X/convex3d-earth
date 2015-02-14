@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 The following Dataset is a variation on http://peric.github.io/GetCountries/
-with almost all attributes being renamed and turned elements. In addition to
-that http://www.distancesfrom.com/Latitude-Longitude.aspx was used to determine
-the longitude and the latitude values of the capitals.
+with almost all attributes being renamed and turned into elements. In addition
+to that http://www.distancesfrom.com/Latitude-Longitude.aspx was used to
+determine the longitude and the latitude values of the capitals.
 -->
 
 <countries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
